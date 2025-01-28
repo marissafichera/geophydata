@@ -1,4 +1,5 @@
 import os.path
+import sys
 
 import httpx
 from bs4 import BeautifulSoup
@@ -6,43 +7,26 @@ from bs4 import BeautifulSoup
 
 def get_available_files(url):
     resp = httpx.get(url)
-    # print(resp.json())
-    # obj = resp.json()
-    # for f in obj['files']:
-    #     print(f)
-    #     dpath = f['downloadUri']
-    #
-    #     download_and_save_file(dpath, name=f['name'], output_dir='out')
 
-    # soup = BeautifulSoup(resp.text, 'html.parser')
-    # for link in soup.find_all('a'):
-    #     # print(link)
-    #     href = link.get('href')
-    #     if href is not None:
-    #         if href.startswith('/files'):
-    #             print(link.get('href'))
-
-    # for link in soup.find_all('span'):
-    #     print(link)
-    #     nested_element = link.find_all('span', id='sb-download-all-link')
-    #     print(nested_element)
-    #     dataurl = link.get('id')
-    #     if dataurl is not None:
-    #         # print(dataurl)
-    #         if dataurl.startswith('/catalog/file'):
-    #             print(link.get('class'))
+    soup = BeautifulSoup(resp.text, 'html.parser')
+    for link in soup.find_all('a'):
+        # print(link)
+        href = link.get('href')
+        if href is not None:
+            if href.startswith('/files'):
+                print(link.get('href'))
 
 
-def download_and_save_file(url, name=None, extension=None, output_dir=None):
+def download_and_save_file(url, name=None, extension=None, output_dir=None, gis_id=None):
 
     if name is None:
         name = url.split('/')[-1]
 
-    if output_dir:
-        if not os.path.isdir(output_dir):
-            os.mkdir(output_dir)
+    if os.path.join(output_dir, gis_id):
+        if not os.path.isdir(os.path.join(output_dir, gis_id)):
+            os.mkdir(os.path.join(output_dir, gis_id))
 
-        name = os.path.join(output_dir, name)
+        name = os.path.join(output_dir, gis_id, name)
 
     if extension is not None:
         name = f'{name}{extension}'
@@ -56,13 +40,28 @@ def download_and_save_file(url, name=None, extension=None, output_dir=None):
 
 
 def main():
-    x = ((37 ** 2) + (27.5 ** 2))**(1/2)
-    print(x)
+    gis_dir = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData'
+    url = 'https://www.sciencebase.gov/catalog/item/5f2978e682cef313ed9e82aa'
 
-    url = 'https://gdr.openei.org/submissions/954'
-    url = 'https://www.sciencebase.gov/catalog/item/63a20e8cd34e176674f51d51'
-    url = 'https://www.sciencebase.gov/catalog/item/download/63a20e8cd34e176674f51d51?format=json'
-    url = 'https://www.sciencebase.gov/catalog/file/get/63a20e8cd34e176674f51d51'
+    if url.startswith('https://gdr'):
+        get_available_files(url)
+        download_and_save_file(url, extension=None, output_dir=gis_dir, gis_id=None)
+
+    if url.startswith('https://www.sciencebase.gov'):
+        base = url.split('/')[0:-2]
+        base_list = []
+        for b in base:
+            base_list.append(f'{b}')
+
+        catid = url.split('/')[-1]
+
+        dataurl_list = ['file', 'get', f'{catid}']
+
+        d_elements = base_list + dataurl_list
+        dataurl = '/'.join(d_elements)
+        download_and_save_file(dataurl, extension='.zip', output_dir=gis_dir, gis_id='USGS015')
+
+    # url = 'https://www.sciencebase.gov/catalog/file/get/63a20e8cd34e176674f51d51'
     # get_available_files(url)
 
     # url = 'https://gdr.openei.org/files/954/Tularosa_170511_mdl13_cellcenter.dat'

@@ -140,11 +140,14 @@ def usgs_kml():
 
 
 def main():
-    data = pd.read_csv(r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\UnivUtah004\Tularosa_170511_mdl13_cellcenter.dat',
-                       header=3, delim_whitespace=True)
-    df = pd.DataFrame(data)
-    df.columns = ['Northing', 'Easting', 'Elevation_m', 'Resistivity_ohmm']
+    df = pd.read_csv(r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\USGS015\5f2978e682cef313ed9e82aa\CannonAFB_ERT_Processed_zip\ERT_Locational_Data.txt',
+                       sep='\t')
     print(df)
+    df.columns = ['Electrode', 'Northing', 'Easting', 'Elevation_m']
+    gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.Easting, df.Northing), crs='EPSG:32614')
+    gdf.to_file(r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\USGS015\5f2978e682cef313ed9e82aa\CannonAFB_ERT_Processed_zip\ERT_Locational_Data.shp')
+
+
 
 
 
