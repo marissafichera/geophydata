@@ -9,6 +9,11 @@ from shapely.wkt import loads
 import pyproj
 import sys
 import fiona
+import rasterio
+from rasterio.mask import mask
+from shapely.geometry import box
+import arcpy as ap
+
 
 root = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData'
 
@@ -24,7 +29,94 @@ transformer = pyproj.Transformer.from_crs("EPSG:3857", "EPSG:4326", always_xy=Tr
 lonmin, latmin = transformer.transform(xmin, ymin)
 lonmax, latmax = transformer.transform(xmax, ymax)
 
-nm_extent_wgs84 = [lonmin, latmin, lonmax, latmax]
+nm_extent_wgs84 = (lonmin, latmin, lonmax, latmax)
+
+def copy_raster(in_raster):
+    out_gdb = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
+    out_path = os.path.join(out_gdb, f'{in_raster}')
+    ap.management.CopyRaster(f'{in_raster}.tif', out_path)
+
+
+def export_features(in_features):
+    out_gdb = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
+    out_path = os.path.join(out_gdb, in_features)
+    ap.conversion.ExportFeatures(in_features=f'{in_features}.shp', out_features=out_path)
+
+
+def clip_usgs002_data():
+    gravtifs = [
+        'GeophysicsGravity_HGM_USCanada',
+        'GeophysicsGravity_Up30km_HGM_USCanada',
+        'GeophysicsGravity_USCanada',
+    ]
+
+    gravshps = [
+        'DeepGravitySources_Worms_USCanada',
+        'ShallowGravitySources_Worms_USCanada'
+    ]
+
+    tifs = [
+        'GeophysicsGravity_HGM_USCanada',
+        'GeophysicsGravity_Up30km_HGM_USCanada',
+        'GeophysicsGravity_Up30km_USCanada',
+        'GeophysicsGravity_USCanada',
+        'GeophysicsMag_RTP_HGM_USCanada',
+        'GeophysicsMag_RTP_USCanada',
+        'GeophysicsMag_RTP_VD_USCanada',
+        'GeophysicsMag_USCanada',
+        'GeophysicsMagRTP_DeepSources_USCanada',
+        'GeophysicsMagRTP_HGM_DeepSources_USCanada'
+    ]
+
+    shps = [
+        'DeepGravitySources_Worms_USCanada',
+        'ShallowGravitySources_Worms_USCanada',
+        'DeepMagSources_Worms_USCanada',
+    ]
+
+    dirnames = ['GeophysicsGravity', 'GeophysicsMag']
+
+    for d in dirnames:
+        f = os.path.join(root, 'USGS002', d)
+        for t in tifs:
+            print(os.path.join(f, t))
+            if os.path.isdir(os.path.join(f, t)):
+                p = os.path.join(f, t, f'{t}.tif')
+                if not os.path.isfile(p):
+                    p = os.path.join(f, t, 'USCanadaMagRTP_DeepSources.tif')
+                    if not os.path.isfile(p):
+                        p = os.path.join(f, t, 'USCanadaMagRTP_HGMDeepSources.tif')
+
+                output_path = os.path.join(f, t, f'{t}_NM.tif')
+                with rasterio.open(p) as src:
+                    bbox = box(lonmin, latmin, lonmax, latmax)
+                    geoms = [bbox]
+                    out_image, out_transform = mask(src, geoms, crop=True)
+
+                    out_meta = src.meta.copy()
+                    out_meta.update({
+                        'driver': 'GTiff',
+                        'count': out_image.shape[0],
+                        'height': out_image.shape[1],
+                        'width': out_image.shape[2],
+                        'transform': out_transform
+                    })
+
+                    with rasterio.open(output_path, 'w', **out_meta) as dest:
+                        dest.write(out_image)
+                        r = os.path.join(f, t, f'{t}_NM')
+                        copy_raster(in_raster=output_path)
+        for s in shps:
+            print(f'shapefile = {s}')
+            if os.path.isdir(os.path.join(f, s)):
+                p = os.path.join(f, s, f'{s}.shp')
+                print(f'shapefile = {p}')
+                output_path = os.path.join(f, s, f'{s}_NM.shp')
+                gdf = gpd.read_file(p)
+                nmgdf = gpd.clip(gdf, nm_extent_wgs84)
+                nmgdf.to_file(output_path)
+                fc = os.path.join(f, s, f'{s}')
+                fc_to_fc(in_features=fc)
 
 
 def stanford_model_data():
@@ -140,12 +232,7 @@ def usgs_kml():
 
 
 def main():
-    df = pd.read_csv(r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\USGS015\5f2978e682cef313ed9e82aa\CannonAFB_ERT_Processed_zip\ERT_Locational_Data.txt',
-                       sep='\t')
-    print(df)
-    df.columns = ['Electrode', 'Northing', 'Easting', 'Elevation_m']
-    gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.Easting, df.Northing), crs='EPSG:32614')
-    gdf.to_file(r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\USGS015\5f2978e682cef313ed9e82aa\CannonAFB_ERT_Processed_zip\ERT_Locational_Data.shp')
+    clip_usgs002_data()
 
 
 

@@ -5,7 +5,7 @@ import httpx
 from bs4 import BeautifulSoup
 
 
-def get_available_files(url):
+def get_available_files(url, gis_dir):
     resp = httpx.get(url)
 
     soup = BeautifulSoup(resp.text, 'html.parser')
@@ -14,7 +14,8 @@ def get_available_files(url):
         href = link.get('href')
         if href is not None:
             if href.startswith('/files'):
-                print(link.get('href'))
+                fileurl = link.get('href')
+                download_and_save_file(url, name=fileurl, output_dir=gis_dir, gis_id='FORGE001')
 
 
 def download_and_save_file(url, name=None, extension=None, output_dir=None, gis_id=None):
@@ -26,11 +27,11 @@ def download_and_save_file(url, name=None, extension=None, output_dir=None, gis_
         if not os.path.isdir(os.path.join(output_dir, gis_id)):
             os.mkdir(os.path.join(output_dir, gis_id))
 
-        name = os.path.join(output_dir, gis_id, name)
-
     if extension is not None:
         name = f'{name}{extension}'
 
+    print(f'{url}')
+    print(name)
     resp = httpx.get(url, timeout=60)
     if resp.status_code == 200:
         with open(name, 'wb') as wfile:
@@ -41,11 +42,11 @@ def download_and_save_file(url, name=None, extension=None, output_dir=None, gis_
 
 def main():
     gis_dir = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData'
-    url = 'https://www.sciencebase.gov/catalog/item/5f2978e682cef313ed9e82aa'
+    url = 'https://gdr.openei.org/submissions/1491'
 
     if url.startswith('https://gdr'):
-        get_available_files(url)
-        download_and_save_file(url, extension=None, output_dir=gis_dir, gis_id=None)
+        get_available_files(url, gis_dir)
+        # download_and_save_file(url, extension=None, output_dir=gis_dir, gis_id='FORGE001')
 
     if url.startswith('https://www.sciencebase.gov'):
         base = url.split('/')[0:-2]
@@ -59,7 +60,7 @@ def main():
 
         d_elements = base_list + dataurl_list
         dataurl = '/'.join(d_elements)
-        download_and_save_file(dataurl, extension='.zip', output_dir=gis_dir, gis_id='USGS015')
+        download_and_save_file(dataurl, extension='.zip', output_dir=gis_dir, gis_id='USGS019')
 
     # url = 'https://www.sciencebase.gov/catalog/file/get/63a20e8cd34e176674f51d51'
     # get_available_files(url)
