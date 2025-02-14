@@ -89,7 +89,7 @@ def main():
         download_and_save_file(dataurl, extension='.zip', output_dir=gis_dir, gis_id='USGS019')
 
     if url.startswith('https://mrdata.usgs.gov/'):
-        get_available_files(url, gis_dir=os.path.join('../..', 'USGS_osd_gravity'), gis_id='USGS_osd_gravity')
+        get_available_files(url, gis_dir=os.path.join('out', 'USGS_osd_gravity'), gis_id='USGS_osd_gravity')
 
     # url = 'https://www.sciencebase.gov/catalog/file/get/63a20e8cd34e176674f51d51'
     # get_available_files(url)
