@@ -1,0 +1,448 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        -106.22727651489919,
+        32.158231352295104,
+        -105.12990504568126,
+        34.988353841856394
+    ],
+    "features": [
+        {
+            "id": "https://mrdata.usgs.gov/earthmri/data-acquisition/project/1054",
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -105.532,
+                                34.9884
+                            ],
+                            [
+                                -105.4164,
+                                34.502
+                            ],
+                            [
+                                -105.4169,
+                                34.502
+                            ],
+                            [
+                                -105.4167,
+                                34.5014
+                            ],
+                            [
+                                -105.1299,
+                                33.7086
+                            ],
+                            [
+                                -105.3487,
+                                32.1582
+                            ],
+                            [
+                                -105.4921,
+                                32.1596
+                            ],
+                            [
+                                -105.7853,
+                                32.159
+                            ],
+                            [
+                                -105.5177,
+                                32.4883
+                            ],
+                            [
+                                -105.518,
+                                32.5363
+                            ],
+                            [
+                                -105.9181,
+                                32.7678
+                            ],
+                            [
+                                -105.9169,
+                                32.9993
+                            ],
+                            [
+                                -106.0354,
+                                33.002
+                            ],
+                            [
+                                -105.9696,
+                                33.5661
+                            ],
+                            [
+                                -105.8622,
+                                33.9646
+                            ],
+                            [
+                                -105.997,
+                                34.5002
+                            ],
+                            [
+                                -105.9971,
+                                34.5006
+                            ],
+                            [
+                                -105.9974,
+                                34.5006
+                            ],
+                            [
+                                -106.072,
+                                34.7234
+                            ],
+                            [
+                                -106.2273,
+                                34.9833
+                            ],
+                            [
+                                -105.532,
+                                34.9884
+                            ]
+                        ],
+                        [
+                            [
+                                -105.4437,
+                                32.9939
+                            ],
+                            [
+                                -105.4437,
+                                32.9849
+                            ],
+                            [
+                                -105.4056,
+                                32.985
+                            ],
+                            [
+                                -105.4057,
+                                32.9941
+                            ],
+                            [
+                                -105.3057,
+                                32.9959
+                            ],
+                            [
+                                -105.3062,
+                                33.1376
+                            ],
+                            [
+                                -105.3062,
+                                33.1372
+                            ],
+                            [
+                                -105.3067,
+                                33.3145
+                            ],
+                            [
+                                -105.7022,
+                                33.3129
+                            ],
+                            [
+                                -105.7023,
+                                33.3208
+                            ],
+                            [
+                                -105.716,
+                                33.3207
+                            ],
+                            [
+                                -105.7166,
+                                33.3985
+                            ],
+                            [
+                                -105.9421,
+                                33.3984
+                            ],
+                            [
+                                -105.9415,
+                                33.2066
+                            ],
+                            [
+                                -105.8434,
+                                33.207
+                            ],
+                            [
+                                -105.8434,
+                                32.9919
+                            ],
+                            [
+                                -105.4437,
+                                32.9939
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "pid": 1054,
+                "show": null,
+                "pname": "NM_SNMAlkalineIgneousBelt_MAG_RAD_D24",
+                "yearstart": 2024,
+                "yearend": null,
+                "affiliatio": "USGS Geology, Minerals, Energy, and Geophysics Science Center",
+                "website": "https://www.usgs.gov/centers/gmeg",
+                "pdescrip": "Southern New Mexico Alkaline Igneous Belt aeromagnetic and aeroradiometric survey",
+                "pdata": [],
+                "pdatgchem": null,
+                "pkeyword": "fluorine; gallium; gold; rare earth elements; tellurium; uranium; zirconium; aeromagnetic surveying; aeroradiometric surveying; study areas; critical minerals; geophysics; igneous rocks",
+                "parea": 6200,
+                "papprox": "N",
+                "abstract": "The North American Cordilleran alkaline-igneous belt (NACAIB) extends southward from southeastern Alaska along the eastern edge of the Rocky Mountains and Basin and Range Provinces into northeastern Mexico. The unique igneous rocks that make up this belt have high concentrations of rare earth elements (REE), fluorine, zirconium, tellurium, gallium, other critical minerals, gold, and uranium. \nThe southern New Mexico Alkaline Igneous Belt aeromagnetic/aeroradiometric survey will cover over 15,150 square kilometers (over 5,800 square miles) within the NACAIB in southern New Mexico. This airborne survey will include over 45,200 flightline kilometers (over 28,000 flightline miles) of passively acquired Earth\u2019s magnetic field and radiometric data with a flightline spacing of 200 meters draped at approximately 120 meters above the ground. The survey will border the existing Trans-Pecos aeromagnetic/aeroradiometric survey to the south and includes several important known critical and other mineral occurrences including the Gallinas Mountains REE (carbonatite), Capitan Mountains REE, White Oaks (gold), Jicarilla (gold), and more. In addition, the survey area lies within the Basin and Range geologic province providing concealed terrane that is virtually unexplored. The current geophysical data in the region is inadequate and these new data will add tremendously to our geologic knowledge, help understand existing mineral occurrences and deposits, and possibly help define unknown mineral occurrences.",
+                "provisionl": "N",
+                "alias": "Southern New Mexico Alkaline Igneous Belt magnetic and radiometric survey",
+                "program": [
+                    "Geophysics",
+                    "Magnetic and Radiometric"
+                ],
+                "contact": [
+                    {
+                        "cid": "81",
+                        "cname": "Tien Grauch",
+                        "cmail": "tien@usgs.gov",
+                        "last": "Grauch, Tien"
+                    }
+                ],
+                "keywords": [
+                    {
+                        "thesaurus": 1,
+                        "code": "f35005",
+                        "term": "Chaves",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35027",
+                        "term": "Lincoln",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35035",
+                        "term": "Otero",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35053",
+                        "term": "Socorro",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35057",
+                        "term": "Torrance",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13050001",
+                        "term": "Western Estancia",
+                        "scope": "hydrologic unit",
+                        "parent": "Rio Grande closed basins"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13050002",
+                        "term": "Eastern Estancia",
+                        "scope": "hydrologic unit",
+                        "parent": "Rio Grande closed basins"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13050003",
+                        "term": "Tularosa Valley",
+                        "scope": "hydrologic unit",
+                        "parent": "Rio Grande closed basins"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13050004",
+                        "term": "Salt Basin",
+                        "scope": "hydrologic unit",
+                        "parent": "Rio Grande closed basins"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13060003",
+                        "term": "Upper Pecos",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Pecos"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13060005",
+                        "term": "Arroyo Del Macho",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Pecos"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13060006",
+                        "term": "Gallo Arroyo",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Pecos"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13060007",
+                        "term": "Upper Pecos-Long Arroyo",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Pecos"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13060008",
+                        "term": "Rio Hondo",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Pecos"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13060009",
+                        "term": "Rio Felix",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Pecos"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13060010",
+                        "term": "Rio Penasco",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Pecos"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13060011",
+                        "term": "Upper Pecos-Black",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Pecos"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33106",
+                        "term": "Carlsbad",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q34106",
+                        "term": "Roswell",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q34108",
+                        "term": "Tularosa",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q35106",
+                        "term": "Fort Sumner",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1454",
+                        "term": "fluorine",
+                        "scope": "Halogen element with symbol F and atomic number 9 <http://periodic.lanl.gov/9.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1460",
+                        "term": "gallium",
+                        "scope": "Metalloid element with symbol Ga and atomic number 31 <http://periodic.lanl.gov/31.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1464",
+                        "term": "gold",
+                        "scope": "Metal element with symbol Au and atomic number 79 <http://periodic.lanl.gov/79.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1553",
+                        "term": "rare earth elements",
+                        "scope": "A group of elements including the lanthanoids, or lanthanides, of interest because they are used in modern technological industries.  Yttrium and scandium are often included in this group.",
+                        "parent": "chemical element groups"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1589",
+                        "term": "tellurium",
+                        "scope": "Nonmetal element with symbol Te and atomic number 52 <http://periodic.lanl.gov/52.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1605",
+                        "term": "uranium",
+                        "scope": "Rare earth (actinide series) element with symbol U and atomic number 92 <http://periodic.lanl.gov/92.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1619",
+                        "term": "zirconium",
+                        "scope": "Metal element with symbol Zr and atomic number 40 <http://periodic.lanl.gov/40.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "18",
+                        "term": "aeromagnetic surveying",
+                        "scope": "Mapping of the earth's magnetic field with the use of airborne electronic magnetometers.",
+                        "parent": "remote sensing"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "19",
+                        "term": "aeroradiometric surveying",
+                        "scope": "Mapping of gamma radiation from the earth's surface with airborne scintillation meters or gamma-ray spectrometers.",
+                        "parent": "remote sensing"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2093",
+                        "term": "study areas",
+                        "scope": "Geospatial data describing the areas from which samples were taken or observations were made, typically polygonal.  May be approximate, as in bounding coordinates, or precise.",
+                        "parent": "geospatial datasets"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2094",
+                        "term": "critical minerals",
+                        "scope": "A non-fuel mineral or mineral material essential to the economic and national security of the US, the supply chain of which is vulnerable to disruption, and that serves an essential function in the manufacturing of a product, the absence of which would have significant consequences for our economy or our national security.",
+                        "parent": "mineral resources"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "470",
+                        "term": "geophysics",
+                        "scope": "Branch of geology studying the physical characteristics and phenomena of the earth and its atmosphere.",
+                        "parent": "earth sciences"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "572",
+                        "term": "igneous rocks",
+                        "scope": "Rocks formed from melted rock that has cooled and solidified.",
+                        "parent": "rocks and deposits"
+                    }
+                ]
+            }
+        }
+    ]
+}

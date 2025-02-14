@@ -9,11 +9,13 @@ from shapely.wkt import loads
 import pyproj
 import sys
 import fiona
-import rasterio
-from rasterio.mask import mask
+# import rasterio
+# from rasterio.mask import mask
 from shapely.geometry import box
-import arcpy as ap
-
+# import arcpy as ap
+import requests
+import json
+import os
 
 root = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData'
 
@@ -30,6 +32,49 @@ lonmin, latmin = transformer.transform(xmin, ymin)
 lonmax, latmax = transformer.transform(xmax, ymax)
 
 nm_extent_wgs84 = (lonmin, latmin, lonmax, latmax)
+
+
+def geojson_to_shapefile():
+    url_ids = [
+        '1054',
+        '5059',
+        '5013',
+        '20038',
+        '40001',
+        '40011',
+        '1034',
+        '20033',
+        '1054',
+        '5027',
+    ]
+
+    for url_id in url_ids:
+        geojson_url = rf'https://mrdata.usgs.gov/earthmri/data-acquisition/project/{url_id}/json'
+
+        # Fetch the GeoJSON data from the URL
+        response = requests.get(geojson_url)
+        if response.status_code != 200:
+            print(f"Failed to retrieve GeoJSON from {geojson_url}")
+            return
+
+        geojson_data = response.json()
+
+        # Convert GeoJSON to GeoDataFrame using geopandas
+        gdf = gpd.read_file(geojson_url)
+
+        # Write the GeoDataFrame to a shapefile
+        shapefile_path = os.path.join('out', 'EarthMRI', f'EarthMRI_{url_id}.shp')
+        print(f'{shapefile_path=}')
+        gdf.to_file(shapefile_path)
+        print(f"Shapefile saved at: {shapefile_path}")
+
+        # Write the entire GeoJSON data to a text file
+        geojson_file_path = os.path.join('out', 'EarthMRI', f'EarthMRI_{url_id}.json')
+        with open(geojson_file_path, 'w') as geojson_file:
+            json.dump(geojson_data, geojson_file, indent=4)
+
+        print(f"GeoJSON saved to: {geojson_file_path}")
+
 
 def copy_raster(in_raster):
     out_gdb = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
@@ -183,7 +228,9 @@ def kml_to_gdf():
         with fiona.open(kml) as collection:
             gdf = gpd.GeoDataFrame.from_features(collection)
 
-        gdf.to_file(rf'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\NOAA001\{kmlname}.shp')
+        gdf.to_file(
+            rf'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\NOAA001\{kmlname}.shp')
+
 
 def noaa_nm_data():
     # "C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\NOAA002\newmex.xyz"
@@ -232,13 +279,7 @@ def usgs_kml():
 
 
 def main():
-    clip_usgs002_data()
-
-
-
-
-
-
+    geojson_to_shapefile()
 
 
 if __name__ == '__main__':

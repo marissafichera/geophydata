@@ -1,0 +1,407 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        -109.01571321079598,
+        32.68282199244106,
+        -107.48221013918652,
+        33.012544366929035
+    ],
+    "features": [
+        {
+            "id": "https://mrdata.usgs.gov/earthmri/data-acquisition/project/40001",
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -108.4486,
+                                32.6828
+                            ],
+                            [
+                                -108.5516,
+                                32.6828
+                            ],
+                            [
+                                -108.5516,
+                                32.7699
+                            ],
+                            [
+                                -108.4486,
+                                32.7699
+                            ],
+                            [
+                                -108.4486,
+                                32.6828
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                -108.9126,
+                                32.8957
+                            ],
+                            [
+                                -108.9126,
+                                32.8927
+                            ],
+                            [
+                                -108.9091,
+                                32.8927
+                            ],
+                            [
+                                -108.9091,
+                                32.8057
+                            ],
+                            [
+                                -109.0123,
+                                32.8057
+                            ],
+                            [
+                                -109.0123,
+                                32.8087
+                            ],
+                            [
+                                -109.0157,
+                                32.8087
+                            ],
+                            [
+                                -109.0157,
+                                32.8957
+                            ],
+                            [
+                                -108.9126,
+                                32.8957
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                -107.4822,
+                                32.9255
+                            ],
+                            [
+                                -107.5855,
+                                32.9255
+                            ],
+                            [
+                                -107.5855,
+                                33.0125
+                            ],
+                            [
+                                -107.4822,
+                                33.0125
+                            ],
+                            [
+                                -107.4822,
+                                32.9255
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "pid": 40001,
+                "show": null,
+                "pname": "Geochemistry of critical minerals in mine wastes in New Mexico",
+                "yearstart": 2022,
+                "yearend": null,
+                "affiliatio": "New Mexico Bureau of Geology and Mineral Resources",
+                "website": "https://geoinfo.nmt.edu/resources/minerals/home.html",
+                "pdescrip": "Mine wastes characterization in the Steeple Rock district, New Mexico",
+                "pdata": [],
+                "pdatgchem": "https://doi.org/10.5066/P9WHRLXH",
+                "pkeyword": "water chemistry; arsenic; bismuth; cobalt; fluorine; magnesium; manganese; nickel; rare earth elements; tellurium; tungsten; zinc; abandoned mines and quarries; geologic maps; partnerships; mine waste; mineral deposits; study areas; critical minerals; geochemistry",
+                "parea": 110,
+                "papprox": "Y",
+                "abstract": "There are tens of thousands of inactive or abandoned mine features in 274 mining districts in New Mexico (NM), including coal, uranium, metals, and industrial minerals districts. Many of these mines have related mine waste materials, which could have potential for containing critical minerals, because the actual mineral production was generally for precious and base metals and not critical minerals. Therefore, any critical minerals that occur naturally in the mineral deposits would presumably be present in the mine wastes. The New Mexico Bureau of Geology and Mineral Resources is conducting a project to characterize and estimate the critical mineral endowment of mine wastes in three mining districts in NM: (1) Copper Flat at Hillsboro, (2) Black Hawk in Burro Mountains, and (3) Carlisle-Center mines in Steeple Rock district. The Copper Flat mine is an example of a porphyry copper deposit, among other related deposit types. Known critical minerals in the district include Te, As, Bi, Mg, Mn, and Zn. The Black Hawk district (also known as Bullard's Peak) is an example of the arsenide mineral system and contains five-element veins among other deposit types. Known critical minerals in the district include Co, Ni, As, REE, Bi, W, Te, fluorite, and Zn. The Carlisle-Center mines are examples of a low sulfidation, volcanic-epithermal system and contain Au-Ag veins among other deposit types. Known critical minerals in the district include As, Bi, Te, fluorite, and Zn. Detailed maps will be produced, showing the geology and extent of mine wastes in the project areas within the three mining districts sampled and characterized. Approximately 100 composite mine waste samples (from mine dumps, low grade stockpiles, tailings from all three sites) will be collected for geochemical analysis in order to calculate the total critical mineral potential in these wastes. Samples will be selected for additional mineralogical, microbial, and leaching studies based upon the chemical analyses. Approximately 15 water samples for pH, major cation and anion and trace elements will be obtained from all three sites to determine if there are any critical minerals potential in the mine waters. Potential critical minerals in the project area: As, Bi, Fluorite, Mg, Mn, REE, Te, W, and Zn.",
+                "provisionl": "N",
+                "alias": "Geochemistry of critical minerals in mine wastes in New Mexico",
+                "program": [
+                    "Mine waste characterization"
+                ],
+                "contact": [
+                    {
+                        "cid": "188",
+                        "cname": "Virginia T. McLemore",
+                        "cmail": "virginia.mclemore@nmt.edu",
+                        "last": "McLemore, Virginia T."
+                    }
+                ],
+                "keywords": [
+                    {
+                        "thesaurus": 1,
+                        "code": "f35017",
+                        "term": "Grant",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35051",
+                        "term": "Sierra",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13030101",
+                        "term": "Caballo",
+                        "scope": "hydrologic unit",
+                        "parent": "Rio Grande-Caballo"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h15040002",
+                        "term": "Upper Gila-Mangas",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Gila"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33108NWD1",
+                        "term": "Hillsboro",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Hatch"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33108NWE1",
+                        "term": "Skute Stone Arroyo",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Hatch"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NEA1",
+                        "term": "Crookson Peak",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Silver City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NEA2",
+                        "term": "Steeple Rock",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Silver City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NED2",
+                        "term": "Mangas Springs",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Silver City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NED3",
+                        "term": "Bullard Peak",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Silver City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NEE2",
+                        "term": "Circle Mesa",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Silver City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NEE3",
+                        "term": "Wind Mountain",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Silver City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NWH1",
+                        "term": "Tillie Hall Peak",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Safford"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NWH2",
+                        "term": "Goat Camp Spring",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Safford"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q34108SWD4",
+                        "term": "Bell Mountain",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Truth or Consequences"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q34108SWE4",
+                        "term": "Saladone Tank",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Truth or Consequences"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1298",
+                        "term": "water chemistry",
+                        "scope": "Branch of chemistry that deals with the elements and compounds in water.",
+                        "parent": "geochemistry"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1396",
+                        "term": "arsenic",
+                        "scope": "Nonmetal element with symbol As and atomic number 33 <http://periodic.lanl.gov/33.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1409",
+                        "term": "bismuth",
+                        "scope": "Metalloid element with symbol Bi and atomic number 83 <http://periodic.lanl.gov/83.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1433",
+                        "term": "cobalt",
+                        "scope": "Metal element with symbol Co and atomic number 27 <http://periodic.lanl.gov/27.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1454",
+                        "term": "fluorine",
+                        "scope": "Halogen element with symbol F and atomic number 9 <http://periodic.lanl.gov/9.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1498",
+                        "term": "magnesium",
+                        "scope": "Alkaline earth element with symbol Mg and atomic number 12 <http://periodic.lanl.gov/12.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1499",
+                        "term": "manganese",
+                        "scope": "Metal element with symbol Mn and atomic number 25 <http://periodic.lanl.gov/25.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1520",
+                        "term": "nickel",
+                        "scope": "Metal element with symbol Ni and atomic number 28 <http://periodic.lanl.gov/28.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1553",
+                        "term": "rare earth elements",
+                        "scope": "A group of elements including the lanthanoids, or lanthanides, of interest because they are used in modern technological industries.  Yttrium and scandium are often included in this group.",
+                        "parent": "chemical element groups"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1589",
+                        "term": "tellurium",
+                        "scope": "Nonmetal element with symbol Te and atomic number 52 <http://periodic.lanl.gov/52.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1600",
+                        "term": "tungsten",
+                        "scope": "Metal element with symbol W and atomic number 74 <http://periodic.lanl.gov/74.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1618",
+                        "term": "zinc",
+                        "scope": "Metal element with symbol Zn and atomic number 30 <http://periodic.lanl.gov/30.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1725",
+                        "term": "abandoned mines and quarries",
+                        "scope": "Mines and quarries that have been abandoned and may expose harmful chemicals to the environment.",
+                        "parent": "human impacts"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1748",
+                        "term": "geologic maps",
+                        "scope": "Maps depicting geological characteristics of the earth's surface, including lithology, geologic structure, age, and the results of crustal processes. Used where the product includes a depiction of the map as a whole, not for data sets that could be used to create a map.",
+                        "parent": "maps and atlases"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1772",
+                        "term": "partnerships",
+                        "scope": "Formal collaborative relationships between USGS and other organizations",
+                        "parent": "science programs"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1998",
+                        "term": "mine waste",
+                        "scope": "Earth materials removed during mining and concentrated in piles or beds, typically near the site of extraction.  Tailings are mine waste that has been processed to remove valuable components; unprocessed mine waste includes overburden removed to reach commodity materials such as ore or coal.",
+                        "parent": "unconsolidated deposits"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2043",
+                        "term": "mineral deposits",
+                        "scope": "Deposits in which particular minerals are concentrated, typically noticed and studied if the minerals have economic value.",
+                        "parent": "rocks and deposits"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2093",
+                        "term": "study areas",
+                        "scope": "Geospatial data describing the areas from which samples were taken or observations were made, typically polygonal.  May be approximate, as in bounding coordinates, or precise.",
+                        "parent": "geospatial datasets"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2094",
+                        "term": "critical minerals",
+                        "scope": "A non-fuel mineral or mineral material essential to the economic and national security of the US, the supply chain of which is vulnerable to disruption, and that serves an essential function in the manufacturing of a product, the absence of which would have significant consequences for our economy or our national security.",
+                        "parent": "mineral resources"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "437",
+                        "term": "geochemistry",
+                        "scope": "Study of the distribution of chemical elements and natural compounds on the earth and in the atmosphere and the chemical processes that affect the earth.",
+                        "parent": "earth sciences"
+                    },
+                    {
+                        "thesaurus": 3,
+                        "code": "686",
+                        "term": "mineral deposit areas",
+                        "scope": "Areas where masses of naturally occurring mineral material are found, e.g. metal ores or nonmetallic minerals. [Adapted from Glossary of Geology, 4th ed.]",
+                        "parent": "physiographic features"
+                    }
+                ],
+                "data_link": [
+                    {
+                        "cite": "1530",
+                        "title": "Geochemical data generated by projects funded by the USGS Earth Mapping Resources Initiative",
+                        "descript": "Includes all geochemical data generated by each project partnership funded through Earth MRI and will be updated periodically as additional geochemical data from these projects becomes available.",
+                        "onlink": "https://doi.org/10.5066/P9WHRLXH",
+                        "landing": "https://mrdata.usgs.gov/catalog/cite-view.php?cite=1530"
+                    }
+                ]
+            }
+        }
+    ]
+}

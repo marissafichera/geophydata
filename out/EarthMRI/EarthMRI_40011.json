@@ -1,0 +1,499 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        -109.0468604159754,
+        32.66115154260967,
+        -107.46212682099593,
+        33.101143968719214
+    ],
+    "features": [
+        {
+            "id": "https://mrdata.usgs.gov/earthmri/data-acquisition/project/40011",
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -108.5158,
+                                32.6623
+                            ],
+                            [
+                                -108.5251,
+                                32.6612
+                            ],
+                            [
+                                -108.5329,
+                                32.6624
+                            ],
+                            [
+                                -108.5465,
+                                32.6671
+                            ],
+                            [
+                                -108.5536,
+                                32.6705
+                            ],
+                            [
+                                -108.559,
+                                32.6757
+                            ],
+                            [
+                                -108.5627,
+                                32.6812
+                            ],
+                            [
+                                -108.5646,
+                                32.6868
+                            ],
+                            [
+                                -108.5662,
+                                32.6942
+                            ],
+                            [
+                                -108.5653,
+                                32.7036
+                            ],
+                            [
+                                -108.5627,
+                                32.7093
+                            ],
+                            [
+                                -108.5582,
+                                32.7136
+                            ],
+                            [
+                                -108.5539,
+                                32.7172
+                            ],
+                            [
+                                -108.5446,
+                                32.7235
+                            ],
+                            [
+                                -108.5331,
+                                32.7279
+                            ],
+                            [
+                                -108.5183,
+                                32.7317
+                            ],
+                            [
+                                -108.507,
+                                32.7342
+                            ],
+                            [
+                                -108.5,
+                                32.735
+                            ],
+                            [
+                                -108.4928,
+                                32.7352
+                            ],
+                            [
+                                -108.4853,
+                                32.7354
+                            ],
+                            [
+                                -108.4787,
+                                32.7346
+                            ],
+                            [
+                                -108.4708,
+                                32.7337
+                            ],
+                            [
+                                -108.4647,
+                                32.7282
+                            ],
+                            [
+                                -108.4614,
+                                32.7222
+                            ],
+                            [
+                                -108.4611,
+                                32.7201
+                            ],
+                            [
+                                -108.4601,
+                                32.7143
+                            ],
+                            [
+                                -108.4599,
+                                32.706
+                            ],
+                            [
+                                -108.4605,
+                                32.7009
+                            ],
+                            [
+                                -108.4617,
+                                32.6936
+                            ],
+                            [
+                                -108.4644,
+                                32.6885
+                            ],
+                            [
+                                -108.4717,
+                                32.6787
+                            ],
+                            [
+                                -108.4819,
+                                32.672
+                            ],
+                            [
+                                -108.493,
+                                32.6686
+                            ],
+                            [
+                                -108.5038,
+                                32.6651
+                            ],
+                            [
+                                -108.5158,
+                                32.6623
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                -107.5181,
+                                32.9089
+                            ],
+                            [
+                                -107.5336,
+                                32.9053
+                            ],
+                            [
+                                -107.5489,
+                                32.9092
+                            ],
+                            [
+                                -107.5614,
+                                32.9167
+                            ],
+                            [
+                                -107.5682,
+                                32.9253
+                            ],
+                            [
+                                -107.5755,
+                                32.938
+                            ],
+                            [
+                                -107.5793,
+                                32.9516
+                            ],
+                            [
+                                -107.58,
+                                32.9658
+                            ],
+                            [
+                                -107.5728,
+                                32.9826
+                            ],
+                            [
+                                -107.5674,
+                                32.996
+                            ],
+                            [
+                                -107.5626,
+                                33
+                            ],
+                            [
+                                -107.5497,
+                                33.0043
+                            ],
+                            [
+                                -107.5302,
+                                33.007
+                            ],
+                            [
+                                -107.5182,
+                                33.0086
+                            ],
+                            [
+                                -107.5049,
+                                33.0068
+                            ],
+                            [
+                                -107.4925,
+                                33
+                            ],
+                            [
+                                -107.4762,
+                                32.992
+                            ],
+                            [
+                                -107.466,
+                                32.9856
+                            ],
+                            [
+                                -107.464,
+                                32.9824
+                            ],
+                            [
+                                -107.4621,
+                                32.9794
+                            ],
+                            [
+                                -107.4632,
+                                32.9607
+                            ],
+                            [
+                                -107.4758,
+                                32.9443
+                            ],
+                            [
+                                -107.4879,
+                                32.9344
+                            ],
+                            [
+                                -107.5,
+                                32.9225
+                            ],
+                            [
+                                -107.5181,
+                                32.9089
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                -108.9346,
+                                32.8153
+                            ],
+                            [
+                                -108.942,
+                                32.8094
+                            ],
+                            [
+                                -108.95,
+                                32.8057
+                            ],
+                            [
+                                -108.9596,
+                                32.8039
+                            ],
+                            [
+                                -108.9681,
+                                32.8036
+                            ],
+                            [
+                                -108.9791,
+                                32.804
+                            ],
+                            [
+                                -108.9863,
+                                32.8085
+                            ],
+                            [
+                                -108.9913,
+                                32.8116
+                            ],
+                            [
+                                -109.0033,
+                                32.8148
+                            ],
+                            [
+                                -109.0142,
+                                32.8124
+                            ],
+                            [
+                                -109.0217,
+                                32.8079
+                            ],
+                            [
+                                -109.0308,
+                                32.8026
+                            ],
+                            [
+                                -109.0469,
+                                32.8021
+                            ],
+                            [
+                                -109.0468,
+                                33.1011
+                            ],
+                            [
+                                -109.0361,
+                                33.0998
+                            ],
+                            [
+                                -109.0266,
+                                33.0946
+                            ],
+                            [
+                                -109.0175,
+                                33.0886
+                            ],
+                            [
+                                -109.011,
+                                33.0795
+                            ],
+                            [
+                                -109.0072,
+                                33.0696
+                            ],
+                            [
+                                -109.0045,
+                                33.0579
+                            ],
+                            [
+                                -109.0012,
+                                33.0367
+                            ],
+                            [
+                                -108.9987,
+                                33.0244
+                            ],
+                            [
+                                -108.9885,
+                                33.0079
+                            ],
+                            [
+                                -108.9781,
+                                32.9883
+                            ],
+                            [
+                                -108.9726,
+                                32.972
+                            ],
+                            [
+                                -108.9702,
+                                32.9592
+                            ],
+                            [
+                                -108.97,
+                                32.9493
+                            ],
+                            [
+                                -108.9692,
+                                32.9163
+                            ],
+                            [
+                                -108.9666,
+                                32.8926
+                            ],
+                            [
+                                -108.9652,
+                                32.8885
+                            ],
+                            [
+                                -108.9629,
+                                32.8844
+                            ],
+                            [
+                                -108.9553,
+                                32.8787
+                            ],
+                            [
+                                -108.9431,
+                                32.8698
+                            ],
+                            [
+                                -108.9283,
+                                32.8563
+                            ],
+                            [
+                                -108.9207,
+                                32.8489
+                            ],
+                            [
+                                -108.9173,
+                                32.845
+                            ],
+                            [
+                                -108.9166,
+                                32.8422
+                            ],
+                            [
+                                -108.9172,
+                                32.8391
+                            ],
+                            [
+                                -108.9184,
+                                32.8343
+                            ],
+                            [
+                                -108.924,
+                                32.8263
+                            ],
+                            [
+                                -108.929,
+                                32.8211
+                            ],
+                            [
+                                -108.9346,
+                                32.8153
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "pid": 40011,
+                "show": null,
+                "pname": "Mine Wastes in New Mexico",
+                "yearstart": 2024,
+                "yearend": null,
+                "affiliatio": "New Mexico Bureau of Geology and Mineral Resources",
+                "website": "https://geoinfo.nmt.edu/resources/minerals/home.html",
+                "pdescrip": "Mine Waste Characterization in New Mexico mine waste localities",
+                "pdata": [],
+                "pdatgchem": null,
+                "pkeyword": "mine waste; study areas; critical minerals",
+                "parea": 148,
+                "papprox": "N",
+                "abstract": "The purpose of this project is to utilize a sampling and characterization procedure developed in collaboration with USGS personnel in 5-8 mining districts in southwestern New Mexico in 2024-2025 to determine their critical mineral potential. This proposal is a continuation of an Earth MRI characterization project funded in 2023 and will sample, map, and characterize new sites not sampled in 2023-2024.",
+                "provisionl": "N",
+                "alias": "Mine Waste Characterization in New Mexico mine waste localities",
+                "program": [
+                    "Mine waste characterization"
+                ],
+                "contact": [
+                    {
+                        "cid": "188",
+                        "cname": "Virginia T. McLemore",
+                        "cmail": "virginia.mclemore@nmt.edu",
+                        "last": "McLemore, Virginia T."
+                    }
+                ],
+                "keywords": [
+                    {
+                        "thesaurus": 2,
+                        "code": "1998",
+                        "term": "mine waste",
+                        "scope": "Earth materials removed during mining and concentrated in piles or beds, typically near the site of extraction.  Tailings are mine waste that has been processed to remove valuable components; unprocessed mine waste includes overburden removed to reach commodity materials such as ore or coal.",
+                        "parent": "unconsolidated deposits"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1998",
+                        "term": "mine waste",
+                        "scope": "Earth materials removed during mining and concentrated in piles or beds, typically near the site of extraction.  Tailings are mine waste that has been processed to remove valuable components; unprocessed mine waste includes overburden removed to reach commodity materials such as ore or coal.",
+                        "parent": "unconsolidated deposits"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2093",
+                        "term": "study areas",
+                        "scope": "Geospatial data describing the areas from which samples were taken or observations were made, typically polygonal.  May be approximate, as in bounding coordinates, or precise.",
+                        "parent": "geospatial datasets"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2094",
+                        "term": "critical minerals",
+                        "scope": "A non-fuel mineral or mineral material essential to the economic and national security of the US, the supply chain of which is vulnerable to disruption, and that serves an essential function in the manufacturing of a product, the absence of which would have significant consequences for our economy or our national security.",
+                        "parent": "mineral resources"
+                    }
+                ]
+            }
+        }
+    ]
+}

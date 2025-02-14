@@ -1,0 +1,222 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        -108.57388685857505,
+        32.65886705302785,
+        -108.45158038940382,
+        32.742621943505355
+    ],
+    "features": [
+        {
+            "id": "https://mrdata.usgs.gov/earthmri/data-acquisition/project/5059",
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -108.5603,
+                                32.72
+                            ],
+                            [
+                                -108.5603,
+                                32.7205
+                            ],
+                            [
+                                -108.5458,
+                                32.7272
+                            ],
+                            [
+                                -108.5175,
+                                32.7381
+                            ],
+                            [
+                                -108.4908,
+                                32.7426
+                            ],
+                            [
+                                -108.4604,
+                                32.7329
+                            ],
+                            [
+                                -108.4516,
+                                32.7036
+                            ],
+                            [
+                                -108.4668,
+                                32.6798
+                            ],
+                            [
+                                -108.517,
+                                32.6589
+                            ],
+                            [
+                                -108.5529,
+                                32.6629
+                            ],
+                            [
+                                -108.5713,
+                                32.6743
+                            ],
+                            [
+                                -108.5739,
+                                32.7029
+                            ],
+                            [
+                                -108.5603,
+                                32.72
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "pid": 5059,
+                "show": "Y",
+                "pname": "Black Hawk project, New Mexico",
+                "yearstart": 2023,
+                "yearend": null,
+                "affiliatio": "New Mexico Bureau of Geology and Mineral Resources",
+                "website": "https://geoinfo.nmt.edu/resources/minerals/home.html",
+                "pdescrip": "Geologic mapping in the Black Hawk district, New Mexico",
+                "pdata": [],
+                "pdatgchem": "https://doi.org/10.5066/P9WHRLXH",
+                "pkeyword": "plutonic rocks; antimony; arsenic; bismuth; cobalt; copper; nickel; silver; uranium; zinc; study areas",
+                "parea": 30,
+                "papprox": "N",
+                "abstract": "The Black Hawk arsenide-5-element vein deposits are an unusual high-grade, hydrothermal vein deposit type that contains silver (Ag) and various critical minerals including nickel (Ni), cobalt (Co), bismuth (Bi), arsenic (As) and local uranium (U), zinc (Zn), copper (Cu), and antimony (Sb). The arsenide-5-element vein deposits in the Black Hawk district are the only such deposits known in New Mexico and have been known since they were first mined for Ag in the late 1880s. The Black Hawk district in the Burro Mountains, in southwestern New Mexico, occurs within a Proterozoic highland that has been affected by Laramide compression and magmatic intrusions followed by caldera magmatism and later during extension associated with the development of the Rio Grande rift. The Black Hawk deposits are ankerite-bearing, northeast-trending fissure veins hosted within Proterozoic metamorphic and granitic rocks. The vein deposits are thought to be Late Cretaceous in age, and possibly related to the porphyry copper deposits, based upon field relationships and a K-Ar age of 65.3\u00b11.2 Ma on alteration assemblages at the Black Hawk mine. The purposes of this project are to (1) map the geology, structure, alteration, and mineralized areas, (2) determine the mineralogy, chemical composition, origin, and critical-mineral potential of the arsenide-5-element vein deposits in the Black Hawk district, and (3) compare the Black Hawk deposits to other arsenide-5-element vein deposits in the world. Highly altered areas could be indicative of higher grades of undiscovered mineral resources and used as vectors towards highly mineralized zones. Geochemical whole rock and mineral analyses of igneous rocks, mineralized veins, and alteration zones will aid in a better understanding of the genetic relationship between the igneous intrusions and the mineralization processes in the area. Potential critical minerals in the project area: As, Bi, Co, Sb, and Zn.",
+                "provisionl": "N",
+                "alias": "Black Hawk project, New Mexico",
+                "program": [
+                    "Geologic mapping",
+                    "geochemistry"
+                ],
+                "contact": [
+                    {
+                        "cid": "188",
+                        "cname": "Virginia T. McLemore",
+                        "cmail": "virginia.mclemore@nmt.edu",
+                        "last": "McLemore, Virginia T."
+                    }
+                ],
+                "keywords": [
+                    {
+                        "thesaurus": 1,
+                        "code": "f35017",
+                        "term": "Grant",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h15040002",
+                        "term": "Upper Gila-Mangas",
+                        "scope": "hydrologic unit",
+                        "parent": "Upper Gila"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NED3",
+                        "term": "Bullard Peak",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Silver City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110NEE3",
+                        "term": "Wind Mountain",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Silver City"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1341",
+                        "term": "plutonic rocks",
+                        "scope": "Rocks formed at considerable depth by crystallization of magma and/or by chemical alteration. They are characteristically medium- to coarse-grained, of granitoid texture.",
+                        "parent": "igneous rocks"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1393",
+                        "term": "antimony",
+                        "scope": "Metalloid element with symbol Sb and atomic number 51 <http://periodic.lanl.gov/51.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1396",
+                        "term": "arsenic",
+                        "scope": "Nonmetal element with symbol As and atomic number 33 <http://periodic.lanl.gov/33.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1409",
+                        "term": "bismuth",
+                        "scope": "Metalloid element with symbol Bi and atomic number 83 <http://periodic.lanl.gov/83.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1433",
+                        "term": "cobalt",
+                        "scope": "Metal element with symbol Co and atomic number 27 <http://periodic.lanl.gov/27.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1434",
+                        "term": "copper",
+                        "scope": "Metal element with symbol Cu and atomic number 29 <http://periodic.lanl.gov/29.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1520",
+                        "term": "nickel",
+                        "scope": "Metal element with symbol Ni and atomic number 28 <http://periodic.lanl.gov/28.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1576",
+                        "term": "silver",
+                        "scope": "Metal element with symbol Ag and atomic number 47 <http://periodic.lanl.gov/47.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1605",
+                        "term": "uranium",
+                        "scope": "Rare earth (actinide series) element with symbol U and atomic number 92 <http://periodic.lanl.gov/92.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1618",
+                        "term": "zinc",
+                        "scope": "Metal element with symbol Zn and atomic number 30 <http://periodic.lanl.gov/30.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2093",
+                        "term": "study areas",
+                        "scope": "Geospatial data describing the areas from which samples were taken or observations were made, typically polygonal.  May be approximate, as in bounding coordinates, or precise.",
+                        "parent": "geospatial datasets"
+                    }
+                ],
+                "data_link": [
+                    {
+                        "cite": "1530",
+                        "title": "Geochemical data generated by projects funded by the USGS Earth Mapping Resources Initiative",
+                        "descript": "Includes all geochemical data generated by each project partnership funded through Earth MRI and will be updated periodically as additional geochemical data from these projects becomes available.",
+                        "onlink": "https://doi.org/10.5066/P9WHRLXH",
+                        "landing": "https://mrdata.usgs.gov/catalog/cite-view.php?cite=1530"
+                    }
+                ]
+            }
+        }
+    ]
+}
