@@ -3,23 +3,49 @@ import sys
 
 import httpx
 from bs4 import BeautifulSoup
+import requests
 
 
-def get_available_files(url, gis_dir):
+def get_available_files(url, gis_dir, gis_id):
     resp = httpx.get(url)
+    # Split the URL by slashes and exclude the last segment
+    parts = url.rstrip('/').split('/')
+
+    # Remove the last segment (the resource or endpoint)
+    base_url = '/'.join(parts[:-1])
+
+    # List of allowed extensions
+    allowed_extensions = ['.gz', '.tif', '.tfw', '.zip']
 
     soup = BeautifulSoup(resp.text, 'html.parser')
-    for link in soup.find_all('a'):
-        # print(link)
-        href = link.get('href')
-        if href is not None:
-            if href.startswith('/files'):
+
+    #for GDR data
+    # for link in soup.find_all('a'):
+    #     href = link.get('href')
+    #     if href is not None:
+    #         if href.startswith('/files'):
+    #             fileurl = link.get('href')
+    #             download_and_save_file(url, name=fileurl, output_dir=gis_dir, gis_id=gis_id)
+
+    # for USGS data
+    # Find all <a> tags inside <td> elements
+    links = soup.find_all('td', {'class': None})  # Or add a class if needed
+    # print(f'{links=}')
+    # Extract the href attribute and link text
+    for td in links:
+        # print(f'{td=}')
+        link = td.find('a', href=True)
+        print(f'{link=}')
+        if link is not None:
+            print(f"Link text: {link.text}, URL: {link['href']}")
+            if any(link['href'].endswith(ext) for ext in allowed_extensions):  # Check for valid extension
                 fileurl = link.get('href')
-                download_and_save_file(url, name=fileurl, output_dir=gis_dir, gis_id='FORGE001')
+                print(f'{fileurl=}')
+                url = base_url + fileurl
+                download_and_save_file(url, output_dir=gis_dir, gis_id=gis_id)
 
 
 def download_and_save_file(url, name=None, extension=None, output_dir=None, gis_id=None):
-
     if name is None:
         name = url.split('/')[-1]
 
@@ -42,7 +68,7 @@ def download_and_save_file(url, name=None, extension=None, output_dir=None, gis_
 
 def main():
     gis_dir = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData'
-    url = 'https://gdr.openei.org/submissions/1491'
+    url = 'https://mrdata.usgs.gov/gravity/'
 
     if url.startswith('https://gdr'):
         get_available_files(url, gis_dir)
@@ -61,6 +87,9 @@ def main():
         d_elements = base_list + dataurl_list
         dataurl = '/'.join(d_elements)
         download_and_save_file(dataurl, extension='.zip', output_dir=gis_dir, gis_id='USGS019')
+
+    if url.startswith('https://mrdata.usgs.gov/'):
+        get_available_files(url, gis_dir=os.path.join('out', 'USGS_osd_gravity'), gis_id='USGS_osd_gravity')
 
     # url = 'https://www.sciencebase.gov/catalog/file/get/63a20e8cd34e176674f51d51'
     # get_available_files(url)

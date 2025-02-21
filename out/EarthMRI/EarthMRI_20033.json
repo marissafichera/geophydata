@@ -1,0 +1,842 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        -114.50855956247639,
+        31.323229022898918,
+        -107.51269898116703,
+        35.69548256711355
+    ],
+    "features": [
+        {
+            "id": "https://mrdata.usgs.gov/earthmri/data-acquisition/project/20033",
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -109.5144,
+                                31.5599
+                            ],
+                            [
+                                -109.5056,
+                                31.3232
+                            ],
+                            [
+                                -110.9663,
+                                31.3337
+                            ],
+                            [
+                                -111.2885,
+                                31.4751
+                            ],
+                            [
+                                -111.4146,
+                                31.5636
+                            ],
+                            [
+                                -111.6016,
+                                31.7229
+                            ],
+                            [
+                                -111.7945,
+                                31.8281
+                            ],
+                            [
+                                -112.0818,
+                                31.9328
+                            ],
+                            [
+                                -112.3818,
+                                31.9421
+                            ],
+                            [
+                                -112.5395,
+                                31.9453
+                            ],
+                            [
+                                -112.8298,
+                                31.9814
+                            ],
+                            [
+                                -112.9763,
+                                32.0786
+                            ],
+                            [
+                                -113.083,
+                                32.3542
+                            ],
+                            [
+                                -113.1486,
+                                32.7289
+                            ],
+                            [
+                                -113.1824,
+                                33.0286
+                            ],
+                            [
+                                -113.1701,
+                                33.3353
+                            ],
+                            [
+                                -113.1986,
+                                33.6091
+                            ],
+                            [
+                                -113.3717,
+                                33.8081
+                            ],
+                            [
+                                -113.4676,
+                                34.0186
+                            ],
+                            [
+                                -113.6403,
+                                34.3498
+                            ],
+                            [
+                                -113.8415,
+                                34.5175
+                            ],
+                            [
+                                -113.9934,
+                                34.6793
+                            ],
+                            [
+                                -114.1176,
+                                34.8587
+                            ],
+                            [
+                                -114.2484,
+                                35.0634
+                            ],
+                            [
+                                -114.392,
+                                35.3853
+                            ],
+                            [
+                                -114.5086,
+                                35.5921
+                            ],
+                            [
+                                -114.3333,
+                                35.6859
+                            ],
+                            [
+                                -114.1869,
+                                35.6955
+                            ],
+                            [
+                                -114.0153,
+                                35.669
+                            ],
+                            [
+                                -113.9242,
+                                35.5639
+                            ],
+                            [
+                                -113.8364,
+                                35.4715
+                            ],
+                            [
+                                -113.6793,
+                                35.363
+                            ],
+                            [
+                                -113.593,
+                                35.2041
+                            ],
+                            [
+                                -113.4626,
+                                35.065
+                            ],
+                            [
+                                -113.3443,
+                                34.9769
+                            ],
+                            [
+                                -113.1272,
+                                34.9562
+                            ],
+                            [
+                                -112.916,
+                                34.9608
+                            ],
+                            [
+                                -112.7493,
+                                34.9453
+                            ],
+                            [
+                                -112.633,
+                                34.9356
+                            ],
+                            [
+                                -112.4823,
+                                34.9174
+                            ],
+                            [
+                                -112.2945,
+                                34.8779
+                            ],
+                            [
+                                -112.0325,
+                                34.7164
+                            ],
+                            [
+                                -111.8507,
+                                34.6227
+                            ],
+                            [
+                                -111.6089,
+                                34.4709
+                            ],
+                            [
+                                -111.4046,
+                                34.34
+                            ],
+                            [
+                                -110.9082,
+                                34.1944
+                            ],
+                            [
+                                -110.6406,
+                                34.0574
+                            ],
+                            [
+                                -110.3018,
+                                33.8761
+                            ],
+                            [
+                                -110.0677,
+                                33.7339
+                            ],
+                            [
+                                -109.8413,
+                                33.6298
+                            ],
+                            [
+                                -109.5106,
+                                33.4719
+                            ],
+                            [
+                                -109.1077,
+                                33.3478
+                            ],
+                            [
+                                -108.8058,
+                                33.2505
+                            ],
+                            [
+                                -108.431,
+                                33.1869
+                            ],
+                            [
+                                -107.9537,
+                                33.1722
+                            ],
+                            [
+                                -107.5449,
+                                33.0831
+                            ],
+                            [
+                                -107.5127,
+                                32.863
+                            ],
+                            [
+                                -107.7245,
+                                32.5916
+                            ],
+                            [
+                                -108.1277,
+                                32.3516
+                            ],
+                            [
+                                -108.595,
+                                32.2344
+                            ],
+                            [
+                                -108.7712,
+                                32.1618
+                            ],
+                            [
+                                -109.0413,
+                                32.0912
+                            ],
+                            [
+                                -109.3263,
+                                32.018
+                            ],
+                            [
+                                -109.4664,
+                                31.9221
+                            ],
+                            [
+                                -109.5297,
+                                31.7429
+                            ],
+                            [
+                                -109.5144,
+                                31.5599
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "pid": 20033,
+                "show": null,
+                "pname": "Porphyry Copper Systems, Arizona and New Mexico",
+                "yearstart": 2022,
+                "yearend": null,
+                "affiliatio": "Arizona Geological Survey;New Mexico Bureau of Geology and Mineral Resources",
+                "website": "https://azgs.arizona.edu/minerals/mining-arizona;https://geoinfo.nmt.edu/resources/minerals/home.html",
+                "pdescrip": "Reconnaissance geochemistry on porphyry copper systems in the southwestern United States",
+                "pdata": [],
+                "pdatgchem": "https://doi.org/10.5066/P9WHRLXH",
+                "pkeyword": "aluminum; arsenic; bismuth; cobalt; gallium; germanium; indium; manganese; nickel; scandium; tellurium; tin; tungsten; zinc; partnerships; alteration; mineral deposits; study areas; critical minerals; platinum-group elements; geochemistry; hydrothermal processes; igneous rocks; isotopic analysis",
+                "parea": 51891,
+                "papprox": "Y",
+                "abstract": "The Arizona Geological Survey and the New Mexico Bureau of Geology and Mineral Resources are conducting a regional geochemical project that focuses on porphyry copper systems in the southwestern United States. The southwestern North American porphyry copper province, straddling the United States-Mexico borderlands of Arizona, New Mexico, westernmost Texas, Sonora, Chihuahua, and Sinaloa, comprises one of the world\u2019s largest endowments of copper, principally due to the abundance and preservation of Late Cretaceous to early Paleogene (\u201cLaramide\u201d) intrusive rocks and related hydrothermal systems. Porphyry systems also contain potentially recoverable critical mineral co-/by-products such as platinum-group-elements, tellurium, indium, germanium, and gallium in anode slimes remaining after copper is refined. Additional potential critical minerals include tungsten, tin, rhenium, bismuth, scandium, nickel, cobalt, manganese, arsenic, aluminum (alunite), and zinc. Our understanding of the distribution of critical minerals in porphyry systems is lacking due to a paucity of detailed geochemistry both at the regional and system scale. Existing publicly available geochemical datasets are inconsistent in methodology, elements analyzed, detection limits, and spatial coverage. New systematic data acquisition that uses the same analytical methods and sampling strategy is required to produce a robust dataset to delineate favorable geologic terranes and porphyry systems with critical mineral potential. This project will provide: 1) a compilation of existing legacy geochemical data; 2) new sample collection from porphyry copper occurrences and other selected sites for system-scale detailed work; 3) in-depth sample characterization (for example, petrography, stained slabs, whole-rock geochemistry, mineral chemistry, isotope geochemistry, geo/thermochronology, geo/thermobarometry, fluid inclusion data); and 4) compilation of legacy and new data into a uniform geochemical database. The goals of this project are to: 1) provide a rigorous comprehensive compilation of geochemical analyses (both new and legacy data) of porphyry systems in the Laramide magmatic arc of Arizona and New Mexico with an emphasis on specific porphyry systems that have elevated concentrations of critical minerals; and 2) develop a better understanding of the distribution of critical minerals within the alteration haloes of porphyry systems, and 3) provide evidence for critical mineral potential for individual prospects/deposits and within specific alteration types and rock types. Potential critical minerals in the project area: Al, As, Bi, Co, Ga, Ge, In, Mn, Ni, PGE, Sc, Sn, Te, W, and Zn.",
+                "provisionl": "Y",
+                "alias": "Porphyry copper systems, Arizona and New Mexico",
+                "program": [
+                    "Reconnaissance geochemistry"
+                ],
+                "contact": [
+                    {
+                        "cid": "212",
+                        "cname": "Carson Richardson",
+                        "cmail": "carichardson@arizona.edu",
+                        "last": "Richardson, Carson"
+                    },
+                    {
+                        "cid": "154",
+                        "cname": "Victor Garcia",
+                        "cmail": "vhgarcia4@arizona.edu",
+                        "last": "Garcia, Victor"
+                    },
+                    {
+                        "cid": "155",
+                        "cname": "Herv\u00e9 Rezeau",
+                        "cmail": "hrezeau@arizona.edu",
+                        "last": "Rezeau, Herv\u00e9"
+                    },
+                    {
+                        "cid": "188",
+                        "cname": "Virginia T. McLemore",
+                        "cmail": "virginia.mclemore@nmt.edu",
+                        "last": "McLemore, Virginia T."
+                    },
+                    {
+                        "cid": "157",
+                        "cname": "Nels Iverson",
+                        "cmail": "nels.iverson@nmt.edu",
+                        "last": "Iverson, Nels"
+                    }
+                ],
+                "keywords": [
+                    {
+                        "thesaurus": 1,
+                        "code": "f04001",
+                        "term": "Apache",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04003",
+                        "term": "Cochise",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04005",
+                        "term": "Coconino",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04007",
+                        "term": "Gila",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04009",
+                        "term": "Graham",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04011",
+                        "term": "Greenlee",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04012",
+                        "term": "La Paz",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04013",
+                        "term": "Maricopa",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04015",
+                        "term": "Mohave",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04017",
+                        "term": "Navajo",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04019",
+                        "term": "Pima",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04021",
+                        "term": "Pinal",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04023",
+                        "term": "Santa Cruz",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f04025",
+                        "term": "Yavapai",
+                        "scope": "county",
+                        "parent": "Arizona"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35003",
+                        "term": "Catron",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35017",
+                        "term": "Grant",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35023",
+                        "term": "Hidalgo",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35029",
+                        "term": "Luna",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "f35051",
+                        "term": "Sierra",
+                        "scope": "county",
+                        "parent": "New Mexico"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h1303",
+                        "term": "Rio Grande-Mimbres",
+                        "scope": "hydrologic subregion",
+                        "parent": "Rio Grande"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h1501",
+                        "term": "Lower Colorado-Lake Mead",
+                        "scope": "hydrologic subregion",
+                        "parent": "Lower Colorado"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h1503",
+                        "term": "Lower Colorado",
+                        "scope": "hydrologic subregion",
+                        "parent": "Lower Colorado"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h1504",
+                        "term": "Upper Gila",
+                        "scope": "hydrologic subregion",
+                        "parent": "Lower Colorado"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h1505",
+                        "term": "Middle Gila",
+                        "scope": "hydrologic subregion",
+                        "parent": "Lower Colorado"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h1506",
+                        "term": "Salt",
+                        "scope": "hydrologic subregion",
+                        "parent": "Lower Colorado"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h1507",
+                        "term": "Lower Gila",
+                        "scope": "hydrologic subregion",
+                        "parent": "Lower Colorado"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h1508",
+                        "term": "Sonora",
+                        "scope": "hydrologic subregion",
+                        "parent": "Lower Colorado"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q32110",
+                        "term": "Douglas",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q32112",
+                        "term": "Nogales",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q32114",
+                        "term": "Lukeville",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33108",
+                        "term": "Las Cruces",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33110",
+                        "term": "Silver City",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33112",
+                        "term": "Tucson",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33114",
+                        "term": "Ajo",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q34108",
+                        "term": "Tularosa",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q34110",
+                        "term": "Clifton",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q34112",
+                        "term": "Mesa",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q34114",
+                        "term": "Phoenix",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q35112",
+                        "term": "Holbrook",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q35114",
+                        "term": "Prescott",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q35116",
+                        "term": "Needles",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q36114",
+                        "term": "Williams",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q36116",
+                        "term": "Kingman",
+                        "scope": "quadrangle 1:250,000 scale",
+                        "parent": "USGS Quadrangles"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1390",
+                        "term": "aluminum",
+                        "scope": "Metalloid element with symbol Al and atomic number 13 <http://periodic.lanl.gov/13.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1396",
+                        "term": "arsenic",
+                        "scope": "Nonmetal element with symbol As and atomic number 33 <http://periodic.lanl.gov/33.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1409",
+                        "term": "bismuth",
+                        "scope": "Metalloid element with symbol Bi and atomic number 83 <http://periodic.lanl.gov/83.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1433",
+                        "term": "cobalt",
+                        "scope": "Metal element with symbol Co and atomic number 27 <http://periodic.lanl.gov/27.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1460",
+                        "term": "gallium",
+                        "scope": "Metalloid element with symbol Ga and atomic number 31 <http://periodic.lanl.gov/31.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1463",
+                        "term": "germanium",
+                        "scope": "Metalloid element with symbol Ge and atomic number 32 <http://periodic.lanl.gov/32.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1479",
+                        "term": "indium",
+                        "scope": "Metalloid element with symbol In and atomic number 49 <http://periodic.lanl.gov/49.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1499",
+                        "term": "manganese",
+                        "scope": "Metal element with symbol Mn and atomic number 25 <http://periodic.lanl.gov/25.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1520",
+                        "term": "nickel",
+                        "scope": "Metal element with symbol Ni and atomic number 28 <http://periodic.lanl.gov/28.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1569",
+                        "term": "scandium",
+                        "scope": "Metal element with symbol Sc and atomic number 21 <http://periodic.lanl.gov/21.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1589",
+                        "term": "tellurium",
+                        "scope": "Nonmetal element with symbol Te and atomic number 52 <http://periodic.lanl.gov/52.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1596",
+                        "term": "tin",
+                        "scope": "Metalloid element with symbol Sn and atomic number 50 <http://periodic.lanl.gov/50.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1600",
+                        "term": "tungsten",
+                        "scope": "Metal element with symbol W and atomic number 74 <http://periodic.lanl.gov/74.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1618",
+                        "term": "zinc",
+                        "scope": "Metal element with symbol Zn and atomic number 30 <http://periodic.lanl.gov/30.shtml>",
+                        "parent": "chemical elements"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1772",
+                        "term": "partnerships",
+                        "scope": "Formal collaborative relationships between USGS and other organizations",
+                        "parent": "science programs"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2022",
+                        "term": "alteration",
+                        "scope": "Local changes in the mineralogy of a rock body due to low-grade metamorphism, weathering, or both.  May indicate underlying mineral deposits.",
+                        "parent": "metamorphism (geological)"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2043",
+                        "term": "mineral deposits",
+                        "scope": "Deposits in which particular minerals are concentrated, typically noticed and studied if the minerals have economic value.",
+                        "parent": "rocks and deposits"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2093",
+                        "term": "study areas",
+                        "scope": "Geospatial data describing the areas from which samples were taken or observations were made, typically polygonal.  May be approximate, as in bounding coordinates, or precise.",
+                        "parent": "geospatial datasets"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2094",
+                        "term": "critical minerals",
+                        "scope": "A non-fuel mineral or mineral material essential to the economic and national security of the US, the supply chain of which is vulnerable to disruption, and that serves an essential function in the manufacturing of a product, the absence of which would have significant consequences for our economy or our national security.",
+                        "parent": "mineral resources"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2263",
+                        "term": "platinum-group elements",
+                        "scope": "A group of chemically similar metal elements that tend to occur in the same types of mineral deposits.",
+                        "parent": "chemical element groups"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "437",
+                        "term": "geochemistry",
+                        "scope": "Study of the distribution of chemical elements and natural compounds on the earth and in the atmosphere and the chemical processes that affect the earth.",
+                        "parent": "earth sciences"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "562",
+                        "term": "hydrothermal processes",
+                        "scope": "Natural phenomena relating to heated water generated by igneous activity.",
+                        "parent": "geologic processes"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "572",
+                        "term": "igneous rocks",
+                        "scope": "Rocks formed from melted rock that has cooled and solidified.",
+                        "parent": "rocks and deposits"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "609",
+                        "term": "isotopic analysis",
+                        "scope": "Experimental determination of the proportion of a given isotope (or isotopes) in a sample.",
+                        "parent": "laboratory methods"
+                    },
+                    {
+                        "thesaurus": 3,
+                        "code": "686",
+                        "term": "mineral deposit areas",
+                        "scope": "Areas where masses of naturally occurring mineral material are found, e.g. metal ores or nonmetallic minerals. [Adapted from Glossary of Geology, 4th ed.]",
+                        "parent": "physiographic features"
+                    },
+                    {
+                        "thesaurus": 4,
+                        "code": "4.2",
+                        "term": "Porphyry",
+                        "scope": "An igneous rock of any composition that contains conspicuous phenocrysts in a fine-grained groundmass.",
+                        "parent": "Plutonic rock"
+                    },
+                    {
+                        "thesaurus": 28,
+                        "code": "27",
+                        "term": "copper",
+                        "scope": null,
+                        "parent": "mineral commodity"
+                    }
+                ],
+                "data_link": [
+                    {
+                        "cite": "1530",
+                        "title": "Geochemical data generated by projects funded by the USGS Earth Mapping Resources Initiative",
+                        "descript": "Includes all geochemical data generated by each project partnership funded through Earth MRI and will be updated periodically as additional geochemical data from these projects becomes available.",
+                        "onlink": "https://doi.org/10.5066/P9WHRLXH",
+                        "landing": "https://mrdata.usgs.gov/catalog/cite-view.php?cite=1530"
+                    }
+                ]
+            }
+        }
+    ]
+}
