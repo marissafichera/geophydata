@@ -5,6 +5,7 @@ import os
 import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
+from geopandas import points_from_xy
 from shapely.wkt import loads
 from shapely.geometry import Point
 import pyproj
@@ -388,6 +389,61 @@ def deal_with_utah_temp_data():
 
     print(f"Shapefile created: {output_shapefile}")
 
+
+def sort_tgs_logdata(df, df2, name, label):
+    print(f'{df=}')
+    print(f'{df2.columns=}')
+
+    df1 = df[['UWI', 'Surface Lat', 'Surface Long']].drop_duplicates()
+    # join Export Well Results sheet to other sheet on UWI to get locations
+    columns_to_keep = ['UWI', 'Surface Lat', 'Surface Long', 'Top Depth', 'Bottom Depth', 'Product Type Name',
+                       'Data Available', 'Description']
+    # suffixes = ('_df1', '_df2')
+    merged_df = df1.merge(df2, on='UWI', how='inner')
+    print(f'{merged_df.columns=}')
+    joined_df = merged_df[columns_to_keep]
+
+    # create geodataframe from joined dataframe
+    gdf = gpd.GeoDataFrame(joined_df, geometry=gpd.points_from_xy(joined_df['Surface Long'], joined_df['Surface Lat']))
+    gdf.set_crs('EPSG:4326', allow_override=True, inplace=True)
+
+    # find number of unique values in Data Available column
+    # unique_vals = gdf['Data Available'].unique()
+    # print(f'unique values in digital curves (LAS+) sheet = {unique_vals.shape}')
+
+    # start by combining all porosity logs (or logs that are used to measure porosity)
+    # keywords: density, neutron, sonic, gamma ray, acoustic
+    keywords_por = ['density', 'neutron', 'sonic', 'gamma ray', 'acoustic']
+    pattern = '|'.join(keywords_por)
+    poro_df = gdf[gdf['Description'].str.contains(pattern, case=False, na=False)]
+    poro_df.to_file(os.path.join(root, f'TGS\TGS_{label}_poro.shp'))
+
+    # combine all permeability logs
+    # keywords: resitivity, induction, laterolog, microlog, spontaneous potential
+    keywords_perm = ['resistivity', 'induction', 'laterolog', 'microlog', 'spontaneous potential']
+    pattern = '|'.join(keywords_perm)
+    perm_df = gdf[gdf['Description'].str.contains(pattern, case=False, na=False)]
+    perm_df.to_file(os.path.join(root, f'TGS\TGS_{label}_perm.shp'))
+
+    # now take group that doesn't contain either
+    pattern = '|'.join(keywords_perm + keywords_por)
+    other_df = gdf[~gdf['Description'].str.contains(pattern, case=False, na=False)]
+    other_df.to_file(os.path.join(root, f'TGS\TGS_{label}_other.shp'))
+
+    gdfs = [poro_df,
+            perm_df,
+            other_df]
+    dfnames = ['poro', 'perm', 'other']
+
+    for gdf, n in zip(gdfs, dfnames):
+        # Group by top depth <= 2,000 ft., save to shapefile
+        threshold = 2000
+        group1 = gdf[gdf['Top Depth'] <= threshold]
+        group2 = gdf[gdf['Top Depth'] > threshold]
+        group1.to_file(os.path.join(root, f'TGS\TGS_{n}{label}TopDepthLT2kft.shp'))
+        group2.to_file(os.path.join(root, f'TGS\TGS_{n}{label}TopDepthGT2kft.shp'))
+
+
 def tgs_data():
     import warnings
     warnings.filterwarnings('ignore', category=RuntimeWarning)
@@ -399,54 +455,18 @@ def tgs_data():
     excel_file = pd.ExcelFile(file_path)
 
     # Create a dictionary to hold each sheet as a DataFrame
-    sheets_data = {}
+    # sheets_data = {}
+    labels = ['LAS', 'LAS+', 'ARLAS', 'MudLAS']
 
-    # Iterate over all sheet names and load each sheet into a DataFrame
-    for sheet_name in excel_file.sheet_names:
-        sheets_data[sheet_name] = pd.read_excel(excel_file, sheet_name=sheet_name)
+    df1 = pd.read_excel(excel_file, sheet_name='Export Product Results')
 
-    df1 = sheets_data['Export Well Results']
-
-    # need to do Digital Curves (ARLAS) and Digital Mud Logs (LAS) next, fix script to be better first
-    df2 = sheets_data['Digital Curves (LAS+)']
-    columns_to_keep = ['UWI', 'Surface Lat', 'Surface Long', 'Top Depth', 'Bottom Depth', 'Product Type Name', 'Data Available', 'Description']
-    merged_df = df1.merge(df2, on='UWI', how='inner')
-    joined_df = merged_df[columns_to_keep]
-
-    gdf = gpd.GeoDataFrame(joined_df, geometry=gpd.points_from_xy(joined_df['Surface Long'], joined_df['Surface Lat']))
-    gdf.set_crs('EPSG:4326', allow_override=True, inplace=True)
-
-    unique_vals = gdf['Data Available'].unique()
-    print(f'unique values in digital curves (LAS+) sheet = {unique_vals.shape}')
-
-    # start by combining all porosity logs (or logs that are used to measure porosity)
-    # keywords: density, neutron, sonic, gamma ray, acoustic
-    keywords_por = ['density', 'neutron', 'sonic', 'gamma ray', 'acoustic']
-    pattern = '|'.join(keywords_por)
-    poro_df = gdf[gdf['Description'].str.contains(pattern, case=False, na=False)]
-    poro_df.to_file(os.path.join(root, 'TGS\TGSproducts_LAS+_poro.shp'))
-
-    # combine all permeability logs
-    # keywords: resitivity, induction, laterolog, microlog, spontaneous potential
-    keywords_perm = ['resistivity', 'induction', 'laterolog', 'microlog', 'spontaneous potential']
-    pattern = '|'.join(keywords_perm)
-    perm_df = gdf[gdf['Description'].str.contains(pattern, case=False, na=False)]
-    perm_df.to_file(os.path.join(root, 'TGS\TGSproducts_LAS+_perm.shp'))
-
-    # now take group that doesn't contain either
-    pattern = '|'.join(keywords_perm + keywords_por)
-    other_df = gdf[~gdf['Description'].str.contains(pattern, case=False, na=False)]
-    other_df.to_file(os.path.join(root, 'TGS\TGSproducts_LAS+_other.shp'))
-
-    sys.exit()
-
-    # Now sheets_data contains all the sheets in the Excel file as DataFrames
-    # Example of accessing the first sheet as a DataFrame
-    # df = sheets_data[excel_file.sheet_names[0]]
+    # Iterate over all sheet names and load each sheet into a DataFrame, then organize digital log data
+    for l, sheet_name in zip(labels, excel_file.sheet_names[2:]):
+        sheetdata = pd.read_excel(excel_file, sheet_name=sheet_name)
+        sort_tgs_logdata(df=df1, df2=sheetdata, name=sheet_name, label=l)
 
     # Create geodataframe from Export Product Results sheet - contains all products
-    df = sheets_data['Export Product Results']
-    gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df['Surface Long'], df['Surface Lat']))
+    gdf = gpd.GeoDataFrame(df1, geometry=gpd.points_from_xy(df1['Surface Long'], df1['Surface Lat']))
     gdf.set_crs('EPSG:4326', allow_override=True, inplace=True)
 
     # Group by top depth <= 2,000 ft., save to shapefile
@@ -491,7 +511,6 @@ def tgs_data():
         print(f'{total_count=}')
 
     # now group by product type
-
     labels =['LT2kft', 'GT2kft']
     for l, g in zip(labels, gdfs):
         unique_vals = g['Product Type Name'].unique()
@@ -502,16 +521,72 @@ def tgs_data():
 
     plt.show()
 
-    # Print all sheet names and their corresponding DataFrame shape
-    for sheet, df in sheets_data.items():
-        print(f"Sheet name: {sheet}, DataFrame shape: {df.shape}")
 
+def ose_data():
+    path = r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\AquiferCharacterization'
+    df = pd.read_csv(os.path.join(path, 'OSE_PODS_cleaned.csv'))
+    pd.set_option('display.max_columns', None)
+
+    print(df['use_'].unique())
+    print(df['pod_basin'].unique())
+
+    basins = df['pod_basin'].unique()
+
+    use_stats_per_basin = {}
+
+    for basin in basins:
+        bdf = df[df['pod_basin'] == basin]
+        category_counts = bdf['use_'].value_counts()
+        use_stats_per_basin[basin] = category_counts
+        # category_counts.columns = ['use', 'count']
+        # category_counts['basin'] = basin
+        # use_stats_per_basin[basin] = category_counts
+        print(f'{category_counts=}')
+        # plt.figure()
+        # ax = sns.barplot(data=category_counts, x='Category', y='Count')
+        # plt.title(f'{l}')
+        # plt.xlabel('Category')
+        # plt.ylabel('Count')
+        #
+        # # Add the count values on top of the bars
+        # for p in ax.patches:
+        #     # Get the height of each bar
+        #     height = p.get_height()
+        #
+        #     # Add text to the bar (centered at the middle of each bar)
+        #     ax.text(p.get_x() + p.get_width() / 2, height + 0.1,  # Slightly above the bar
+        #             str(int(height)),  # Convert height to integer for count value
+        #             ha='center',  # Horizontal alignment (centered)
+        #             va='bottom',  # Vertical alignment (above the bar)
+        #             fontsize=12,  # Font size of the count
+        #             color='black')  # Text color
+        #
+        # plt.xticks()
+        # plt.tight_layout()
+        # plt.show()
+
+        # total_count = category_counts['count'].sum()
+        # print(f'{total_count=}')
+    final_df = pd.DataFrame(use_stats_per_basin).fillna(0)
+    final_df.reset_index(inplace=True)
+    final_df.rename(columns={'index': 'use'}, inplace=True)
+
+    print(final_df.shape)
+    print(df['use_'].unique().shape)
+    print(basins.shape)
+
+    final_df.to_csv(os.path.join(path, 'ose_usepermits_per_basin.csv'))
+
+    # exp_df = df[df['use_'] == 'EXP']
+    # ose_expwells = gpd.GeoDataFrame(exp_df, geometry=points_from_xy(exp_df.easting, exp_df.northing), crs='EPSG:26913')
+    # ose_expwells.set_crs('EPSG:26913')
+    #
+    # # ose_expwells.to_file(os.path.join(path, 'OSE_EXPwells.shp'))
+    # print(exp_df.columns.tolist())
 
 
 def main():
-    tgs_data()
-
-
+    ose_data()
 
 
 if __name__ == '__main__':
