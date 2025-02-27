@@ -1,0 +1,230 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        -105.62500951497708,
+        31.87500314787701,
+        -105.37500929154555,
+        32.00000515941065
+    ],
+    "features": [
+        {
+            "id": "https://mrdata.usgs.gov/earthmri/data-acquisition/project/5029",
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -105.375,
+                                32
+                            ],
+                            [
+                                -105.375,
+                                31.875
+                            ],
+                            [
+                                -105.5,
+                                31.875
+                            ],
+                            [
+                                -105.625,
+                                31.875
+                            ],
+                            [
+                                -105.625,
+                                32
+                            ],
+                            [
+                                -105.5,
+                                32
+                            ],
+                            [
+                                -105.375,
+                                32
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "pid": 5029,
+                "show": "Y",
+                "pname": "Trans-Pecos Tertiary Alkaline Rocks, Texas",
+                "yearstart": 2020,
+                "yearend": 2023,
+                "affiliatio": "Texas Bureau of Economic Geology",
+                "website": "https://www.beg.utexas.edu/minerals/rare-earth",
+                "pdescrip": "Researchers from the Texas Bureau of Economic Geology will conduct 1:24,000-scale geologic mapping in two 7.5' quadrangles in the Cornudas Mountains of west Texas in a coordinated effort between the New Mexico Bureau of Geology and Mineral Resources and",
+                "pdata": [
+                    "https://ngmdb.usgs.gov/Prodesc/proddesc_115874.htm",
+                    "https://ngmdb.usgs.gov/Prodesc/proddesc_115875.htm"
+                ],
+                "pdatgchem": "https://doi.org/10.5066/P9WHRLXH",
+                "pkeyword": "chemical analysis; rare earth elements; geologic maps; study areas; geochemistry; igneous rocks",
+                "parea": 127,
+                "papprox": "N",
+                "abstract": "Researchers from the Texas Bureau of Economic Geology will conduct 1:24,000-scale geologic mapping and geochemical sampling in the Sixteen Mountains and Cerro Diablo 7.5-minute quadrangles located in the Cornudas Mountains of west Texas. The area lies within the Trans-Pecos Tertiary alkaline magmatic province that extends northward into New Mexico. The Paleogene alkaline igneous rocks in Trans-Pecos Texas have the potential to host critical mineral resources including rare earth elements (REE), such as those of the Round Top REE deposit. This is a companion project being conducted in concert with the New Mexico Bureau of Geology and Mineral Resources, which is mapping the Cornudas Mountain in New Mexico, and the USGS Mineral Resources Program to conduct an airborne magnetic and radiometric survey of the region, all of which are supported by Earth MRI.",
+                "provisionl": "N",
+                "alias": "Trans-Pecos tertiary alkaline Rocks, Texas",
+                "program": [
+                    "Geologic mapping",
+                    "geochemistry"
+                ],
+                "contact": [
+                    {
+                        "cid": "114",
+                        "cname": "Jeff Paine",
+                        "cmail": "jeff.paine@beg.utexas.edu",
+                        "last": "Paine, Jeff"
+                    }
+                ],
+                "keywords": [
+                    {
+                        "thesaurus": 1,
+                        "code": "f48229",
+                        "term": "Hudspeth",
+                        "scope": "county",
+                        "parent": "Texas"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "h13050004",
+                        "term": "Salt Basin",
+                        "scope": "hydrologic unit",
+                        "parent": "Rio Grande closed basins"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q32106NWC1",
+                        "term": "Big Heiser Tank",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Dell City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q32106NWD1",
+                        "term": "Sixteen Mountains",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Dell City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q32106NWE1",
+                        "term": "Cerro Diablo",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Dell City"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33106SWC4",
+                        "term": "Alamo Mountain",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Crow Flats"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33106SWD4",
+                        "term": "Cornudas Mountain",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Crow Flats"
+                    },
+                    {
+                        "thesaurus": 1,
+                        "code": "q33106SWE4",
+                        "term": "Mcveigh Hills",
+                        "scope": "quadrangle 1:24,000 scale",
+                        "parent": "Crow Flats"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "153",
+                        "term": "chemical analysis",
+                        "scope": "Chemical techniques used to identify the composition of substances.",
+                        "parent": "laboratory methods"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1553",
+                        "term": "rare earth elements",
+                        "scope": "A group of elements including the lanthanoids, or lanthanides, of interest because they are used in modern technological industries.  Yttrium and scandium are often included in this group.",
+                        "parent": "chemical element groups"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "1748",
+                        "term": "geologic maps",
+                        "scope": "Maps depicting geological characteristics of the earth's surface, including lithology, geologic structure, age, and the results of crustal processes. Used where the product includes a depiction of the map as a whole, not for data sets that could be used to create a map.",
+                        "parent": "maps and atlases"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "2093",
+                        "term": "study areas",
+                        "scope": "Geospatial data describing the areas from which samples were taken or observations were made, typically polygonal.  May be approximate, as in bounding coordinates, or precise.",
+                        "parent": "geospatial datasets"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "437",
+                        "term": "geochemistry",
+                        "scope": "Study of the distribution of chemical elements and natural compounds on the earth and in the atmosphere and the chemical processes that affect the earth.",
+                        "parent": "earth sciences"
+                    },
+                    {
+                        "thesaurus": 2,
+                        "code": "572",
+                        "term": "igneous rocks",
+                        "scope": "Rocks formed from melted rock that has cooled and solidified.",
+                        "parent": "rocks and deposits"
+                    },
+                    {
+                        "thesaurus": 4,
+                        "code": "3.7",
+                        "term": "Alkalic volcanic rock",
+                        "scope": "A volcanic rock that contains more sodium and/or potassium than is required to form feldspar with the available silica.",
+                        "parent": "Volcanic rock"
+                    },
+                    {
+                        "thesaurus": 4,
+                        "code": "4.6",
+                        "term": "Alkalic intrusive rock",
+                        "scope": "A plutonic rock that contains more sodium and/or potassium than is required to form feldspar with the available silica.",
+                        "parent": "Plutonic rock"
+                    }
+                ],
+                "publication": [
+                    {
+                        "id": "73",
+                        "pid": "5029",
+                        "affiliation": "University of Texas at Austin, Bureau of Economic Geology",
+                        "poc": "Jeff Paine",
+                        "pocemail": "jeff.paine@beg.utexas.edu",
+                        "pubtype": "Geologic map",
+                        "citation": "Elliott, B.A., Childress, Tristan, and Andrews, John, 2023, Geologic map of the Cerro Diablo quadrangle, Texas: University of Texas at Austin, Bureau of Economic Geology Open File Map No. 280, scale 1:24,000.",
+                        "website": "https://ngmdb.usgs.gov/Prodesc/proddesc_115875.htm"
+                    },
+                    {
+                        "id": "74",
+                        "pid": "5029",
+                        "affiliation": "University of Texas at Austin, Bureau of Economic Geology",
+                        "poc": "Jeff Paine",
+                        "pocemail": "jeff.paine@beg.utexas.edu",
+                        "pubtype": "Geologic map",
+                        "citation": "Elliott, B.A., Childress, Tristan, and Andrews, John, 2023, Geologic map of the Sixteen Mountains quadrangle, Texas: University of Texas at Austin, Bureau of Economic Geology Open File Map No. 279, scale 1:24,000.",
+                        "website": "https://ngmdb.usgs.gov/Prodesc/proddesc_115874.htm"
+                    }
+                ],
+                "data_link": [
+                    {
+                        "cite": "1530",
+                        "title": "Geochemical data generated by projects funded by the USGS Earth Mapping Resources Initiative",
+                        "descript": "Includes all geochemical data generated by each project partnership funded through Earth MRI and will be updated periodically as additional geochemical data from these projects becomes available.",
+                        "onlink": "https://doi.org/10.5066/P9WHRLXH",
+                        "landing": "https://mrdata.usgs.gov/catalog/cite-view.php?cite=1530"
+                    }
+                ]
+            }
+        }
+    ]
+}

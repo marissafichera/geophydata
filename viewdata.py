@@ -4,19 +4,19 @@ import numpy as np
 import os
 import pandas as pd
 import geopandas as gpd
-import matplotlib.pyplot as plt
-from geopandas import points_from_xy
+# import matplotlib.pyplot as plt
 from shapely.wkt import loads
 from shapely.geometry import Point
 import pyproj
 import sys
 import fiona
-import rasterio
-from rasterio.mask import mask
+# import rasterio
+# from rasterio.mask import mask
 from shapely.geometry import box
-import arcpy as ap
-import seaborn as sns
-import re
+# import arcpy as ap
+import requests
+import json
+import os
 
 root = r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData'
 default_gdb = r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
@@ -40,47 +40,62 @@ nm_extent_wgs84 = (lonmin, latmin, lonmax, latmax)
 import os
 import zipfile
 
+def geojson_to_shapefile():
+    url_ids = [
+        '1054',
+        '5059',
+        '5013',
+        '20038',
+        '40001',
+        '40011',
+        '1034',
+        '20033',
+        '1054',
+        '5027',
+        '20047',
+        '1014',
+        '5029',
+        '50001',
+    ]
 
-# Function to extract all zip files in the given directory
-def extract_zip_files(directory):
-    # Loop through every file in the given directory
-    for filename in os.listdir(directory):
-        # Check if the file is a zip file
-        if filename.endswith('.zip'):
-            zip_path = os.path.join(directory, filename)
+    for url_id in url_ids:
+        geojson_url = rf'https://mrdata.usgs.gov/earthmri/data-acquisition/project/{url_id}/json'
 
-            # Create a folder to extract the contents of the zip file
-            extract_folder = os.path.join(directory, os.path.splitext(filename)[0])
-            if not os.path.exists(extract_folder):
-                os.makedirs(extract_folder)
+        # Fetch the GeoJSON data from the URL
+        response = requests.get(geojson_url)
+        if response.status_code != 200:
+            print(f"Failed to retrieve GeoJSON from {geojson_url}")
+            return
 
-            # Open and extract the zip file
-            with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-                zip_ref.extractall(extract_folder)
-                print(f"Extracted {filename} to {extract_folder}")
+        geojson_data = response.json()
 
+        # Convert GeoJSON to GeoDataFrame using geopandas
+        gdf = gpd.read_file(geojson_url)
 
-def copy_raster(in_raster_dir, in_raster_name):
-    in_raster_path = os.path.join(in_raster_dir, f'{in_raster_name}.tif')
-    print(f'in raster = {in_raster_path}')
+        # Write the GeoDataFrame to a shapefile
+        shapefile_path = os.path.join('out', 'EarthMRI', f'EarthMRI_{url_id}.shp')
+        print(f'{shapefile_path=}')
+        gdf.to_file(shapefile_path)
+        print(f"Shapefile saved at: {shapefile_path}")
 
-    out_gdb = r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
-    out_path = os.path.join(out_gdb, f'{in_raster_name}')
-    print(f'out raster path = {out_path}')
+        # Write the entire GeoJSON data to a text file
+        geojson_file_path = os.path.join('out', 'EarthMRI', f'EarthMRI_{url_id}.json')
+        with open(geojson_file_path, 'w') as geojson_file:
+            json.dump(geojson_data, geojson_file, indent=4)
 
-    ap.conversion.RasterToGeodatabase(in_raster_path, out_gdb)
+        print(f"GeoJSON saved to: {geojson_file_path}")
 
 
-def modify_filename(filename):
-    print(f'filename = {filename}')
-    # Check if the filename starts with 'geophysics'
-    if filename.lower().startswith('geophysics'):
-        filename = filename[10:]  # Remove 'geophysics' from the start (10 characters)
-        # Check if the filename ends with 'USCanada'
-        if filename.lower().endswith('uscanada'):
-            filename = filename[:-8]  # Remove 'USCanada' from the end (8 characters)
+def copy_raster(in_raster):
+    out_gdb = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
+    out_path = os.path.join(out_gdb, f'{in_raster}')
+    ap.management.CopyRaster(f'{in_raster}.tif', out_path)
 
-    return f'USGS002{filename}'
+
+def export_features(in_features):
+    out_gdb = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
+    out_path = os.path.join(out_gdb, in_features)
+    ap.conversion.ExportFeatures(in_features=f'{in_features}.shp', out_features=out_path)
 
 
 def clip_usgs002_data():
@@ -119,7 +134,7 @@ def clip_usgs002_data():
     for d in dirnames:
         f = os.path.join(root, 'USGS002', d)
         for t in tifs:
-            # print(os.path.join(f, t))
+            print(os.path.join(f, t))
             if os.path.isdir(os.path.join(f, t)):
                 p = os.path.join(f, t, f'{t}.tif')
                 if not os.path.isfile(p):
@@ -127,9 +142,7 @@ def clip_usgs002_data():
                     if not os.path.isfile(p):
                         p = os.path.join(f, t, 'USCanadaMagRTP_HGMDeepSources.tif')
 
-                mf = modify_filename(t)
-                output_path = os.path.join(f, t, f'{mf}NM.tif')
-                print(f'tif output path = {output_path}')
+                output_path = os.path.join(f, t, f'{t}_NM.tif')
                 with rasterio.open(p) as src:
                     bbox = box(lonmin, latmin, lonmax, latmax)
                     geoms = [bbox]
@@ -146,9 +159,8 @@ def clip_usgs002_data():
 
                     with rasterio.open(output_path, 'w', **out_meta) as dest:
                         dest.write(out_image)
-                        rdir = os.path.join(f, t)
-                        rname = f'{mf}NM'
-                        # copy_raster(in_raster_dir=rdir, in_raster_name=rname)
+                        r = os.path.join(f, t, f'{t}_NM')
+                        copy_raster(in_raster=output_path)
         for s in shps:
             print(f'shapefile = {s}')
             if os.path.isdir(os.path.join(f, s)):
@@ -158,14 +170,8 @@ def clip_usgs002_data():
                 gdf = gpd.read_file(p)
                 nmgdf = gpd.clip(gdf, nm_extent_wgs84)
                 nmgdf.to_file(output_path)
-                fc = os.path.join(f, s, f'{s}_NM')
-
-                out_gdb = r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb\USGS002'
-                fc_to_gdb(in_features=fc, out_gdb=out_gdb)
-
-
-def fc_to_gdb(in_features, out_gdb=None):
-    ap.conversion.FeatureClassToGeodatabase(Input_Features=in_features, Output_Geodatabase=out_gdb)
+                fc = os.path.join(f, s, f'{s}')
+                fc_to_fc(in_features=fc)
 
 
 def stanford_model_data():
@@ -232,7 +238,9 @@ def kml_to_gdf():
         with fiona.open(kml) as collection:
             gdf = gpd.GeoDataFrame.from_features(collection)
 
-        gdf.to_file(rf'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\NOAA001\{kmlname}.shp')
+        gdf.to_file(
+            rf'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\NOAA001\{kmlname}.shp')
+
 
 def noaa_nm_data():
     # "C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\NOAA002\newmex.xyz"
@@ -586,7 +594,7 @@ def ose_data():
 
 
 def main():
-    ose_data()
+    geojson_to_shapefile()
 
 
 if __name__ == '__main__':
