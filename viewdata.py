@@ -4,15 +4,20 @@ import numpy as np
 import os
 import pandas as pd
 import geopandas as gpd
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+from geopandas import points_from_xy
 from shapely.wkt import loads
 from shapely.geometry import Point
 import pyproj
 import sys
 import fiona
-# import rasterio
-# from rasterio.mask import mask
+import rasterio
+from rasterio.mask import mask
 from shapely.geometry import box
+import arcpy as ap
+import seaborn as sns
+import re
+import random
 # import arcpy as ap
 import requests
 import json
@@ -57,7 +62,6 @@ def geojson_to_shapefile():
         '5029',
         '50001',
     ]
-
     for url_id in url_ids:
         geojson_url = rf'https://mrdata.usgs.gov/earthmri/data-acquisition/project/{url_id}/json'
 
@@ -86,16 +90,47 @@ def geojson_to_shapefile():
         print(f"GeoJSON saved to: {geojson_file_path}")
 
 
-def copy_raster(in_raster):
-    out_gdb = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
-    out_path = os.path.join(out_gdb, f'{in_raster}')
-    ap.management.CopyRaster(f'{in_raster}.tif', out_path)
+# Function to extract all zip files in the given directory
+def extract_zip_files(directory):
+    # Loop through every file in the given directory
+    for filename in os.listdir(directory):
+        # Check if the file is a zip file
+        if filename.endswith('.zip'):
+            zip_path = os.path.join(directory, filename)
+
+            # Create a folder to extract the contents of the zip file
+            extract_folder = os.path.join(directory, os.path.splitext(filename)[0])
+            if not os.path.exists(extract_folder):
+                os.makedirs(extract_folder)
+
+            # Open and extract the zip file
+            with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+                zip_ref.extractall(extract_folder)
+                print(f"Extracted {filename} to {extract_folder}")
 
 
-def export_features(in_features):
-    out_gdb = r'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
-    out_path = os.path.join(out_gdb, in_features)
-    ap.conversion.ExportFeatures(in_features=f'{in_features}.shp', out_features=out_path)
+
+def copy_raster(in_raster_dir, in_raster_name):
+    in_raster_path = os.path.join(in_raster_dir, f'{in_raster_name}.tif')
+    print(f'in raster = {in_raster_path}')
+
+    out_gdb = r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
+    out_path = os.path.join(out_gdb, f'{in_raster_name}')
+    print(f'out raster path = {out_path}')
+
+    ap.conversion.RasterToGeodatabase(in_raster_path, out_gdb)
+
+
+def modify_filename(filename):
+    print(f'filename = {filename}')
+    # Check if the filename starts with 'geophysics'
+    if filename.lower().startswith('geophysics'):
+        filename = filename[10:]  # Remove 'geophysics' from the start (10 characters)
+        # Check if the filename ends with 'USCanada'
+        if filename.lower().endswith('uscanada'):
+            filename = filename[:-8]  # Remove 'USCanada' from the end (8 characters)
+
+    return f'USGS002{filename}'
 
 
 def clip_usgs002_data():
@@ -134,7 +169,7 @@ def clip_usgs002_data():
     for d in dirnames:
         f = os.path.join(root, 'USGS002', d)
         for t in tifs:
-            print(os.path.join(f, t))
+            # print(os.path.join(f, t))
             if os.path.isdir(os.path.join(f, t)):
                 p = os.path.join(f, t, f'{t}.tif')
                 if not os.path.isfile(p):
@@ -142,7 +177,9 @@ def clip_usgs002_data():
                     if not os.path.isfile(p):
                         p = os.path.join(f, t, 'USCanadaMagRTP_HGMDeepSources.tif')
 
-                output_path = os.path.join(f, t, f'{t}_NM.tif')
+                mf = modify_filename(t)
+                output_path = os.path.join(f, t, f'{mf}NM.tif')
+                print(f'tif output path = {output_path}')
                 with rasterio.open(p) as src:
                     bbox = box(lonmin, latmin, lonmax, latmax)
                     geoms = [bbox]
@@ -159,8 +196,9 @@ def clip_usgs002_data():
 
                     with rasterio.open(output_path, 'w', **out_meta) as dest:
                         dest.write(out_image)
-                        r = os.path.join(f, t, f'{t}_NM')
-                        copy_raster(in_raster=output_path)
+                        rdir = os.path.join(f, t)
+                        rname = f'{mf}NM'
+                        # copy_raster(in_raster_dir=rdir, in_raster_name=rname)
         for s in shps:
             print(f'shapefile = {s}')
             if os.path.isdir(os.path.join(f, s)):
@@ -170,8 +208,14 @@ def clip_usgs002_data():
                 gdf = gpd.read_file(p)
                 nmgdf = gpd.clip(gdf, nm_extent_wgs84)
                 nmgdf.to_file(output_path)
-                fc = os.path.join(f, s, f'{s}')
-                fc_to_fc(in_features=fc)
+                fc = os.path.join(f, s, f'{s}_NM')
+
+                out_gdb = r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb\USGS002'
+                fc_to_gdb(in_features=fc, out_gdb=out_gdb)
+
+
+def fc_to_gdb(in_features, out_gdb=None):
+    ap.conversion.FeatureClassToGeodatabase(Input_Features=in_features, Output_Geodatabase=out_gdb)
 
 
 def stanford_model_data():
@@ -238,9 +282,7 @@ def kml_to_gdf():
         with fiona.open(kml) as collection:
             gdf = gpd.GeoDataFrame.from_features(collection)
 
-        gdf.to_file(
-            rf'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\NOAA001\{kmlname}.shp')
-
+        gdf.to_file(rf'C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\NOAA001\{kmlname}.shp')
 
 def noaa_nm_data():
     # "C:\Users\mfichera\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\NOAA002\newmex.xyz"
@@ -535,11 +577,27 @@ def ose_data():
     df = pd.read_csv(os.path.join(path, 'OSE_PODS_cleaned.csv'))
     pd.set_option('display.max_columns', None)
 
+    # get all the exploration wells and export to shapefile and csv
+    exp_df = df[df['use_'] == 'EXP']
+    ose_expwells = gpd.GeoDataFrame(exp_df, geometry=points_from_xy(exp_df.easting, exp_df.northing), crs='EPSG:26913')
+    ose_expwells.set_crs('EPSG:26913')
+    ose_expwells.to_csv(os.path.join(path, 'OSE_EXPwells.csv'))
+
+    # export just the pod_file column to use in OSEFileRetrieval
+    ose_expwells_podfile = ose_expwells['db_file']
+    ose_expwells_podfile.to_csv(os.path.join(path, 'OSE_EXPwells_dbfile.csv'), index=False)
+
+    # ose_expwells.to_file(os.path.join(path, 'OSE_EXPwells.shp'))
+    # print(exp_df.columns.tolist())
+
+    # now create stats for well use permits per groundwater basin
+    df_bc = pd.read_csv(os.path.join(path, 'OSE_basincodes.csv'))
+    rename_dict = dict(zip(df_bc['Code Value'], df_bc['Code Description']))
+
     print(df['use_'].unique())
     print(df['pod_basin'].unique())
 
     basins = df['pod_basin'].unique()
-
     use_stats_per_basin = {}
 
     for basin in basins:
@@ -578,23 +636,84 @@ def ose_data():
     final_df = pd.DataFrame(use_stats_per_basin).fillna(0)
     final_df.reset_index(inplace=True)
     final_df.rename(columns={'index': 'use'}, inplace=True)
+    final_df.rename(columns=rename_dict, inplace=True)
 
     print(final_df.shape)
     print(df['use_'].unique().shape)
     print(basins.shape)
 
     final_df.to_csv(os.path.join(path, 'ose_usepermits_per_basin.csv'))
+    # plot_ose_data(final_df)
 
-    # exp_df = df[df['use_'] == 'EXP']
-    # ose_expwells = gpd.GeoDataFrame(exp_df, geometry=points_from_xy(exp_df.easting, exp_df.northing), crs='EPSG:26913')
-    # ose_expwells.set_crs('EPSG:26913')
+
+def plot_ose_data(df):
+    df = df.drop(index=0).reset_index(drop=True)
+    use_labels = df['use_']  # Extract the labels from the first column
+    # df = df[['use_', 'Bluewater']]
+    df_numeric = df.drop(columns=['use_'])  # Drop the first column for plotting
+
+    print(df_numeric)
+
+    # Assuming df_data is your dataframe after renaming
+    # fig, axes = plt.subplots(nrows=5, ncols=9, figsize=(20, 20))  # Adjust grid size as needed
+    # axes = axes.flatten()  # Flatten axes array for easy iteration
+
+    num_charts = len(df_numeric.columns)  # Total number of bar charts
+    charts_per_fig = 10  # Number of bar charts per figure
+    num_figs = int(np.ceil(num_charts / charts_per_fig))  # Number of figures needed
+
+    for fig_idx in range(num_figs):
+        fig, axes = plt.subplots(nrows=5, ncols=2, figsize=(20, 20))  # 5x2 grid per figure
+        axes = axes.flatten()  # Flatten axes for easy iteration
+
+        start_idx = fig_idx * charts_per_fig
+        end_idx = min(start_idx + charts_per_fig, num_charts)
+
+        for i, column in enumerate(df_numeric.columns[start_idx:end_idx]):
+            axes[i].bar(use_labels, df_numeric[column], color='skyblue')
+            axes[i].set_title(column, fontsize=12, pad=10)
+            axes[i].tick_params(axis='x', rotation=90, labelsize=8)  # Rotate x-axis labels for readability labels for readability
+
+
+    # n = 60
+    # colors = plt.cm.nipy_spectral(np.linspace(0, 1, n))
+    # np.random.shuffle(colors)
     #
-    # # ose_expwells.to_file(os.path.join(path, 'OSE_EXPwells.shp'))
-    # print(exp_df.columns.tolist())
+    # for i, column in enumerate(df_numeric.columns):
+    #     wedges, texts = axes[i].pie(
+    #         df_numeric[column],
+    #         # autopct='%1.1f%%',
+    #         startangle=90,
+    #         colors=colors,
+    #         labels=None  # Hide labels inside pie to avoid clutter
+    #     )
+    #     axes[i].set_title(column)
+    #
+    # # Add a global legend
+    # fig.legend(use_labels, loc='lower center')
+
+    # Hide any unused subplots (if columns < total axes)
+        for j in range(i + 1, len(axes)):
+            fig.delaxes(axes[j])
+
+        fig.subplots_adjust(hspace=0.6, top=0.95, bottom=0.05)  # Adjust hspace and figure boundaries
+
+        # plt.tight_layout()
+
+        # Save the figure as a PNG
+        fig.savefig(f'bar_chart_figure_{fig_idx + 1}.png', dpi=300)  # Save with high dpi
+
+        plt.close(fig)  # Close the figure after saving to free up memory
+
+        # plt.show()
+
+
+
+
 
 
 def main():
-    geojson_to_shapefile()
+    ose_data()
 
 
 if __name__ == '__main__':
