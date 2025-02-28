@@ -21,6 +21,5 @@ def main():
         pool.map(process_task, tasks)
 
 
-
 if __name__ == '__main__':
     main()
