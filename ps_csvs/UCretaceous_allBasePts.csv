@@ -1,0 +1,256 @@
+OID@,OBJECTID,Shape,UniqueID,Easting,Northing,Units,Datum,DataSourceID,DataQualityBottom,UnitsPresent,MUEBase,SimpleUnit
+1,1,"(438759.67480000015, 3703496.9431)",AngusCSA-8500,438759.67480000015,3703496.9431,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+2,2,"(440533.60030000005, 3703499.3849)",AngusCSA-10273,440533.60030000005,3703499.3849,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+3,3,"(441491.1721999999, 3703500.7029)",AngusCSA-11231,441491.1721999999,3703500.7029,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+4,4,"(442308.87519999966, 3703233.7464000005)",FortStantonCSD-519,442308.87519999966,3703233.7464000005,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,5003.0,UCretaceous
+5,5,"(448055.9648000002, 3704841.3323)",FortStantonCSE-2312,448055.9648000002,3704841.3323,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,6482.0,UCretaceous
+6,6,"(448645.30140000023, 3703759.0681999996)",FortStantonCSE-3544,448645.30140000023,3703759.0681999996,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,6499.0,UCretaceous
+7,7,"(447781.8761999998, 3705344.6714999992)",FortStantonCSE-1739,447781.8761999998,3705344.6714999992,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,6512.0,UCretaceous
+8,8,"(447105.1513, 3706587.4164000005)",FortStantonCSE-324,447105.1513,3706587.4164000005,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+9,9,"(421242.0033, 3703929.3554999996)",NogalPeakCSA-2596,421242.0033,3703929.3554999996,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+10,10,"(425360.2263000002, 3706966.8268)",NogalPeakCSC-50,425360.2263000002,3706966.8268,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+11,11,"(442384.93730000034, 3699336.4766000006)",FortStantonCSC-613,442384.93730000034,3699336.4766000006,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,5577.0,UCretaceous
+12,12,"(443729.24870000035, 3702293.5342999995)",FortStantonCSD-2222,443729.24870000035,3702293.5342999995,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,5583.0,UCretaceous
+13,13,"(445797.97030000016, 3700924.1500000004)",FortStantonCSD-4703,445797.97030000016,3700924.1500000004,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,6322.0,UCretaceous
+14,14,"(445009.5175000001, 3701446.0639999993)",FortStantonCSD-3758,445009.5175000001,3701446.0639999993,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,5938.0,UCretaceous
+15,15,"(449125.05420000013, 3702878.045)",FortStantonCSE-4548,449125.05420000013,3702878.045,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,6679.0,UCretaceous
+16,16,"(426024.3491000002, 3702453.8225)",NogalPeakCSC-4614,426024.3491000002,3702453.8225,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+17,17,"(426142.3912000004, 3701696.6457)",NogalPeakCSC-5380,426142.3912000004,3701696.6457,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+18,18,"(436183.0537999999, 3697653.1160000004)",AngusCSB-8312,436183.0537999999,3697653.1160000004,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,3730.0,UCretaceous
+19,19,"(437124.20469999965, 3696726.4626)",AngusCSB-9633,437124.20469999965,3696726.4626,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,5016.0,UCretaceous
+20,20,"(437889.48500000034, 3695972.9707999993)",AngusCSB-10707,437889.48500000034,3695972.9707999993,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,5213.0,UCretaceous
+21,21,"(442032.42650000006, 3696667.7652000003)",FortStantonCSA-10262,442032.42650000006,3696667.7652000003,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,6095.0,UCretaceous
+22,22,"(443770.40160000045, 3698543.0713)",FortStantonCSC-2210,443770.40160000045,3698543.0713,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,6781.0,UCretaceous
+23,23,"(439166.8546000002, 3694715.277899999)",AngusCSB-12500,439166.8546000002,3694715.277899999,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,6000.0,UCretaceous
+24,24,"(440464.51379999984, 3693437.6078999992)",AngusCSB-14321,440464.51379999984,3693437.6078999992,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,7060.0,UCretaceous
+25,25,"(442029.23599999957, 3695042.7684000004)",FortStantonCSA-11887,442029.23599999957,3695042.7684000004,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,7024.0,UCretaceous
+26,26,"(442029.9232000001, 3695392.7676999997)",FortStantonCSA-11537,442029.9232000001,3695392.7676999997,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,7030.0,UCretaceous
+27,27,"(437062.1935999999, 3691669.1862000003)",RuidosoCSA-1928,437062.1935999999,3691669.1862000003,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,3454.0,UCretaceous
+28,28,"(435784.5921, 3693046.319)",RuidosoCSA-50,435784.5921,3693046.319,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,3392.0,UCretaceous
+29,29,"(437549.89269999973, 3691143.4930000007)",RuidosoCSA-2645,437549.89269999973,3691143.4930000007,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,3618.0,UCretaceous
+30,30,"(439250.1880000001, 3689310.7366000004)",RuidosoCSA-5145,439250.1880000001,3689310.7366000004,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,7224.0,UCretaceous
+31,31,"(438400.0404000003, 3690227.1148000006)",RuidosoCSA-3895,438400.0404000003,3690227.1148000006,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,6135.0,UCretaceous
+32,32,"(438127.9930999996, 3690520.355799999)",RuidosoCSA-3495,438127.9930999996,3690520.355799999,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,4258.0,UCretaceous
+33,33,"(430265.6321999999, 3688932.2102000006)",RuidosoCSB-136,430265.6321999999,3688932.2102000006,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,4793.0,UCretaceous
+34,34,"(431255.46740000043, 3688208.3714000005)",RuidosoCSB-1363,431255.46740000043,3688208.3714000005,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,5597.0,UCretaceous
+35,35,"(437016.43759999983, 3683995.5351)",RuidosoCSB-8500,437016.43759999983,3683995.5351,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,7424.0,UCretaceous
+36,36,"(435528.79569999967, 3685083.4059999995)",RuidosoCSB-6657,435528.79569999967,3685083.4059999995,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,4960.0,UCretaceous
+37,37,"(431938.53830000013, 3687708.8608)",RuidosoCSB-2209,431938.53830000013,3687708.8608,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,6072.0,UCretaceous
+38,38,"(434860.2604, 3685572.2871000003)",RuidosoCSB-5828,434860.2604,3685572.2871000003,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,4481.0,UCretaceous
+39,39,"(436013.1144000003, 3684729.237299999)",RuidosoCSB-7257,436013.1144000003,3684729.237299999,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,6538.0,UCretaceous
+40,40,"(436672.07380000036, 3683939.492900001)",RuidosoCSC-7660,436672.07380000036,3683939.492900001,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,7309.0,UCretaceous
+41,41,"(431852.21439999994, 3681020.8341000006)",RuidosoCSC-2000,431852.21439999994,3681020.8341000006,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,7490.0,UCretaceous
+42,42,"(432292.53440000024, 3681257.727)",RuidosoCSC-2500,432292.53440000024,3681257.727,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,6318.0,UCretaceous
+43,43,"(430134.966, 3680096.9518)",RuidosoCSC-50,430134.966,3680096.9518,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+44,44,"(442460.09389999975, 3702171.6867999993)",FortStantonCSA-4728,442460.09389999975,3702171.6867999993,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,4927.0,UCretaceous
+45,45,"(442388.6238000002, 3700904.6083000004)",FortStantonCSA-6000,442388.6238000002,3700904.6083000004,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,5223.0,UCretaceous
+46,46,"(442180.8579000002, 3699487.7606000006)",FortStantonCSA-7432,442180.8579000002,3699487.7606000006,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,5357.0,UCretaceous
+47,47,"(446455.58189999964, 3741089.2733999994)",UCretaceous_ContactPts_51,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6453.0,UCretaceous
+48,48,"(447035.2775999997, 3736878.496200001)",UCretaceous_ContactPts_52,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6437.0,UCretaceous
+49,49,"(449394.1950000003, 3728242.844900001)",UCretaceous_ContactPts_53,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+50,50,"(448731.68730000034, 3726145.3050999995)",UCretaceous_ContactPts_54,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+51,51,"(444659.38019999955, 3724918.9372000005)",UCretaceous_ContactPts_55,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6737.0,UCretaceous
+52,52,"(445362.09970000014, 3721766.641899999)",UCretaceous_ContactPts_56,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+53,53,"(451383.9073000001, 3718231.181500001)",UCretaceous_ContactPts_57,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6687.0,UCretaceous
+54,54,"(450848.92370000016, 3718455.5681999996)",UCretaceous_ContactPts_58,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6693.0,UCretaceous
+55,55,"(450497.85250000004, 3716428.6919)",UCretaceous_ContactPts_59,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6699.0,UCretaceous
+56,56,"(448609.38850000035, 3716557.4353)",UCretaceous_ContactPts_60,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6626.0,UCretaceous
+57,57,"(449560.9034000002, 3717853.9606)",UCretaceous_ContactPts_61,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6537.0,UCretaceous
+58,58,"(443730.45999999996, 3719529.0952000003)",UCretaceous_ContactPts_62,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6895.0,UCretaceous
+59,59,"(451022.51999999955, 3712685.691299999)",UCretaceous_ContactPts_63,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+60,60,"(449279.8953999998, 3715270.1667)",UCretaceous_ContactPts_64,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6552.0,UCretaceous
+61,61,"(451613.8559999997, 3716221.4518)",UCretaceous_ContactPts_65,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6455.0,UCretaceous
+62,62,"(450124.99459999986, 3710827.5912999995)",UCretaceous_ContactPts_66,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6409.0,UCretaceous
+63,63,"(448581.2149, 3711899.7852)",UCretaceous_ContactPts_67,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+64,64,"(450240.03259999957, 3707828.1840000004)",UCretaceous_ContactPts_68,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6438.0,UCretaceous
+65,65,"(448811.91899999976, 3707963.1821999997)",UCretaceous_ContactPts_69,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+66,66,"(449378.50320000015, 3702768.2300000004)",UCretaceous_ContactPts_70,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+67,67,"(449197.19099999964, 3704343.9757000003)",UCretaceous_ContactPts_71,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6468.0,UCretaceous
+68,68,"(447863.3552000001, 3703879.0255999994)",UCretaceous_ContactPts_72,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6511.0,UCretaceous
+69,69,"(444542.60259999987, 3698246.7261999995)",UCretaceous_ContactPts_73,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6834.0,UCretaceous
+70,70,"(447667.574, 3699972.2158000004)",UCretaceous_ContactPts_74,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6743.0,UCretaceous
+71,71,"(444089.78110000025, 3698199.3730999995)",UCretaceous_ContactPts_75,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6979.0,UCretaceous
+72,72,"(441723.37459999975, 3695921.3167000003)",UCretaceous_ContactPts_77,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+73,73,"(444066.6994000003, 3696715.947899999)",UCretaceous_ContactPts_78,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,7034.0,UCretaceous
+74,74,"(439422.43230000045, 3689976.6642000005)",UCretaceous_ContactPts_79,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6897.0,UCretaceous
+75,75,"(437655.70409999974, 3687649.9126999993)",UCretaceous_ContactPts_80,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6913.0,UCretaceous
+76,76,"(438710.8169999998, 3687884.8663999997)",UCretaceous_ContactPts_81,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,6715.0,UCretaceous
+77,77,"(426058.08779999986, 3682382.4043000005)",UCretaceous_ContactPts_82,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,7333.0,UCretaceous
+78,78,"(421959.0521999998, 3678281.6601)",UCretaceous_ContactPts_83,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+79,79,"(425187.08210000023, 3681651.7457)",UCretaceous_ContactPts_84,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+80,80,"(427291.51659999974, 3681820.2183999997)",UCretaceous_ContactPts_86,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,7436.0,UCretaceous
+81,81,"(428451.1489000004, 3678109.2426999994)",UCretaceous_ContactPts_87,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+82,82,"(431193.9466000004, 3677331.4365)",UCretaceous_ContactPts_88,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,7570.0,UCretaceous
+83,83,"(433682.09410000034, 3677804.480799999)",UCretaceous_ContactPts_89,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,UCretaceous
+84,84,"(439977.6621000003, 3717573.4529)",UCretaceous_ContactPts_90,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+85,85,"(438020.4068999998, 3715279.2715000007)",UCretaceous_ContactPts_92,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+86,86,"(434880.49909999967, 3715410.316400001)",UCretaceous_ContactPts_93,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+87,87,"(434664.7270999998, 3715616.5998)",UCretaceous_ContactPts_94,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+88,88,"(444040.19489999954, 3715494.8665999994)",UCretaceous_ContactPts_96,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+89,89,"(443898.21829999983, 3715615.5918000005)",UCretaceous_ContactPts_97,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+90,90,"(443817.9303000001, 3715772.9143000003)",UCretaceous_ContactPts_98,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+91,91,"(442507.9243000001, 3712587.707699999)",UCretaceous_ContactPts_99,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+92,92,"(421185.97559999954, 3709470.736300001)",UCretaceous_ContactPts_101,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+93,93,"(437114.22470000014, 3710457.2715000007)",UCretaceous_ContactPts_102,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+94,94,"(435342.35919999983, 3710301.5187)",UCretaceous_ContactPts_104,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+95,95,"(441396.6612, 3707365.4312999994)",UCretaceous_ContactPts_105,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+96,96,"(441876.44629999995, 3707224.4398)",UCretaceous_ContactPts_106,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+97,97,"(441512.3388, 3706853.4396)",UCretaceous_ContactPts_107,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+98,98,"(433741.60250000004, 3708144.2508000005)",UCretaceous_ContactPts_111,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+99,99,"(441681.1624999996, 3708217.4099000003)",UCretaceous_ContactPts_112,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+100,100,"(442135.3912000004, 3707421.1447)",UCretaceous_ContactPts_113,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+101,101,"(441784.10780000035, 3708484.0820000004)",UCretaceous_ContactPts_118,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+102,102,"(437297.9480999997, 3701164.942399999)",UCretaceous_ContactPts_119,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+103,103,"(438947.70830000006, 3701691.8669000007)",UCretaceous_ContactPts_120,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+104,104,"(439859.79810000025, 3703490.5551999994)",UCretaceous_ContactPts_121,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+105,105,"(440076.2001, 3703315.1290000007)",UCretaceous_ContactPts_122,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+106,106,"(440425.6629999997, 3703785.0735)",UCretaceous_ContactPts_123,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+107,107,"(440599.7790999999, 3703928.4662999995)",UCretaceous_ContactPts_124,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+108,108,"(440614.1524, 3702486.9875000007)",UCretaceous_ContactPts_126,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+109,109,"(439942.41559999995, 3703870.1142999995)",UCretaceous_ContactPts_128,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+110,110,"(441542.32830000017, 3704602.8879000004)",UCretaceous_ContactPts_130,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+111,111,"(435834.65610000025, 3701641.4266999997)",UCretaceous_ContactPts_132,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+112,112,"(437161.7006999999, 3701215.4988)",UCretaceous_ContactPts_133,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+113,113,"(437245.0873999996, 3699289.9217000008)",UCretaceous_ContactPts_134,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+114,114,"(437845.32629999984, 3700963.318)",UCretaceous_ContactPts_136,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+115,115,"(437718.5329999998, 3694704.948999999)",UCretaceous_ContactPts_137,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+116,116,"(436948.5996000003, 3695448.6169000007)",UCretaceous_ContactPts_138,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+117,117,"(437647.58380000014, 3689948.435799999)",UCretaceous_ContactPts_140,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+118,118,"(438362.19969999976, 3690623.9634000007)",UCretaceous_ContactPts_141,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+119,119,"(438707.9940999998, 3691738.6601)",UCretaceous_ContactPts_143,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+120,120,"(430294.3492999999, 3690147.978)",UCretaceous_ContactPts_148,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+121,121,"(433077.7182, 3690053.3533999994)",UCretaceous_ContactPts_149,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+122,122,"(434765.7383000003, 3693049.727499999)",UCretaceous_ContactPts_150,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+123,123,"(422885.48450000025, 3687468.1433000006)",UCretaceous_ContactPts_152,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+124,124,"(426312.7416000003, 3687350.9397)",UCretaceous_ContactPts_153,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+125,125,"(427614.6007000003, 3687572.9662999995)",UCretaceous_ContactPts_154,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+126,126,"(427394.28639999963, 3685597.846999999)",UCretaceous_ContactPts_155,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+127,127,"(442018.31120000035, 3719524.0764000006)",CapitanCSD-50,442018.31120000035,3719524.0764000006,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5745.0,UCretaceous
+128,128,"(443045.1782999998, 3719076.9255)",CapitanCSD-1170,443045.1782999998,3719076.9255,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6739.0,UCretaceous
+129,129,"(435376.0911999997, 3719554.0998)",NogalCSD-5000,435376.0911999997,3719554.0998,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4839.0,UCretaceous
+130,130,"(441667.4199999999, 3719544.503799999)",NogalCSD-11291,441667.4199999999,3719544.503799999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5554.0,UCretaceous
+131,131,"(438376.08770000003, 3719549.524)",NogalCSD-8000,438376.08770000003,3719549.524,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5748.0,UCretaceous
+132,132,"(436810.6213999996, 3719551.911800001)",NogalCSD-6435,436810.6213999996,3719551.911800001,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5725.0,UCretaceous
+133,133,"(433968.2059000004, 3719556.247199999)",NogalCSD-3592,433968.2059000004,3719556.247199999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4327.0,UCretaceous
+134,134,"(432649.9693999998, 3719558.2578999996)",NogalCSD-2274,432649.9693999998,3719558.2578999996,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4016.0,UCretaceous
+135,135,"(439876.0859000003, 3719547.2360999994)",NogalCSD-9500,439876.0859000003,3719547.2360999994,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5069.0,UCretaceous
+136,136,"(442414.76719999965, 3716539.3609999996)",CapitanCSC-500,442414.76719999965,3716539.3609999996,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4469.0,UCretaceous
+137,137,"(445422.82660000026, 3715244.2919999994)",CapitanCSC-3775,445422.82660000026,3715244.2919999994,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5541.0,UCretaceous
+138,138,"(443884.3535000002, 3715906.6555000003)",CapitanCSC-2100,443884.3535000002,3715906.6555000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5056.0,UCretaceous
+139,139,"(446098.2742999997, 3717747.450099999)",CapitanCSD-4500,446098.2742999997,3717747.450099999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5840.0,UCretaceous
+140,140,"(449368.70419999957, 3716323.3363000005)",CapitanCSD-8067,449368.70419999957,3716323.3363000005,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6496.0,UCretaceous
+141,141,"(450747.07380000036, 3715723.1230999995)",CapitanCSD-9570,450747.07380000036,3715723.1230999995,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+142,142,"(437855.6936999997, 3716741.0603)",NogalCSC-7500,437855.6936999997,3716741.0603,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4980.0,UCretaceous
+143,143,"(434978.9927000003, 3716743.8521)",NogalCSC-4623,434978.9927000003,3716743.8521,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4656.0,UCretaceous
+144,144,"(430405.69710000046, 3716748.2905)",NogalCSC-50,430405.69710000046,3716748.2905,meters,NAD83,Rawling2014_OFR538,,UCretaceous,,UCretaceous
+145,145,"(440605.69240000006, 3716738.3915)",NogalCSC-10250,440605.69240000006,3716738.3915,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4544.0,UCretaceous
+146,146,"(441905.69180000015, 3716737.129899999)",NogalCSC-11580,441905.69180000015,3716737.129899999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4649.0,UCretaceous
+147,147,"(432355.6963999998, 3716746.398)",NogalCSC-2000,432355.6963999998,3716746.398,meters,NAD83,Rawling2014_OFR538,,UCretaceous,,UCretaceous
+148,148,"(439105.69319999963, 3716739.8472000007)",NogalCSC-8750,439105.69319999963,3716739.8472000007,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4738.0,UCretaceous
+149,149,"(436355.6945000002, 3716742.5161000006)",NogalCSC-6000,436355.6945000002,3716742.5161000006,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4665.0,UCretaceous
+150,150,"(439855.6928000003, 3716739.1194)",NogalCSC-9500,439855.6928000003,3716739.1194,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4685.0,UCretaceous
+151,151,"(442904.5365000004, 3712794.151900001)",CapitanCSB-1045,442904.5365000004,3712794.151900001,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4370.0,UCretaceous
+152,152,"(445933.7396, 3711484.9811000004)",CapitanCSB-4357,445933.7396,3711484.9811000004,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5423.0,UCretaceous
+153,153,"(446655.4146999996, 3711173.0853000004)",CapitanCSB-5143,446655.4146999996,3711173.0853000004,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5558.0,UCretaceous
+154,154,"(444235.5499999998, 3712218.9102)",CapitanCSB-2511,444235.5499999998,3712218.9102,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5436.0,UCretaceous
+155,155,"(448925.9955000002, 3713736.061899999)",CapitanCSC-7589,448925.9955000002,3713736.061899999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6601.0,UCretaceous
+156,156,"(450647.09949999955, 3712995.0698000006)",CapitanCSC-9463,450647.09949999955,3712995.0698000006,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6417.0,UCretaceous
+157,157,"(447759.44290000014, 3714238.3014)",CapitanCSC-6319,447759.44290000014,3714238.3014,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6102.0,UCretaceous
+158,158,"(449835.86870000046, 3713344.3313999996)",CapitanCSC-8580,449835.86870000046,3713344.3313999996,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6483.0,UCretaceous
+159,159,"(441870.6891000001, 3713213.4132000003)",NogalCSB-11541,441870.6891000001,3713213.4132000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4039.0,UCretaceous
+160,160,"(436829.9654000001, 3713207.1712999996)",NogalCSB-6500,436829.9654000001,3713207.1712999996,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4610.0,UCretaceous
+161,161,"(434329.96729999967, 3713204.0755000003)",NogalCSB-4000,434329.96729999967,3713204.0755000003,meters,NAD83,Rawling2014_OFR538,,UCretaceous,,UCretaceous
+162,162,"(430379.97030000016, 3713199.1842)",NogalCSB-50,430379.97030000016,3713199.1842,meters,NAD83,Rawling2014_OFR538,,UCretaceous,,UCretaceous
+163,163,"(437930.49959999975, 3713208.534)",NogalCSB-7601,437930.49959999975,3713208.534,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4045.0,UCretaceous
+164,164,"(441155.5086000003, 3713212.5275999997)",NogalCSB-10826,441155.5086000003,3713212.5275999997,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,3999.0,UCretaceous
+165,165,"(446208.2774, 3707192.9964000005)",CapitanCSA-4670,446208.2774,3707192.9964000005,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5705.0,UCretaceous
+166,166,"(444990.57540000044, 3707709.357999999)",CapitanCSA-3347,444990.57540000044,3707709.357999999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5715.0,UCretaceous
+167,167,"(443213.72699999996, 3708462.8233000003)",CapitanCSA-1417,443213.72699999996,3708462.8233000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4557.0,UCretaceous
+168,168,"(442679.75179999974, 3708689.2533)",CapitanCSA-837,442679.75179999974,3708689.2533,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4364.0,UCretaceous
+169,169,"(448170.59250000026, 3710518.2509000003)",CapitanCSB-6794,448170.59250000026,3710518.2509000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6214.0,UCretaceous
+170,170,"(448386.9040999999, 3710424.7645999994)",CapitanCSB-7029,448386.9040999999,3710424.7645999994,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6217.0,UCretaceous
+171,171,"(433899.55480000004, 3709003.6987999994)",NogalCSA-3600,433899.55480000004,3709003.6987999994,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4836.0,UCretaceous
+172,172,"(438963.3200000003, 3709011.5439)",NogalCSA-8664,438963.3200000003,3709011.5439,meters,NAD83,Rawling2014_OFR538,,UCretaceous,,UCretaceous
+173,173,"(432299.5566999996, 3709001.2200000007)",NogalCSA-2000,432299.5566999996,3709001.2200000007,meters,NAD83,Rawling2014_OFR538,,UCretaceous,,UCretaceous
+174,174,"(441828.32459999993, 3709015.9825)",NogalCSA-11529,441828.32459999993,3709015.9825,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,4029.0,UCretaceous
+175,175,"(439538.72530000005, 3709012.4353)",NogalCSA-9239,439538.72530000005,3709012.4353,meters,NAD83,Rawling2014_OFR538,,UCretaceous,,UCretaceous
+176,176,"(430349.55879999977, 3708998.198999999)",NogalCSA-50,430349.55879999977,3708998.198999999,meters,NAD83,Rawling2014_OFR538,,UCretaceous,,UCretaceous
+177,177,"(435799.5525000002, 3709006.6424000002)",NogalCSA-5500,435799.5525000002,3709006.6424000002,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5423.0,UCretaceous
+178,178,"(440717.0218000002, 3709014.2608000003)",NogalCSA-10417,440717.0218000002,3709014.2608000003,meters,NAD83,Rawling2014_OFR538,,UCretaceous,,UCretaceous
+179,179,"(446913.6079000002, 3706893.9038999993)",CapitanCSA-5436,446913.6079000002,3706893.9038999993,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,5696.0,UCretaceous
+180,180,"(456256.82919999957, 3714916.4557000007)",CapitanPassCSA-3500,456256.82919999957,3714916.4557000007,meters,NAD83,Skotnicki2010_OFGM208,Sampled from interpretive cross-section,LDockum,,LDockum
+181,181,"(447491.52440000046, 3699803.1067999993)",FortStantonCSD-6734,447491.52440000046,3699803.1067999993,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,LDockum,7075.0,LDockum
+182,182,"(454481.16420000046, 3713224.8927999996)",LDockum_ContactPts_45,,,,,NMBGMR_500k,500k_surface_map,LDockum,6521.0,LDockum
+183,183,"(454706.6914999997, 3713611.1043999996)",LDockum_ContactPts_46,,,,,NMBGMR_500k,500k_surface_map,LDockum,6519.0,LDockum
+184,184,"(455506.4023000002, 3714554.2660000008)",LDockum_ContactPts_47,,,,,NMBGMR_500k,500k_surface_map,LDockum,,LDockum
+185,185,"(444931.7834000001, 3698295.8582000006)",LDockum_ContactPts_49,,,,,NMBGMR_500k,500k_surface_map,LDockum,7095.0,LDockum
+186,186,"(445491.9559000004, 3698371.2535999995)",LDockum_ContactPts_50,,,,,NMBGMR_500k,500k_surface_map,LDockum,7085.0,LDockum
+187,187,"(448939.8925000001, 3700537.4218000006)",LDockum_ContactPts_52,,,,,NMBGMR_500k,500k_surface_map,LDockum,7088.0,LDockum
+188,188,"(444932.7123999996, 3697027.027899999)",LDockum_ContactPts_54,,,,,NMBGMR_500k,500k_surface_map,LDockum,7183.0,LDockum
+189,189,"(437677.85979999974, 3688298.7689999994)",LDockum_ContactPts_58,,,,,NMBGMR_500k,500k_surface_map,LDockum,,LDockum
+190,190,"(426399.98319999967, 3682091.3189000003)",LDockum_ContactPts_62,,,,,NMBGMR_500k,500k_surface_map,LDockum,7661.0,LDockum
+191,191,"(438090.39470000006, 3684763.3793)",LDockum_ContactPts_64,,,,,NMBGMR_500k,500k_surface_map,LDockum,7112.0,LDockum
+192,192,"(436198.15440000035, 3683997.780200001)",LDockum_ContactPts_65,,,,,NMBGMR_500k,500k_surface_map,LDockum,7242.0,LDockum
+193,193,"(441561.45610000007, 3695698.8101000004)",GR_RAB_NorthEW-6500,,,,,,Sampled from cross-section,Santa Rosa,6752.0,LDockum
+194,194,"(440700.9923999999, 3696208.321799999)",GR_RAB_NorthEW-5500,,,,,,Sampled from cross-section,Santa Rosa,5829.0,LDockum
+195,195,"(439840.5286999997, 3696717.8335999995)",GR_RAB_NorthEW-4500,,,,,,Sampled from cross-section,Santa Rosa,5562.0,LDockum
+196,196,"(451572.4912999999, 3713899.5102999993)",30-027-00007,451572.4912999999,3713899.5102999993,meters,NAD83,NMBGMR_SubsurfaceLibrary,No known issues,Dockum,6128.0,LDockum
+197,197,"(450554.01549999975, 3711318.2898999993)",30-027-00080,450554.01549999975,3711318.2898999993,meters,NAD83 UTM,NMOCD_online,No known issues,Dockum,6079.0,LDockum
+198,198,"(472965.9649, 3715493.4713000003)",CapitanPeakCSB-8768,472604.9665999999,3711899.2707,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,,SierraBlanca
+199,199,"(473024.0647999998, 3716071.9299999997)",CapitanPeakCSB-9350,472546.8512000004,3711320.6576000005,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,,SierraBlanca
+200,200,"(472754.8523000004, 3713391.5753000006)",CapitanPeakCSB-6656,472816.0619999999,3714000.9957,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,,SierraBlanca
+201,201,"(473420.0558000002, 3720014.5275999997)",CapitanPeakCSB-13312,472150.9101999998,3707378.5588000007,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,,SierraBlanca
+202,202,"(473098.63879999984, 3716814.4093999993)",CapitanPeakCSB-10096,472472.2988,3710578.3932000007,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,,SierraBlanca
+203,203,"(438759.67480000015, 3703496.9431)",AngusCSA-8500,438759.67480000015,3703496.9431,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,SierraBlanca,3822.0,SierraBlanca
+204,204,"(441491.1721999999, 3703500.7029)",AngusCSA-11231,441491.1721999999,3703500.7029,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,SierraBlanca,,SierraBlanca
+205,205,"(450638.03259999957, 3725294.4696999993)",SierraBlanca_ContactPts_24,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+206,206,"(453812.73369999975, 3725799.0560999997)",SierraBlanca_ContactPts_25,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+207,207,"(439977.6621000003, 3717573.4529)",SierraBlanca_ContactPts_28,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,4727.0,SierraBlanca
+208,208,"(483188.5491000004, 3716693.004899999)",SierraBlanca_ContactPts_30,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+209,209,"(449651.6666000001, 3719751.214400001)",SierraBlanca_ContactPts_32,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+210,210,"(442507.9243000001, 3712587.707699999)",SierraBlanca_ContactPts_37,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+211,211,"(481013.61170000024, 3713161.0581)",SierraBlanca_ContactPts_39,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+212,212,"(441396.6612, 3707365.4312999994)",SierraBlanca_ContactPts_45,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,3687.0,SierraBlanca
+213,213,"(441876.44629999995, 3707224.4398)",SierraBlanca_ContactPts_46,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,3659.0,SierraBlanca
+214,214,"(433741.60250000004, 3708144.2508000005)",SierraBlanca_ContactPts_51,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,4304.0,SierraBlanca
+215,215,"(442135.3912000004, 3707421.1447)",SierraBlanca_ContactPts_53,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,3701.0,SierraBlanca
+216,216,"(441784.10780000035, 3708484.0820000004)",SierraBlanca_ContactPts_58,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,3733.0,SierraBlanca
+217,217,"(438947.70830000006, 3701691.8669000007)",SierraBlanca_ContactPts_60,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,3819.0,SierraBlanca
+218,218,"(439859.79810000025, 3703490.5551999994)",SierraBlanca_ContactPts_61,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,4021.0,SierraBlanca
+219,219,"(440076.2001, 3703315.1290000007)",SierraBlanca_ContactPts_62,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,3980.0,SierraBlanca
+220,220,"(440599.7790999999, 3703928.4662999995)",SierraBlanca_ContactPts_64,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,3995.0,SierraBlanca
+221,221,"(440614.1524, 3702486.9875000007)",SierraBlanca_ContactPts_66,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+222,222,"(437161.7006999999, 3701215.4988)",SierraBlanca_ContactPts_73,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,3574.0,SierraBlanca
+223,223,"(437245.0873999996, 3699289.9217000008)",SierraBlanca_ContactPts_74,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,4075.0,SierraBlanca
+224,224,"(437845.32629999984, 3700963.318)",SierraBlanca_ContactPts_76,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,3571.0,SierraBlanca
+225,225,"(436948.5996000003, 3695448.6169000007)",SierraBlanca_ContactPts_78,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+226,226,"(437647.58380000014, 3689948.435799999)",SierraBlanca_ContactPts_80,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+227,227,"(438362.19969999976, 3690623.9634000007)",SierraBlanca_ContactPts_81,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+228,228,"(438707.9940999998, 3691738.6601)",SierraBlanca_ContactPts_83,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+229,229,"(430294.3492999999, 3690147.978)",SierraBlanca_ContactPts_88,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,5316.0,SierraBlanca
+230,230,"(433077.7182, 3690053.3533999994)",SierraBlanca_ContactPts_89,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,5057.0,SierraBlanca
+231,231,"(434765.7383000003, 3693049.727499999)",SierraBlanca_ContactPts_90,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,SierraBlanca
+232,232,"(422885.48450000025, 3687468.1433000006)",SierraBlanca_ContactPts_92,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,5266.0,SierraBlanca
+233,233,"(426312.7416000003, 3687350.9397)",SierraBlanca_ContactPts_93,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6120.0,SierraBlanca
+234,234,"(427614.6007000003, 3687572.9662999995)",SierraBlanca_ContactPts_94,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6247.0,SierraBlanca
+235,235,"(427394.28639999963, 3685597.846999999)",SierraBlanca_ContactPts_95,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6189.0,SierraBlanca
+236,236,"(434329.96729999967, 3713204.0755000003)",NogalCSB-4000,434329.96729999967,3713204.0755000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,3537.0,SierraBlanca
+237,237,"(438963.3200000003, 3709011.5439)",NogalCSA-8664,438963.3200000003,3709011.5439,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,3653.0,SierraBlanca
+238,238,"(432299.5566999996, 3709001.2200000007)",NogalCSA-2000,432299.5566999996,3709001.2200000007,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,3503.0,SierraBlanca
+239,239,"(439538.72530000005, 3709012.4353)",NogalCSA-9239,439538.72530000005,3709012.4353,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,3690.0,SierraBlanca
+240,240,"(440717.0218000002, 3709014.2608000003)",NogalCSA-10417,440717.0218000002,3709014.2608000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,3752.0,SierraBlanca
+241,241,"(432764.0307, 3717151.217)",SierraBlanca_ContactPts_111,,,,,Rawling2014_OFR538,24k_surface_map,SierraBlanca,3673.0,SierraBlanca
+242,242,"(431993.55229999963, 3676969.2325999998)",LDockum_ContactPts_69,,,,,NMBGMR_500k,500k_surface_map,LDockum,7959.0,LDockum
+243,243,"(419797.31240000017, 3703989.017999999)",NogalPeakCSA-1150,419797.31240000017,3703989.017999999,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+244,244,"(418647.8622000003, 3704036.7775999997)",NogalPeakCSA-None,418647.8622000003,3704036.7775999997,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+245,245,"(419872.9484000001, 3695630.3332)",NogalPeakCSB-1308,419872.9484000001,3695630.3332,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+246,246,"(418617.35830000043, 3695464.8308000006)",NogalPeakCSB-42,418617.35830000043,3695464.8308000006,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,UCretaceous,,UCretaceous
+247,247,"(418164.37090000045, 3707803.9911)",UCretaceous_ContactPts_109,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+248,248,"(418280.41700000037, 3706091.9836)",UCretaceous_ContactPts_110,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+249,249,"(415653.93319999985, 3708103.7127)",UCretaceous_ContactPts_115,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+250,250,"(418404.3361999998, 3708058.344900001)",UCretaceous_ContactPts_116,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+251,251,"(416740.8789999997, 3692730.329500001)",UCretaceous_ContactPts_144,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+252,252,"(418397.34389999975, 3692263.931399999)",UCretaceous_ContactPts_145,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+253,253,"(419759.6309000002, 3689708.5198)",UCretaceous_ContactPts_147,,,,,NMBGMR_500k,,UCretaceous,,UCretaceous
+254,254,"(419872.9484000001, 3695630.3332)",NogalPeakCSB-1308,419872.9484000001,3695630.3332,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,LDockum,3353.0,LDockum
+255,255,"(418617.35830000043, 3695464.8308000006)",NogalPeakCSB-42,418617.35830000043,3695464.8308000006,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,LDockum,3244.0,LDockum

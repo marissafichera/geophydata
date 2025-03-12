@@ -1,0 +1,273 @@
+OID@,OBJECTID,SHAPE,UniqueID,DataSourceID,DataQualityBottom,UnitsPresent,SimpleUnit,MUEBase
+1,1,"(648883.4157999996, 3724720.7114000004)",30-041-00268,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1739
+2,2,"(663074.6394999996, 3696855.1242999993)",30-025-03655,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1115
+3,3,"(635037.1607999997, 3731717.669399999)",30-041-00145,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,2322
+4,4,"(580728.7553000003, 3699639.308599999)",30-005-00350,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,3509
+5,5,"(662155.8295, 3703260.5645000003)",30-025-03639,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1230
+6,6,"(650886.8112000003, 3731208.3002000004)",30-041-20845,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1978
+7,7,"(647774.3887, 3721083.4323999994)",30-041-00141,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1697
+8,8,"(670207.6369000003, 3721876.7150999997)",30-041-00219,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1336
+9,9,"(639457.5712000001, 3735447.7184999995)",30-041-10572,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,2314
+10,10,"(574830.9742999999, 3683369.8313999996)",30-005-00334,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,3568
+11,11,"(590266.8130999999, 3723859.4001)",30-005-00407,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,3260
+12,12,"(678072.8627000004, 3688129.7853999995)",30-025-07129,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,892
+13,13,"(621938.4687999999, 3683571.176000001)",30-025-00115,SalineSE,No known issues,"Yates,Tansill",LOchoan,2187
+14,14,"(572626.2728000004, 3720110.246200001)",30-005-00236,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen",LOchoan,3687
+15,15,"(626656.0417999998, 3719859.8729999997)",30-005-01212,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,2193
+16,16,"(610220.6913000001, 3687274.3904999997)",30-005-00539,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,2378
+17,17,"(636353.7289000005, 3717547.4222)",30-005-29036,OCD_online_2018,No known issues,"Tansill,Yates",LOchoan,1955
+18,18,"(626793.8344, 3703393.9241000004)",30-025-37568,OCD_online_2018,No known issues,Tansill,LOchoan,2094
+19,19,"(606878.4351000004, 3722805.625)",30-005-29028,OCD_online_2018,No known issues,"Tansill,Yates,Seven Rivers,Grayburg",LOchoan,2667
+20,20,"(570653.1551999999, 3695210.1164999995)",Artesia_ContactPts_207,NMBGMR_500k,,Artesia,LOchoan,3699
+21,21,"(568061.3510999996, 3716974.0534000006)",Artesia_ContactPts_276,NMBGMR_500k,,Artesia,LOchoan,3872
+22,22,"(566133.0686999997, 3717745.5001)",Artesia_ContactPts_277,NMBGMR_500k,,Artesia,LOchoan,3811
+23,23,"(565886.2122, 3720671.0238000005)",Artesia_ContactPts_279,NMBGMR_500k,,Artesia,LOchoan,3868
+24,24,"(574261.3448000001, 3699588.4893999994)",30-005-62751,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3725
+25,25,"(556480.3320000004, 3720569.1405999996)",30-005-63218,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4339
+26,26,"(567811.8572000004, 3707573.8247999996)",30-005-63234,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3961
+27,27,"(565300.9759, 3714295.3696999997)",30-005-63244,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3997
+28,28,"(579763.1807000004, 3711604.9309)",30-005-62245,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3570
+29,29,"(534075.2424999997, 3689943.7720999997)",30-005-61071,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4644
+30,30,"(566588.6969999997, 3704725.8084999993)",30-005-63307,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3936
+31,31,"(658733.0177999996, 3735345.0922)",30-041-20366,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1910
+32,32,"(580230.1063999999, 3705266.6076999996)",30-005-00345,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3517
+33,33,"(586440.7001999998, 3685070.658500001)",30-005-00421,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3209
+34,34,"(613487.5716000004, 3682495.1692999993)",30-005-20916,SalineSE,No known issues,"San Andres,Glorieta",Artesia,2233
+35,35,"(645196.1654000003, 3685510.0397999994)",30-025-34991-0001,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1340
+36,36,"(642381.0323000001, 3687075.3307000007)",30-025-01829,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1465
+37,37,"(641344.7548000002, 3694791.0884000007)",30-025-20545,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1489
+38,38,"(571962.9221999999, 3688621.2183999997)",30-005-00320,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3690
+39,39,"(560230.9545999998, 3686000.0600000005)",30-005-60226,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4038
+40,40,"(677528.8653999995, 3695709.3684)",30-025-07098,SalineSE,No known issues,"San Andres,Glorieta",Artesia,947
+41,41,"(678943.4302000003, 3684856.8211000003)",30-025-07176,SalineSE,No known issues,"San Andres,Glorieta",Artesia,874
+42,42,"(616679.0761000002, 3686735.6449999996)",30-025-21243,SalineSE,No known issues,"San Andres,Glorieta",Artesia,2282
+43,43,"(667142.1312999995, 3706278.2621999998)",30-025-26463,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1164
+44,44,"(626328.8055999996, 3687247.909499999)",30-025-01006,SalineSE,No known issues,San Andres,Artesia,1979
+45,45,"(653151.7111, 3689247.755000001)",30-025-02674,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1172
+46,46,"(658799.5574000003, 3689361.8288000003)",30-025-03660,SalineSE,No known issues,San Andres,Artesia,1063
+47,47,"(619015.8402000004, 3693198.9580000006)",30-025-00051,SalineSE,No known issues,"San Andres,Glorieta",Artesia,2255
+48,48,"(563392.5283000004, 3702731.8254000004)",30-005-60689-0001,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4018
+49,49,"(564136.3689000001, 3714804.193)",30-005-63252,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3924
+50,50,"(610577.9321999997, 3690398.7926000003)",30-005-00537,SalineSE,No known issues,"Glorieta,San Andres",Artesia,2371
+51,51,"(602650.7340000002, 3684385.9486999996)",30-005-21052,SalineSE,No known issues,"San Andres,Glorieta",Artesia,2565
+52,52,"(572988.4857000001, 3725292.0999999996)",30-005-60310,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3901
+53,53,"(598761.5318, 3724700.5976)",30-005-00403,SalineSE,No known issues,"San Andres,Glorieta",Artesia,2987
+54,54,"(610983.1640999997, 3727355.033500001)",30-005-21071,SalineSE,No known issues,"San Andres,Glorieta",Artesia,2664
+55,55,"(646422.8528000005, 3729123.6346000005)",30-041-20659,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1930
+56,56,"(660399.0543, 3731761.3806)",30-041-20752,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1827
+57,57,"(579700.3561000004, 3692100.0623000003)",30-005-63141,OFR497,No known issues,"San Andres,Glorieta",Artesia,3499
+58,58,"(567608.5049999999, 3690871.589299999)",30-005-63642,OFR497,No known issues,"San Andres,Glorieta",Artesia,3844
+59,59,"(675648.6836000001, 3686013.6334000006)",30-025-27493,OFR497,No known issues,San Andres,Artesia,846
+60,60,"(590503.9907999998, 3700250.0764000006)",30-005-63612,OCD_online_2018,No known issues,San Andres,Artesia,3015
+61,61,"(639809.9123999998, 3715412.1867999993)",30-025-40542,OCD_online_2018,No known issues,San Andres,Artesia,1656
+62,62,"(639457.1942999996, 3716110.2249999996)",30-041-20955,OCD_online_2018,No known issues,San Andres,Artesia,1678
+63,63,"(639817.5933999997, 3715713.9703)",30-041-20956,OCD_online_2018,No known issues,San Andres,Artesia,1649
+64,64,"(578828.3706999999, 3718512.3004)",30-005-62943,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,3596
+65,65,"(578229.3375000004, 3722438.2135000005)",30-005-63628,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,3653
+66,66,"(599214.8525999999, 3707131.1248000003)",30-005-64118,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,2733
+67,67,"(599318.0447000004, 3706814.9355999995)",30-005-64127,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,2724
+68,68,"(598826.1799999997, 3705427.075200001)",30-005-64142,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,2737
+69,69,"(591599.1228, 3701668.9485)",30-005-63660,OCD_online_2018,No known issues,San Andres,Artesia,3038
+70,70,"(637701.7562999995, 3706285.2781000007)",30-025-37466,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1680
+71,71,"(636382.5285999998, 3705283.825099999)",30-025-37524,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1674
+72,72,"(626365.2006000001, 3698535.108100001)",30-025-38171,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1975
+73,73,"(662924.9819, 3700328.4967)",30-025-38792,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1140
+74,74,"(662941.7922, 3699289.1625999995)",30-025-38463,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1097
+75,75,"(592833.7019999996, 3717560.0704999994)",30-005-64128,OCD_online_2018,No known issues,San Andres,Artesia,3007
+76,76,"(641244.6993000004, 3704975.4605)",30-025-38292,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1529
+77,77,"(632905.0588999996, 3696049.7397000007)",30-025-37571,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1747
+78,78,"(656772.0087000001, 3712095.9540999997)",30-025-38276,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1406
+79,79,"(628755.1568, 3710579.6702999994)",30-025-39945,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,2065
+80,80,"(635284.2895999998, 3699537.0075000003)",30-025-39508,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1664
+81,81,"(579055.6178000001, 3717306.1193000004)",30-005-63767,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,3593
+82,82,"(646412.8328, 3706202.759299999)",30-025-20473,OCD_online_2018,No known issues,San Andres,Artesia,1474
+83,83,"(631214.5609999998, 3701065.2646999992)",30-025-37438,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1841
+84,84,"(640433.4896, 3706046.6976999994)",30-025-37303,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1589
+85,85,"(646003.6183000002, 3701458.926999999)",30-025-37545,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1430
+86,86,"(653833.8383999998, 3701788.5974000003)",30-025-37626,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1251
+87,87,"(627870.8053000001, 3705393.9365999997)",30-025-38077,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,2125
+88,88,"(644803.1135, 3701236.509400001)",30-025-38253,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1473
+89,89,"(636885.2286, 3704768.7903000005)",30-025-37628,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1663
+90,90,"(645797.6558999997, 3701757.0474999994)",30-025-37979,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1444
+91,91,"(651149.4615000002, 3695659.5555000007)",30-025-37259,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1236
+92,92,"(641935.9884000001, 3703825.0956999995)",30-025-38573,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1535
+93,93,"(640222.9029000001, 3700039.3373000007)",30-025-38169,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1538
+94,94,"(642156.6809999999, 3696773.509400001)",30-025-38863,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1473
+95,95,"(646417.9338999996, 3700661.3215999994)",30-025-38185,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1417
+96,96,"(646210.4101, 3701060.1169000007)",30-025-37911,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1421
+97,97,"(644779.5323000001, 3703046.5384)",30-025-38393,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1486
+98,98,"(626794.8926999997, 3696282.5205000006)",30-025-37982,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1940
+99,99,"(644907.6451000003, 3700936.4147999994)",30-025-38017,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1457
+100,100,"(649602.7200999996, 3708163.8111000005)",30-025-37103,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1462
+101,101,"(645070.3262999998, 3697610.878799999)",30-025-36985,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1413
+102,102,"(621429.1220000004, 3714950.6790999994)",30-025-37075,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,2255
+103,103,"(648866.2078999998, 3708252.6734999996)",30-025-37104,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1474
+104,104,"(645750.0125000002, 3698141.0590000004)",30-025-36886,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1400
+105,105,"(649188.1113999998, 3703067.0962000005)",30-025-36915,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1382
+106,106,"(641595.3497000001, 3706185.1827000007)",30-025-37206,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1565
+107,107,"(645338.568, 3698934.499)",30-025-37543,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1402
+108,108,"(624701.5772000002, 3704564.3154000007)",30-025-39212,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,2235
+109,109,"(646501.8738000002, 3701768.977)",30-025-38396,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1426
+110,110,"(644544.8964999998, 3703274.4464999996)",30-025-38288,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1497
+111,111,"(645583.3103, 3702658.383199999)",30-025-38392,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,1465
+112,112,"(578141.4408, 3719416.1045999993)",30-005-63747,OCD_online_2018,No known issues,San Andres,Artesia,3641
+113,113,"(578338.4581000004, 3720426.9466999993)",30-005-63749,OCD_online_2018,No known issues,San Andres,Artesia,3650
+114,114,"(578342.4486999996, 3719417.3213)",30-005-63805,OCD_online_2018,No known issues,San Andres,Artesia,3643
+115,115,"(578371.7048000004, 3720603.123400001)",30-005-63640,OCD_online_2018,No known issues,San Andres,Artesia,3658
+116,116,"(614621.625, 3699311.4091999996)",30-005-29066,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,2312
+117,117,"(559756.0098000001, 3700258.121099999)",30-005-00035,Meyer1966,No known issues,"San Andres,Glorieta",Artesia,4211
+118,118,"(570774.2599999998, 3686981.5331999995)",30-005-00328,OFR497,No known issues,"San Andres,Glorieta",Artesia,3738
+119,119,"(555022.3361999998, 3695158.3819999993)",GR_RAB_NorthEW-120450,,Sampled from cross-section,San Andres,Artesia,4120
+120,120,"(532610.4167999998, 3695078.4145)",GR_RAB_NorthEW-98038,,Sampled from cross-section,San Andres,Artesia,4708
+121,121,"(553572.3876, 3695153.2084)",GR_RAB_NorthEW-119000,,Sampled from cross-section,San Andres,Artesia,4193
+122,122,"(540407.1068000002, 3695106.2336999997)",GR_RAB_NorthEW-105835,,Sampled from cross-section,San Andres,Artesia,4567
+123,123,"(539364.0867999997, 3695102.5121)",GR_RAB_NorthEW-104792,,Sampled from cross-section,San Andres,Artesia,4582
+124,124,"(528761.6041000001, 3695064.6816000007)",GR_RAB_NorthEW-94189,,Sampled from cross-section,San Andres,Artesia,4757
+125,125,"(538280.4193000002, 3695098.6455000006)",GR_RAB_NorthEW-103708,,Sampled from cross-section,San Andres,Artesia,4602
+126,126,"(585654.4742999999, 3686272.2369)",30-005-00365,WellCompletionRecord,No known issues,San Andres,Artesia,3235
+127,127,"(605373.9168999996, 3693630.5898)",30-005-00531,WellCompletionRecord,No known issues,"San Andres, Glorieta",Artesia,2486
+128,128,"(598358.3907000003, 3715892.5505)",30-005-60787,OCD_online_2018,No known issues,Salado,UOchoan,2918
+129,129,"(537939.8837000001, 3678215.3573000003)",30-005-61014,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4461
+130,130,"(583231.3268999998, 3679835.906300001)",30-005-00369,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3317
+131,131,"(584138.3853000002, 3677827.9947999995)",30-005-00377,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3283
+132,132,"(668583.5631999997, 3679814.8289)",30-025-05057,SalineSE,No known issues,"San Andres,Glorieta",Artesia,986
+133,133,"(666153.3777000001, 3680596.1296999995)",30-025-05062,SalineSE,No known issues,"San Andres,Glorieta",Artesia,942
+134,134,"(661268.9315, 3679307.3441000003)",30-025-25660,SalineSE,No known issues,"San Andres,Glorieta",Artesia,962
+135,135,"(552722.1535999998, 3681189.0424000006)",30-005-00096,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4130
+136,136,"(679705.2176999999, 3681546.4071999993)",30-025-30106,OFR497,No known issues,"San Andres,Glorieta",Artesia,842
+137,137,"(677769.9302000003, 3679941.3320000004)",30-025-34100,OFR497,No known issues,"San Andres,Glorieta",Artesia,841
+138,138,"(640495.2363999998, 3679739.6143999994)",30-025-34940,OFR497,No known issues,"San Andres,Glorieta",Artesia,1479
+139,139,"(630918.5471000001, 3674413.9590000007)",30-025-01070,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen",LOchoan,1791
+140,140,"(655087.5564000001, 3676274.5188999996)",30-025-03665,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1172
+141,141,"(606744.6035000002, 3675549.4525000006)",30-005-00729,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen",LOchoan,2371
+142,142,"(573828.9698999999, 3675495.0387999993)",Artesia_ContactPts_172,NMBGMR_500k,,Artesia,LOchoan,3575
+143,143,"(577334.4709999999, 3674545.0911999997)",30-005-62980,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3514
+144,144,"(549152.4537000004, 3674685.7530000005)",30-005-00098,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4181
+145,145,"(618065.6209000004, 3671825.7345000003)",30-025-20405-0001,SalineSE,No known issues,"San Andres,Glorieta",Artesia,2184
+146,146,"(619933.0082999999, 3674967.8246999998)",30-025-20737,SalineSE,No known issues,"San Andres,Glorieta",Artesia,2128
+147,147,"(592350.7892000005, 3633580.1458)",30-015-04187,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,2720
+148,148,"(606754.5743000004, 3632136.5153)",30-015-05347,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,2332
+149,149,"(646103.5083999997, 3632624.2763)",30-025-02856,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1061
+150,150,"(600300.0404000003, 3642106.4252000004)",30-015-03917,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,2464
+151,151,"(606209.6150000002, 3645520.3037)",30-015-04839,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,2219
+152,152,"(643286.5571999997, 3648777.410700001)",30-025-01883,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1146
+153,153,"(638094.8595000003, 3630130.7284999993)",30-025-02128,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen",LOchoan,1294
+154,154,"(661388.3299000002, 3651500.6494999994)",30-025-03701,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,816
+155,155,"(656851.6935, 3641638.7255000006)",30-025-03743,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,799
+156,156,"(660448.4571000002, 3638180.7260999996)",30-025-05412,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,871
+157,157,"(675855.2166999998, 3639122.0963000003)",30-025-07293,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,604
+158,158,"(588327.1880000001, 3667714.3882)",30-005-00430,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,3094
+159,159,"(591942.1821999997, 3660030.780200001)",30-005-00441,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen",LOchoan,2904
+160,160,"(588847.1836000001, 3632230.8652999997)",30-015-03063,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen",LOchoan,2826
+161,161,"(590345.6245999997, 3631141.2906)",30-015-03068,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen",LOchoan,2744
+162,162,"(617907.5219999999, 3642290.5194000006)",30-025-00402,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1818
+163,163,"(630327.2695000004, 3656655.532400001)",30-025-01218,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen",LOchoan,1642
+164,164,"(644175.4200999998, 3626978.082800001)",30-025-03043,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,914
+165,165,"(658954.5506999996, 3637317.0461)",30-025-03829,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,930
+166,166,"(669954.8108999999, 3670987.3051999994)",30-025-05083,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,776
+167,167,"(678549.7111999998, 3648000.6915000007)",30-025-20486,SalineSE,No known issues,"Yates,Tansill,Queen,Grayburg",LOchoan,640
+168,168,"(635802.5214, 3621907.4846)",30-025-02362,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,860
+169,169,"(672909.7412999999, 3618881.912799999)",30-025-07604,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1112
+170,170,"(660379.7471000003, 3619966.8111000005)",30-025-21832,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1138
+171,171,"(653011.5324999997, 3621967.8586999997)",30-025-03977,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,622
+172,172,"(629963.0592999998, 3642809.3290999997)",30-025-01256,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1509
+173,173,"(655624.8486000001, 3663507.635500001)",30-025-03671,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,982
+174,174,"(598557.7751000002, 3650494.3479999993)",30-005-00514-0002,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,2641
+175,175,"(627302.0999999996, 3631931.9428000003)",30-025-01515,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1449
+176,176,"(672109.3205000004, 3648862.434699999)",30-025-07268,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,606
+177,177,"(644420.6678999998, 3655624.1986)",30-025-02690,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1173
+178,178,"(652509.9183, 3655400.3895999994)",30-025-02693,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1032
+179,179,"(616553.0791999996, 3622141.5338000003)",30-025-00867,SalineSE,No known issues,"Tansill,Seven Rivers,Queen,Yates,Grayburg",LOchoan,1229
+180,180,"(673937.2460000003, 3627811.447899999)",30-025-07318,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,559
+181,181,"(636584.7900999999, 3671257.9987000003)",30-025-01869,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen",LOchoan,1497
+182,182,"(569497.0305000003, 3620350.9360000007)",Artesia_ContactPts_112,NMBGMR_500k,,Tansill and Yates,LOchoan,3452
+183,183,"(572659.1826999998, 3631232.5802999996)",Artesia_ContactPts_126,NMBGMR_500k,,Artesia,LOchoan,3525
+184,184,"(572965.9846000001, 3634533.8238999993)",Artesia_ContactPts_127,NMBGMR_500k,,Artesia,LOchoan,3469
+185,185,"(570632.5887000002, 3637188.0206000004)",Artesia_ContactPts_128,NMBGMR_500k,,Artesia,LOchoan,3487
+186,186,"(572612.5687999995, 3637947.5457000006)",Artesia_ContactPts_129,NMBGMR_500k,,Artesia,LOchoan,3518
+187,187,"(573427.0067999996, 3641267.5414000005)",Artesia_ContactPts_130,NMBGMR_500k,,Artesia,LOchoan,3557
+188,188,"(572553.9439000003, 3643653.887)",Artesia_ContactPts_131,NMBGMR_500k,,Artesia,LOchoan,3627
+189,189,"(549186.5213000001, 3630958.2380999997)",30-015-21559,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4170
+190,190,"(567137.1995000001, 3648230.2397000007)",30-005-00205,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3723
+191,191,"(575279.0185000002, 3629762.2643)",30-015-01611,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3437
+192,192,"(554997.9489000002, 3652141.4845000003)",30-005-00107,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4075
+193,193,"(580852.4930999996, 3650474.4473)",30-005-00378,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3278
+194,194,"(570777.4781999998, 3645226.8954000007)",30-015-00561,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3591
+195,195,"(667544.5003000004, 3625298.3696999997)",30-025-05449,SalineSE,No known issues,"San Andres,Glorieta",Artesia,882
+196,196,"(547596.8598999996, 3618870.107999999)",30-015-20076,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4394
+197,197,"(638651.9451000001, 3664268.5233999994)",30-025-34333,SalineSE,No known issues,San Andres,Artesia,1392
+198,198,"(669745.8717999998, 3660506.4657000005)",30-025-05157,SalineSE,No known issues,"San Andres,Glorieta",Artesia,881
+199,199,"(669889.6856000004, 3657383.341600001)",30-025-05258,SalineSE,No known issues,"San Andres,Glorieta",Artesia,949
+200,200,"(640291.0407999996, 3644737.614499999)",30-025-25673,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1210
+201,201,"(633068.2647000002, 3644825.7962999996)",30-025-25830,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1514
+202,202,"(625077.5911999997, 3639072.3432)",30-025-34368-0001,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1601
+203,203,"(564496.9413999999, 3669076.6456000004)",30-005-60355,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3931
+204,204,"(534140.0248999996, 3644176.5705999993)",30-015-22888,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4834
+205,205,"(617958.1497, 3649607.3135)",30-025-00351,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1928
+206,206,"(651049.1162999999, 3671086.187000001)",30-025-02685,SalineSE,No known issues,San Andres,Artesia,1142
+207,207,"(646827.6464999998, 3639895.4772999994)",30-025-02800,SalineSE,No known issues,"San Andres,Glorieta",Artesia,926
+208,208,"(679433.2501999997, 3660274.7876999993)",30-025-21797,SalineSE,No known issues,"San Andres,Glorieta",Artesia,778
+209,209,"(674988.1722999997, 3643931.6756999996)",30-025-22923,SalineSE,No known issues,San Andres,Artesia,684
+210,210,"(645151.2255999995, 3662931.0013999995)",30-025-23108,SalineSE,No known issues,San Andres,Artesia,1191
+211,211,"(661725.5533999996, 3657971.0963000003)",30-025-24286,SalineSE,No known issues,"San Andres,Glorieta",Artesia,832
+212,212,"(654598.0987999998, 3636910.8728)",30-025-24656,SalineSE,No known issues,"San Andres,Glorieta",Artesia,909
+213,213,"(532503.9883000003, 3633683.7642)",30-015-21238,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4965
+214,214,"(581946.2322000004, 3663697.2245000005)",30-005-00386,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3304
+215,215,"(610233.9167999998, 3649834.6593999993)",30-005-20985,SalineSE,No known issues,San Andres,Artesia,1992
+216,216,"(569842.1032999996, 3624536.1610000003)",30-015-24857,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3415
+217,217,"(679785.1312999995, 3638368.475400001)",30-025-23203,SalineSE,No known issues,"San Andres,Glorieta",Artesia,458
+218,218,"(641551.6940000001, 3654009.954)",30-025-32421,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1285
+219,219,"(560032.7427000003, 3623292.2623999994)",30-015-00289,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3972
+220,220,"(570069.4052999998, 3631725.0649999995)",30-015-00472,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3477
+221,221,"(579734.5630999999, 3619007.6719000004)",30-015-22698,OFR497,No known issues,San Andres,Artesia,2710
+222,222,"(580304.494, 3636198.8632999994)",30-015-31720,OFR497,No known issues,"San Andres,Glorieta",Artesia,3089
+223,223,"(569846.9321999997, 3626109.344799999)",30-015-32070,OFR497,No known issues,"San Andres,Glorieta",Artesia,3431
+224,224,"(560753.7161999997, 3642703.1371)",30-015-33583,OFR497,No known issues,"San Andres,Glorieta",Artesia,3860
+225,225,"(624531.9548000004, 3621394.7204)",30-025-21246,OFR497,No known issues,San Andres,Artesia,816
+226,226,"(618085.8084000004, 3670234.741800001)",30-025-24450,OFR497,No known issues,"San Andres,Glorieta",Artesia,2149
+227,227,"(632350.5939999996, 3637688.0406)",30-025-34806,OFR497,No known issues,"San Andres,Glorieta",Artesia,1363
+228,228,"(613462.7693999996, 3643441.354699999)",30-025-34905,OFR497,No known issues,"San Andres,Glorieta",Artesia,1926
+229,229,"(672071.7869999995, 3659736.0997)",OFR497-153,OFR497,No known issues,"San Andres,Glorieta",Artesia,855
+230,230,"(532633.1980999997, 3621173.9455999993)",30-015-00035,SalineSE,No known issues,"San Andres,Glorieta",Artesia,5010
+231,231,"(564545.5576999998, 3665532.5012999997)",30-005-00114,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4015
+232,232,"(599156.9512999998, 3638481.8399)",30-015-03931,NMBGMR_SubsurfaceLibrary,No known issues,"San Andres,Glorieta",Artesia,2517
+233,233,"(547823.3276000004, 3627715.5742000006)",GR_RAB_SouthEW-138029,,Sampled from cross-section,San Andres,Artesia,4270
+234,234,"(522622.1791000003, 3630340.4617999997)",GR_RAB_SouthEW-112692,,Sampled from cross-section,San Andres,Artesia,5329
+235,235,"(562547.7176999999, 3626181.9191999994)",GR_RAB_SouthEW-152834,,Sampled from cross-section,San Andres,Artesia,3739
+236,236,"(526082.3712999998, 3629980.057)",GR_RAB_SouthEW-116171,,Sampled from cross-section,San Andres,Artesia,5156
+237,237,"(544810.1290999996, 3628029.4212999996)",GR_RAB_SouthEW-135000,,Sampled from cross-section,San Andres,Artesia,4429
+238,238,"(545804.7483999999, 3627925.8243000004)",GR_RAB_SouthEW-136000,,Sampled from cross-section,San Andres,Artesia,4369
+239,239,"(610337.9825999998, 3638211.0622000005)",30-015-30947,WellCompletionRecord,No known issues,"San Andres,Glorieta",Artesia,2074
+240,240,"(596383.4170000004, 3620384.9626)",30-015-24651,SalineSE,No known issues,Salado,UOchoan,2097
+241,241,"(608553.8984000003, 3618049.196799999)",30-015-22925,OFR497,No known issues,Salado,UOchoan,1500
+242,242,"(575312.3490000004, 3634541.9354)",LOchoan_ContactPts_140,NMBGMR_500k,,Salado,UOchoan,3311
+243,243,"(574897.4123999998, 3638333.2079000007)",LOchoan_ContactPts_142,NMBGMR_500k,,Salado,UOchoan,3368
+244,244,"(576407.3896000003, 3644079.8452000003)",LOchoan_ContactPts_144,NMBGMR_500k,,Salado,UOchoan,3403
+245,245,"(573742.9709000001, 3650146.2947000004)",LOchoan_ContactPts_150,NMBGMR_500k,,Salado,UOchoan,3333
+246,246,"(660164.2588, 3613392.4582)",30-025-05640,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,1148
+247,247,"(545215.7292999998, 3614842.5331999995)",30-015-26562,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4564
+248,248,"(530660.0340999998, 3614721.260500001)",30-015-00028,SalineSE,No known issues,"San Andres,Glorieta",Artesia,5037
+249,249,"(553655.6260000002, 3616801.3652999997)",30-015-26270,OFR497,No known issues,"San Andres,Glorieta",Artesia,4010
+250,250,"(649655.3129000003, 3611719.8803000003)",30-025-03204,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,372
+251,251,"(664983.6097999997, 3609601.6226000004)",30-025-33471,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1138
+252,252,"(566168.9500000002, 3610322.7810999993)",30-015-33345,OFR497,No known issues,San Andres,Artesia,3416
+253,253,"(588144.5073999995, 3611013.148499999)",30-015-23108,OFR497,No known issues,San Andres,Artesia,2275
+254,254,"(679226.6859999998, 3602526.4679000005)",30-025-07991,SalineSE,No known issues,"San Andres,Glorieta",Artesia,821
+255,255,"(527628.1874000002, 3592889.4553999994)",30-015-00006,SalineSE,No known issues,"San Andres,Glorieta",Artesia,5606
+256,256,"(668467.9886999996, 3600336.0178999994)",30-025-32128,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1003
+257,257,"(662215.5617000004, 3599444.432600001)",30-025-30790,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1237
+258,258,"(677249.9517000001, 3601266.9220000003)",30-025-07885,SalineSE,No known issues,"San Andres,Glorieta",Artesia,830
+259,259,"(538698.0801999997, 3607125.8522999994)",30-015-26449,SalineSE,No known issues,"San Andres,Glorieta",Artesia,4895
+260,260,"(560850.5357999997, 3605563.966)",30-015-10711,SalineSE,No known issues,"San Andres,Glorieta",Artesia,3502
+261,261,"(525207.0258, 3600173.227)",30-015-34513,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,5541
+262,262,"(531131.4889000002, 3594933.1898999996)",30-015-33321,OCD_online_2018,No known issues,"San Andres,Glorieta",Artesia,5331
+263,263,"(520461.784, 3591253.5994000006)",SanAndres_ContactPts_350,NMBGMR_500k,,San Andres,Artesia,6008
+264,264,"(525913.6200000001, 3595554.0781999994)",SanAndres_ContactPts_353,NMBGMR_500k,,San Andres,Artesia,5677
+265,265,"(524014.30200000014, 3596959.989)",SanAndres_ContactPts_356,NMBGMR_500k,,San Andres,Artesia,5736
+266,266,"(520228.1283, 3595280.5250000004)",SanAndres_ContactPts_357,NMBGMR_500k,,San Andres,Artesia,5977
+267,267,"(668289.9501999998, 3738764.5040000007)",30-041-20388,SalineSE,No known issues,"San Andres,Glorieta",Artesia,1563
+268,268,"(635821.8421999998, 3740920.6907)",30-041-20342,SalineSE,No known issues,"San Andres,Glorieta",Artesia,2481
+269,269,"(681671.3735999996, 3592957.7590999994)",30-025-22403,SalineSE,No known issues,"Tansill,Yates,Seven Rivers,Queen,Grayburg",LOchoan,682
+270,270,"(679920.9062999999, 3596954.6106000002)",30-025-07049,SalineSE,No known issues,"San Andres,Glorieta",Artesia,789
+271,271,"(525195.8876999998, 3588993.8926999997)",SanAndres_ContactPts_266,NMBGMR_500k,,San Andres,Artesia,5946
+272,272,"(518509.4648000002, 3588701.8329000007)",SanAndres_ContactPts_349,NMBGMR_500k,,San Andres,Artesia,6229

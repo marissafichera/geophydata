@@ -510,14 +510,17 @@ def tgs_data():
 
     df1 = pd.read_excel(excel_file, sheet_name='Export Product Results')
 
+    # Create geodataframe from Export Product Results sheet - contains all products
+    gdf = gpd.GeoDataFrame(df1, geometry=gpd.points_from_xy(df1['Surface Long'], df1['Surface Lat']))
+    gdf.set_crs('EPSG:4326', allow_override=True, inplace=True)
+    gdf.to_file(os.path.join(root, 'TGS\TGSProducts_NoSJorDB_all.shp'))
+
+    sys.exit()
+
     # Iterate over all sheet names and load each sheet into a DataFrame, then organize digital log data
     for l, sheet_name in zip(labels, excel_file.sheet_names[2:]):
         sheetdata = pd.read_excel(excel_file, sheet_name=sheet_name)
         sort_tgs_logdata(df=df1, df2=sheetdata, name=sheet_name, label=l)
-
-    # Create geodataframe from Export Product Results sheet - contains all products
-    gdf = gpd.GeoDataFrame(df1, geometry=gpd.points_from_xy(df1['Surface Long'], df1['Surface Lat']))
-    gdf.set_crs('EPSG:4326', allow_override=True, inplace=True)
 
     # Group by top depth <= 2,000 ft., save to shapefile
     threshold = 2000
@@ -713,7 +716,7 @@ def plot_ose_data(df):
 
 
 def main():
-    ose_data()
+    tgs_data()
 
 
 if __name__ == '__main__':

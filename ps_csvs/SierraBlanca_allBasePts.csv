@@ -1,0 +1,189 @@
+OID@,OBJECTID,Shape,UniqueID,Easting,Northing,Units,Datum,DataSourceID,DataQualityBottom,UnitsPresent,MUEBase,SE_NM_30m_int,SimpleUnit
+1,1,"(446455.58189999964, 3741089.2733999994)",UCretaceous_ContactPts_51,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,8682.0,6453,UCretaceous
+2,2,"(447035.2775999997, 3736878.496200001)",UCretaceous_ContactPts_52,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,8727.0,6437,UCretaceous
+3,3,"(450638.03259999957, 3725294.4696999993)",SierraBlanca_ContactPts_24,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6605.0,6605,SierraBlanca
+4,4,"(453812.73369999975, 3725799.0560999997)",SierraBlanca_ContactPts_25,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6593.0,6593,SierraBlanca
+5,5,"(444659.38019999955, 3724918.9372000005)",UCretaceous_ContactPts_55,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,6737,UCretaceous
+6,6,"(473420.0558000002, 3720014.5275999997)",CapitanPeakCSB-13312,472150.9101999998,3707378.5588000007,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,4750.0,7182,SierraBlanca
+7,7,"(474516.48000000045, 3720325.9678000007)",SierraBlanca_ContactPts_26,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7031,SierraBlanca
+8,8,"(479365.2734000003, 3720260.2238999996)",SierraBlanca_ContactPts_27,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6142,SierraBlanca
+9,9,"(451427.1699999999, 3719944.6433000006)",SierraBlanca_ContactPts_31,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7031,SierraBlanca
+10,10,"(449651.6666000001, 3719751.214400001)",SierraBlanca_ContactPts_32,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6855.0,6855,SierraBlanca
+11,11,"(443730.45999999996, 3719529.0952000003)",UCretaceous_ContactPts_62,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,6895,UCretaceous
+12,12,"(442018.31120000035, 3719524.0764000006)",CapitanCSD-50,442018.31120000035,3719524.0764000006,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8028.0,7174,UCretaceous
+13,13,"(443045.1782999998, 3719076.9255)",CapitanCSD-1170,443045.1782999998,3719076.9255,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,,6953,UCretaceous
+14,14,"(435376.0911999997, 3719554.0998)",NogalCSD-5000,435376.0911999997,3719554.0998,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7118.0,7469,UCretaceous
+15,15,"(441667.4199999999, 3719544.503799999)",NogalCSD-11291,441667.4199999999,3719544.503799999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7818.0,7129,UCretaceous
+16,16,"(438376.08770000003, 3719549.524)",NogalCSD-8000,438376.08770000003,3719549.524,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7947.0,7361,UCretaceous
+17,17,"(436810.6213999996, 3719551.911800001)",NogalCSD-6435,436810.6213999996,3719551.911800001,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7970.0,7293,UCretaceous
+18,18,"(433968.2059000004, 3719556.247199999)",NogalCSD-3592,433968.2059000004,3719556.247199999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6655.0,6371,UCretaceous
+19,19,"(432649.9693999998, 3719558.2578999996)",NogalCSD-2274,432649.9693999998,3719558.2578999996,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6388.0,6119,UCretaceous
+20,20,"(439876.0859000003, 3719547.2360999994)",NogalCSD-9500,439876.0859000003,3719547.2360999994,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7282.0,7157,UCretaceous
+21,21,"(472965.9649, 3715493.4713000003)",CapitanPeakCSB-8768,472604.9665999999,3711899.2707,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,4747.0,8068,SierraBlanca
+22,22,"(473024.0647999998, 3716071.9299999997)",CapitanPeakCSB-9350,472546.8512000004,3711320.6576000005,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,4658.0,8915,SierraBlanca
+23,23,"(473098.63879999984, 3716814.4093999993)",CapitanPeakCSB-10096,472472.2988,3710578.3932000007,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,4790.0,8992,SierraBlanca
+24,24,"(439977.6621000003, 3717573.4529)",SierraBlanca_ContactPts_28,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6931.0,6931,SierraBlanca
+25,25,"(483188.5491000004, 3716693.004899999)",SierraBlanca_ContactPts_30,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,5562.0,5562,SierraBlanca
+26,26,"(438020.4068999998, 3715279.2715000007)",SierraBlanca_ContactPts_33,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7166,SierraBlanca
+27,27,"(434880.49909999967, 3715410.316400001)",SierraBlanca_ContactPts_34,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6431,SierraBlanca
+28,28,"(434664.7270999998, 3715616.5998)",SierraBlanca_ContactPts_35,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6348,SierraBlanca
+29,29,"(430405.69710000046, 3716748.2905)",NogalCSC-50,430405.69710000046,3716748.2905,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,,6217,SierraBlanca
+30,30,"(440605.69240000006, 3716738.3915)",NogalCSC-10250,440605.69240000006,3716738.3915,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6844.0,6901,SierraBlanca
+31,31,"(432355.6963999998, 3716746.398)",NogalCSC-2000,432355.6963999998,3716746.398,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,,6233,SierraBlanca
+32,32,"(439105.69319999963, 3716739.8472000007)",NogalCSC-8750,439105.69319999963,3716739.8472000007,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6870.0,6935,SierraBlanca
+33,33,"(439855.6928000003, 3716739.1194)",NogalCSC-9500,439855.6928000003,3716739.1194,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6873.0,6930,SierraBlanca
+34,34,"(432764.0307, 3717151.217)",SierraBlanca_ContactPts_111,,,,,Rawling2014_OFR538,24k_surface_map,SierraBlanca,6150.0,6163,SierraBlanca
+35,35,"(451383.9073000001, 3718231.181500001)",UCretaceous_ContactPts_57,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9182.0,6687,UCretaceous
+36,36,"(450848.92370000016, 3718455.5681999996)",UCretaceous_ContactPts_58,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9176.0,6693,UCretaceous
+37,37,"(450497.85250000004, 3716428.6919)",UCretaceous_ContactPts_59,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9235.0,6699,UCretaceous
+38,38,"(448609.38850000035, 3716557.4353)",UCretaceous_ContactPts_60,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9164.0,6626,UCretaceous
+39,39,"(449560.9034000002, 3717853.9606)",UCretaceous_ContactPts_61,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9026.0,6537,UCretaceous
+40,40,"(449279.8953999998, 3715270.1667)",UCretaceous_ContactPts_64,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9129.0,6552,UCretaceous
+41,41,"(451613.8559999997, 3716221.4518)",UCretaceous_ContactPts_65,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9001.0,6455,UCretaceous
+42,42,"(442414.76719999965, 3716539.3609999996)",CapitanCSC-500,442414.76719999965,3716539.3609999996,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6891.0,6756,UCretaceous
+43,43,"(445422.82660000026, 3715244.2919999994)",CapitanCSC-3775,445422.82660000026,3715244.2919999994,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8124.0,6676,UCretaceous
+44,44,"(443884.3535000002, 3715906.6555000003)",CapitanCSC-2100,443884.3535000002,3715906.6555000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7559.0,6745,UCretaceous
+45,45,"(446098.2742999997, 3717747.450099999)",CapitanCSD-4500,446098.2742999997,3717747.450099999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8314.0,6675,UCretaceous
+46,46,"(449368.70419999957, 3716323.3363000005)",CapitanCSD-8067,449368.70419999957,3716323.3363000005,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,9034.0,6605,UCretaceous
+47,47,"(437855.6936999997, 3716741.0603)",NogalCSC-7500,437855.6936999997,3716741.0603,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7227.0,6920,UCretaceous
+48,48,"(434978.9927000003, 3716743.8521)",NogalCSC-4623,434978.9927000003,3716743.8521,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7069.0,6450,UCretaceous
+49,49,"(441905.69180000015, 3716737.129899999)",NogalCSC-11580,441905.69180000015,3716737.129899999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7048.0,6831,UCretaceous
+50,50,"(436355.6945000002, 3716742.5161000006)",NogalCSC-6000,436355.6945000002,3716742.5161000006,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7008.0,6660,UCretaceous
+51,51,"(472754.8523000004, 3713391.5753000006)",CapitanPeakCSB-6656,472816.0619999999,3714000.9957,meters,NAD83,Skotnicki2010_OFGM209,Sampled from interpretive cross-section,SierraBlanca,4790.0,7158,SierraBlanca
+52,52,"(442507.9243000001, 3712587.707699999)",SierraBlanca_ContactPts_37,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6654.0,6654,SierraBlanca
+53,53,"(481013.61170000024, 3713161.0581)",SierraBlanca_ContactPts_39,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,5926.0,5926,SierraBlanca
+54,54,"(474650.42360000033, 3713346.882099999)",SierraBlanca_ContactPts_40,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6928,SierraBlanca
+55,55,"(441870.6891000001, 3713213.4132000003)",NogalCSB-11541,441870.6891000001,3713213.4132000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6719.0,6734,SierraBlanca
+56,56,"(434329.96729999967, 3713204.0755000003)",NogalCSB-4000,434329.96729999967,3713204.0755000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6224.0,6471,SierraBlanca
+57,57,"(430379.97030000016, 3713199.1842)",NogalCSB-50,430379.97030000016,3713199.1842,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,,7214,SierraBlanca
+58,58,"(437930.49959999975, 3713208.534)",NogalCSB-7601,437930.49959999975,3713208.534,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6749.0,7035,SierraBlanca
+59,59,"(441155.5086000003, 3713212.5275999997)",NogalCSB-10826,441155.5086000003,3713212.5275999997,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6722.0,6884,SierraBlanca
+60,60,"(442904.5365000004, 3712794.151900001)",CapitanCSB-1045,442904.5365000004,3712794.151900001,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7057.0,6598,UCretaceous
+61,61,"(445933.7396, 3711484.9811000004)",CapitanCSB-4357,445933.7396,3711484.9811000004,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8175.0,6388,UCretaceous
+62,62,"(446655.4146999996, 3711173.0853000004)",CapitanCSB-5143,446655.4146999996,3711173.0853000004,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8328.0,6357,UCretaceous
+63,63,"(444235.5499999998, 3712218.9102)",CapitanCSB-2511,444235.5499999998,3712218.9102,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8177.0,6648,UCretaceous
+64,64,"(448925.9955000002, 3713736.061899999)",CapitanCSC-7589,448925.9955000002,3713736.061899999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,9258.0,6616,UCretaceous
+65,65,"(450647.09949999955, 3712995.0698000006)",CapitanCSC-9463,450647.09949999955,3712995.0698000006,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,9077.0,6611,UCretaceous
+66,66,"(447759.44290000014, 3714238.3014)",CapitanCSC-6319,447759.44290000014,3714238.3014,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8743.0,6569,UCretaceous
+67,67,"(449835.86870000046, 3713344.3313999996)",CapitanCSC-8580,449835.86870000046,3713344.3313999996,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,9131.0,6629,UCretaceous
+68,68,"(436829.9654000001, 3713207.1712999996)",NogalCSB-6500,436829.9654000001,3713207.1712999996,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7304.0,7063,UCretaceous
+69,69,"(421185.97559999954, 3709470.736300001)",SierraBlanca_ContactPts_41,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6649,SierraBlanca
+70,70,"(437114.22470000014, 3710457.2715000007)",SierraBlanca_ContactPts_42,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7183,SierraBlanca
+71,71,"(435342.35919999983, 3710301.5187)",SierraBlanca_ContactPts_44,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7082,SierraBlanca
+72,72,"(441396.6612, 3707365.4312999994)",SierraBlanca_ContactPts_45,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6703.0,6703,SierraBlanca
+73,73,"(441876.44629999995, 3707224.4398)",SierraBlanca_ContactPts_46,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6688.0,6688,SierraBlanca
+74,74,"(433741.60250000004, 3708144.2508000005)",SierraBlanca_ContactPts_51,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7347.0,7347,SierraBlanca
+75,75,"(441681.1624999996, 3708217.4099000003)",SierraBlanca_ContactPts_52,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6744,SierraBlanca
+76,76,"(442135.3912000004, 3707421.1447)",SierraBlanca_ContactPts_53,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6708.0,6708,SierraBlanca
+77,77,"(441784.10780000035, 3708484.0820000004)",SierraBlanca_ContactPts_58,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6701.0,6701,SierraBlanca
+78,78,"(438963.3200000003, 3709011.5439)",NogalCSA-8664,438963.3200000003,3709011.5439,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6624.0,7197,SierraBlanca
+79,79,"(432299.5566999996, 3709001.2200000007)",NogalCSA-2000,432299.5566999996,3709001.2200000007,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6490.0,7168,SierraBlanca
+80,80,"(439538.72530000005, 3709012.4353)",NogalCSA-9239,439538.72530000005,3709012.4353,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6657.0,7205,SierraBlanca
+81,81,"(430349.55879999977, 3708998.198999999)",NogalCSA-50,430349.55879999977,3708998.198999999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,,7750,SierraBlanca
+82,82,"(440717.0218000002, 3709014.2608000003)",NogalCSA-10417,440717.0218000002,3709014.2608000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,SierraBlanca,6709.0,6830,SierraBlanca
+83,83,"(450124.99459999986, 3710827.5912999995)",UCretaceous_ContactPts_66,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9144.0,6409,UCretaceous
+84,84,"(450240.03259999957, 3707828.1840000004)",UCretaceous_ContactPts_68,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9251.0,6438,UCretaceous
+85,85,"(446208.2774, 3707192.9964000005)",CapitanCSA-4670,446208.2774,3707192.9964000005,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8638.0,6727,UCretaceous
+86,86,"(444990.57540000044, 3707709.357999999)",CapitanCSA-3347,444990.57540000044,3707709.357999999,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8654.0,6712,UCretaceous
+87,87,"(443213.72699999996, 3708462.8233000003)",CapitanCSA-1417,443213.72699999996,3708462.8233000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7497.0,6614,UCretaceous
+88,88,"(442679.75179999974, 3708689.2533)",CapitanCSA-837,442679.75179999974,3708689.2533,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7314.0,6680,UCretaceous
+89,89,"(448170.59250000026, 3710518.2509000003)",CapitanCSB-6794,448170.59250000026,3710518.2509000003,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8988.0,6507,UCretaceous
+90,90,"(448386.9040999999, 3710424.7645999994)",CapitanCSB-7029,448386.9040999999,3710424.7645999994,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8986.0,6453,UCretaceous
+91,91,"(433899.55480000004, 3709003.6987999994)",NogalCSA-3600,433899.55480000004,3709003.6987999994,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,7814.0,7286,UCretaceous
+92,92,"(441828.32459999993, 3709015.9825)",NogalCSA-11529,441828.32459999993,3709015.9825,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,6963.0,6719,UCretaceous
+93,93,"(435799.5525000002, 3709006.6424000002)",NogalCSA-5500,435799.5525000002,3709006.6424000002,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,,7117,UCretaceous
+94,94,"(438759.67480000015, 3703496.9431)",AngusCSA-8500,438759.67480000015,3703496.9431,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,SierraBlanca,7076.0,7232,SierraBlanca
+95,95,"(440533.60030000005, 3703499.3849)",AngusCSA-10273,440533.60030000005,3703499.3849,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,SierraBlanca,,7102,SierraBlanca
+96,96,"(441491.1721999999, 3703500.7029)",AngusCSA-11231,441491.1721999999,3703500.7029,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,SierraBlanca,6965.0,7035,SierraBlanca
+97,97,"(421242.0033, 3703929.3554999996)",NogalPeakCSA-2596,421242.0033,3703929.3554999996,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,SierraBlanca,,8484,SierraBlanca
+98,98,"(425360.2263000002, 3706966.8268)",NogalPeakCSC-50,425360.2263000002,3706966.8268,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,SierraBlanca,,9558,SierraBlanca
+99,99,"(441512.3388, 3706853.4396)",SierraBlanca_ContactPts_47,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6752,SierraBlanca
+100,100,"(439859.79810000025, 3703490.5551999994)",SierraBlanca_ContactPts_61,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7238.0,7238,SierraBlanca
+101,101,"(440076.2001, 3703315.1290000007)",SierraBlanca_ContactPts_62,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7197.0,7197,SierraBlanca
+102,102,"(440425.6629999997, 3703785.0735)",SierraBlanca_ContactPts_63,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7182,SierraBlanca
+103,103,"(440599.7790999999, 3703928.4662999995)",SierraBlanca_ContactPts_64,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7181.0,7181,SierraBlanca
+104,104,"(439942.41559999995, 3703870.1142999995)",SierraBlanca_ContactPts_68,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7110,SierraBlanca
+105,105,"(441542.32830000017, 3704602.8879000004)",SierraBlanca_ContactPts_70,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7208,SierraBlanca
+106,106,"(442308.87519999966, 3703233.7464000005)",FortStantonCSD-519,442308.87519999966,3703233.7464000005,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,8164.0,7132,UCretaceous
+107,107,"(448055.9648000002, 3704841.3323)",FortStantonCSE-2312,448055.9648000002,3704841.3323,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,9406.0,6474,UCretaceous
+108,108,"(448645.30140000023, 3703759.0681999996)",FortStantonCSE-3544,448645.30140000023,3703759.0681999996,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,9426.0,6731,UCretaceous
+109,109,"(447781.8761999998, 3705344.6714999992)",FortStantonCSE-1739,447781.8761999998,3705344.6714999992,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,9442.0,6642,UCretaceous
+110,110,"(449197.19099999964, 3704343.9757000003)",UCretaceous_ContactPts_71,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9370.0,6468,UCretaceous
+111,111,"(447863.3552000001, 3703879.0255999994)",UCretaceous_ContactPts_72,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9449.0,6511,UCretaceous
+112,112,"(446913.6079000002, 3706893.9038999993)",CapitanCSA-5436,446913.6079000002,3706893.9038999993,meters,NAD83,Rawling2014_OFR538,Sampled from interpretive cross-section,UCretaceous,8604.0,6707,UCretaceous
+113,113,"(426024.3491000002, 3702453.8225)",NogalPeakCSC-4614,426024.3491000002,3702453.8225,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,SierraBlanca,,7907,SierraBlanca
+114,114,"(426142.3912000004, 3701696.6457)",NogalPeakCSC-5380,426142.3912000004,3701696.6457,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,SierraBlanca,,8468,SierraBlanca
+115,115,"(437297.9480999997, 3701164.942399999)",SierraBlanca_ContactPts_59,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6944,SierraBlanca
+116,116,"(438947.70830000006, 3701691.8669000007)",SierraBlanca_ContactPts_60,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7120.0,7120,SierraBlanca
+117,117,"(440614.1524, 3702486.9875000007)",SierraBlanca_ContactPts_66,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6938.0,6938,SierraBlanca
+118,118,"(435834.65610000025, 3701641.4266999997)",SierraBlanca_ContactPts_72,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7331,SierraBlanca
+119,119,"(437161.7006999999, 3701215.4988)",SierraBlanca_ContactPts_73,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6932.0,6932,SierraBlanca
+120,120,"(437845.32629999984, 3700963.318)",SierraBlanca_ContactPts_76,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6910.0,6910,SierraBlanca
+121,121,"(442384.93730000034, 3699336.4766000006)",FortStantonCSC-613,442384.93730000034,3699336.4766000006,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,8731.0,7162,UCretaceous
+122,122,"(443729.24870000035, 3702293.5342999995)",FortStantonCSD-2222,443729.24870000035,3702293.5342999995,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,8690.0,6661,UCretaceous
+123,123,"(445797.97030000016, 3700924.1500000004)",FortStantonCSD-4703,445797.97030000016,3700924.1500000004,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,9347.0,6945,UCretaceous
+124,124,"(445009.5175000001, 3701446.0639999993)",FortStantonCSD-3758,445009.5175000001,3701446.0639999993,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,8985.0,6701,UCretaceous
+125,125,"(449125.05420000013, 3702878.045)",FortStantonCSE-4548,449125.05420000013,3702878.045,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,9594.0,6747,UCretaceous
+126,126,"(442460.09389999975, 3702171.6867999993)",FortStantonCSA-4728,442460.09389999975,3702171.6867999993,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,8081.0,6767,UCretaceous
+127,127,"(442388.6238000002, 3700904.6083000004)",FortStantonCSA-6000,442388.6238000002,3700904.6083000004,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,8383.0,7081,UCretaceous
+128,128,"(442180.8579000002, 3699487.7606000006)",FortStantonCSA-7432,442180.8579000002,3699487.7606000006,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,8537.0,7174,UCretaceous
+129,129,"(447667.574, 3699972.2158000004)",UCretaceous_ContactPts_74,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9691.0,6743,UCretaceous
+130,130,"(436183.0537999999, 3697653.1160000004)",AngusCSB-8312,436183.0537999999,3697653.1160000004,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,SierraBlanca,7165.0,7446,SierraBlanca
+131,131,"(437245.0873999996, 3699289.9217000008)",SierraBlanca_ContactPts_74,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7462.0,7462,SierraBlanca
+132,132,"(437124.20469999965, 3696726.4626)",AngusCSB-9633,437124.20469999965,3696726.4626,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,,7399,UCretaceous
+133,133,"(437889.48500000034, 3695972.9707999993)",AngusCSB-10707,437889.48500000034,3695972.9707999993,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,8442.0,7489,UCretaceous
+134,134,"(442032.42650000006, 3696667.7652000003)",FortStantonCSA-10262,442032.42650000006,3696667.7652000003,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,9199.0,7305,UCretaceous
+135,135,"(443770.40160000045, 3698543.0713)",FortStantonCSC-2210,443770.40160000045,3698543.0713,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,9868.0,6836,UCretaceous
+136,136,"(444542.60259999987, 3698246.7261999995)",UCretaceous_ContactPts_73,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9862.0,6834,UCretaceous
+137,137,"(444089.78110000025, 3698199.3730999995)",UCretaceous_ContactPts_75,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,10031.0,6979,UCretaceous
+138,138,"(444066.6994000003, 3696715.947899999)",UCretaceous_ContactPts_78,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,10047.0,7034,UCretaceous
+139,139,"(437062.1935999999, 3691669.1862000003)",RuidosoCSA-1928,437062.1935999999,3691669.1862000003,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,SierraBlanca,6377.0,7195,SierraBlanca
+140,140,"(435784.5921, 3693046.319)",RuidosoCSA-50,435784.5921,3693046.319,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,SierraBlanca,6292.0,7385,SierraBlanca
+141,141,"(437718.5329999998, 3694704.948999999)",SierraBlanca_ContactPts_77,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7319,SierraBlanca
+142,142,"(436948.5996000003, 3695448.6169000007)",SierraBlanca_ContactPts_78,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7274.0,7274,SierraBlanca
+143,143,"(438707.9940999998, 3691738.6601)",SierraBlanca_ContactPts_83,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6908.0,6908,SierraBlanca
+144,144,"(434765.7383000003, 3693049.727499999)",SierraBlanca_ContactPts_90,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7324.0,7324,SierraBlanca
+145,145,"(439166.8546000002, 3694715.277899999)",AngusCSB-12500,439166.8546000002,3694715.277899999,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,9090.0,7192,UCretaceous
+146,146,"(440464.51379999984, 3693437.6078999992)",AngusCSB-14321,440464.51379999984,3693437.6078999992,meters,NAD83,Rawling2004_OFGM95,Sampled from interpretive cross-section,UCretaceous,,7131,UCretaceous
+147,147,"(442029.23599999957, 3695042.7684000004)",FortStantonCSA-11887,442029.23599999957,3695042.7684000004,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,10059.0,7248,UCretaceous
+148,148,"(442029.9232000001, 3695392.7676999997)",FortStantonCSA-11537,442029.9232000001,3695392.7676999997,meters,NAD83,Rawling2006_OFGM119,Sampled from interpretive cross-section,UCretaceous,10090.0,7263,UCretaceous
+149,149,"(437549.89269999973, 3691143.4930000007)",RuidosoCSA-2645,437549.89269999973,3691143.4930000007,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,SierraBlanca,6548.0,6960,SierraBlanca
+150,150,"(438127.9930999996, 3690520.355799999)",RuidosoCSA-3495,438127.9930999996,3690520.355799999,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,SierraBlanca,6856.0,6867,SierraBlanca
+151,151,"(430265.6321999999, 3688932.2102000006)",RuidosoCSB-136,430265.6321999999,3688932.2102000006,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,SierraBlanca,,7541,SierraBlanca
+152,152,"(431255.46740000043, 3688208.3714000005)",RuidosoCSB-1363,431255.46740000043,3688208.3714000005,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,SierraBlanca,7916.0,7992,SierraBlanca
+153,153,"(437647.58380000014, 3689948.435799999)",SierraBlanca_ContactPts_80,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6790.0,6790,SierraBlanca
+154,154,"(438362.19969999976, 3690623.9634000007)",SierraBlanca_ContactPts_81,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,6842.0,6842,SierraBlanca
+155,155,"(430294.3492999999, 3690147.978)",SierraBlanca_ContactPts_88,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7875.0,7875,SierraBlanca
+156,156,"(433077.7182, 3690053.3533999994)",SierraBlanca_ContactPts_89,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,7611.0,7611,SierraBlanca
+157,157,"(439250.1880000001, 3689310.7366000004)",RuidosoCSA-5145,439250.1880000001,3689310.7366000004,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,9837.0,7296,UCretaceous
+158,158,"(438400.0404000003, 3690227.1148000006)",RuidosoCSA-3895,438400.0404000003,3690227.1148000006,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,,6827,UCretaceous
+159,159,"(430265.6321999999, 3688932.2102000006)",RuidosoCSB-136,430265.6321999999,3688932.2102000006,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,,7541,UCretaceous
+160,160,"(439422.43230000045, 3689976.6642000005)",UCretaceous_ContactPts_79,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9560.0,6897,UCretaceous
+161,161,"(438710.8169999998, 3687884.8663999997)",UCretaceous_ContactPts_81,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9273.0,6715,UCretaceous
+162,162,"(422885.48450000025, 3687468.1433000006)",SierraBlanca_ContactPts_92,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,8143.0,8143,SierraBlanca
+163,163,"(426312.7416000003, 3687350.9397)",SierraBlanca_ContactPts_93,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,8808.0,8808,SierraBlanca
+164,164,"(427614.6007000003, 3687572.9662999995)",SierraBlanca_ContactPts_94,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,8830.0,8830,SierraBlanca
+165,165,"(427394.28639999963, 3685597.846999999)",SierraBlanca_ContactPts_95,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,8748.0,8748,SierraBlanca
+166,166,"(437016.43759999983, 3683995.5351)",RuidosoCSB-8500,437016.43759999983,3683995.5351,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,9915.0,7492,UCretaceous
+167,167,"(435528.79569999967, 3685083.4059999995)",RuidosoCSB-6657,435528.79569999967,3685083.4059999995,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,,7147,UCretaceous
+168,168,"(431938.53830000013, 3687708.8608)",RuidosoCSB-2209,431938.53830000013,3687708.8608,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,,7824,UCretaceous
+169,169,"(434860.2604, 3685572.2871000003)",RuidosoCSB-5828,434860.2604,3685572.2871000003,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,,7251,UCretaceous
+170,170,"(436013.1144000003, 3684729.237299999)",RuidosoCSB-7257,436013.1144000003,3684729.237299999,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,,6887,UCretaceous
+171,171,"(437655.70409999974, 3687649.9126999993)",UCretaceous_ContactPts_80,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,,6913,UCretaceous
+172,172,"(436672.07380000036, 3683939.492900001)",RuidosoCSC-7660,436672.07380000036,3683939.492900001,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,9790.0,7513,UCretaceous
+173,173,"(431852.21439999994, 3681020.8341000006)",RuidosoCSC-2000,431852.21439999994,3681020.8341000006,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,,7552,UCretaceous
+174,174,"(432292.53440000024, 3681257.727)",RuidosoCSC-2500,432292.53440000024,3681257.727,meters,NAD83,Rawling2004_OFGM93,Sampled from interpretive cross-section,UCretaceous,,7373,UCretaceous
+175,175,"(426058.08779999986, 3682382.4043000005)",UCretaceous_ContactPts_82,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,9991.0,7333,UCretaceous
+176,176,"(427291.51659999974, 3681820.2183999997)",UCretaceous_ContactPts_86,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,10055.0,7436,UCretaceous
+177,177,"(431193.9466000004, 3677331.4365)",UCretaceous_ContactPts_88,,,,,NMBGMR_500k,500k_surface_map,UCretaceous,10153.0,7570,UCretaceous
+178,178,"(418164.37090000045, 3707803.9911)",SierraBlanca_ContactPts_49,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6374,SierraBlanca
+179,179,"(415653.93319999985, 3708103.7127)",SierraBlanca_ContactPts_55,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6456,SierraBlanca
+180,180,"(418404.3361999998, 3708058.344900001)",SierraBlanca_ContactPts_56,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6353,SierraBlanca
+181,181,"(419797.31240000017, 3703989.017999999)",NogalPeakCSA-1150,419797.31240000017,3703989.017999999,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,SierraBlanca,,7852,SierraBlanca
+182,182,"(418647.8622000003, 3704036.7775999997)",NogalPeakCSA-None,418647.8622000003,3704036.7775999997,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,SierraBlanca,,7007,SierraBlanca
+183,183,"(418280.41700000037, 3706091.9836)",SierraBlanca_ContactPts_50,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6640,SierraBlanca
+184,184,"(419872.9484000001, 3695630.3332)",NogalPeakCSB-1308,419872.9484000001,3695630.3332,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,SierraBlanca,,7455,SierraBlanca
+185,185,"(418617.35830000043, 3695464.8308000006)",NogalPeakCSB-42,418617.35830000043,3695464.8308000006,meters,NAD83,Goff2011_OFGM134,Sampled from interpretive cross-section,SierraBlanca,,7370,SierraBlanca
+186,186,"(416740.8789999997, 3692730.329500001)",SierraBlanca_ContactPts_84,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6334,SierraBlanca
+187,187,"(418397.34389999975, 3692263.931399999)",SierraBlanca_ContactPts_85,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,6634,SierraBlanca
+188,188,"(419759.6309000002, 3689708.5198)",SierraBlanca_ContactPts_87,,,,,NMBGMR_500k,500k_surface_map,SierraBlanca,,7193,SierraBlanca
