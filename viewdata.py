@@ -711,12 +711,73 @@ def plot_ose_data(df):
         # plt.show()
 
 
+def dms_to_decimal(dms_str):
+    """Convert degrees:minutes:seconds format to decimal degrees."""
+    match = re.match(r'(-?\d+):(\d+):(\d+\.\d+)', dms_str)
+    if match:
+        degrees, minutes, seconds = map(float, match.groups())
+        decimal = abs(degrees) + minutes / 60 + seconds / 3600
+        return -decimal if degrees < 0 else decimal
+    return None
 
 
+def parse_edi_files(folder_path=r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\UnivUtah003\EDI_files\Raw_Data'):
+    """Read all .edi files in a folder and extract ID, LAT, LONG, ELEV_M."""
+    data = []
+
+    for file_name in os.listdir(folder_path):
+        print(file_name)
+        if file_name.endswith(".edi"):
+            file_path = os.path.join(folder_path, file_name)
+            with open(file_path, 'r') as f:
+                lines = f.readlines()
+
+                # Extract values from specific lines
+                lat_match = re.search(r'LAT=(-?\d+:\d+:\d+\.\d+)', lines[11])
+                long_match = re.search(r'LONG=(-?\d+:\d+:\d+\.\d+)', lines[12])
+                elev_match = re.search(r'ELEV=([\d\.]+)', lines[13])
+
+                if lat_match and long_match and elev_match:
+                    lat_dms = lat_match.group(1)
+                    long_dms = long_match.group(1)
+                    elev_m = float(elev_match.group(1))
+
+                    # Convert to decimal degrees
+                    lat = dms_to_decimal(lat_dms)
+                    long = dms_to_decimal(long_dms)
+
+                    # Extract ID from file name (remove .edi extension)
+                    file_id = os.path.splitext(file_name)[0]
+
+                    data.append([file_id, lat, long, elev_m])
+
+    # Create DataFrame
+    df = pd.DataFrame(data, columns=['ID', 'LAT', 'LONG', 'ELEV_M'])
+    gdf = gpd.GeoDataFrame(df, geometry=points_from_xy(x=df.LONG, y=df.LAT), crs='EPSG:4326')
+    print(gdf)
+    shpname = os.path.join(root, 'UnivUtah003', 'MTrawdata_locs.shp')
+    gdf.to_file(shpname)
+
+    save_script(output_script_folder=os.path.join(root, 'UnivUtah003'))
+
+
+def save_script(output_script_folder, script_name='viewdata.txt'):
+    output_script_path = os.path.join(output_script_folder, script_name)
+    # Save script to output directory
+    script_content = """" + __file__ + """""
+    with open(output_script_path, 'w') as script_file:
+        script_file.write(script_content)
+
+def nmocd():
+    file_path = os.path.join(root, 'NMOCD', 'NMOCDWellLogs')
+    df = pd.read_csv(f'{file_path}.csv')
+    print(df)
+    gdf = gpd.GeoDataFrame(df, geometry=points_from_xy(x=df.Longitude, y=df.Latitude), crs='EPSG:4326')
+    gdf.to_file(f'{file_path}.shp')
 
 
 def main():
-    tgs_data()
+    nmocd()
 
 
 if __name__ == '__main__':
