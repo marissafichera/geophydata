@@ -776,8 +776,65 @@ def nmocd():
     gdf.to_file(f'{file_path}.shp')
 
 
+def USGS012():
+    # User inputs
+    fcnames = ['Cornudas_Spec', 'Hueco_Spec', 'Middle_Spec', 'Sierra_Blanca_Spec']
+    foldernames = ['Cornudas block', 'Hueco block', 'Middle block', 'Sierra Blanca block']
+    for fcname, foldername in zip(fcnames, foldernames):
+        csv_file = os.path.join(root, rf"USGS012\Aeroradiometric_data\Aeroradiometric_data\{foldername}\DATA\{fcname}.csv")  # Change to your CSV file path
+        gdb_path = os.path.join(default_gdb)  # Change to your Geodatabase path
+        spatial_reference = ap.SpatialReference(4326)  # WGS 84 (Change if needed)
+
+        # Ensure the geodatabase exists
+        if not ap.Exists(gdb_path):
+            raise ValueError(f"Geodatabase does not exist: {gdb_path}")
+
+        # Create a table from the CSV
+        table_name = os.path.splitext(os.path.basename(csv_file))[0]
+        table_path = os.path.join(gdb_path, f'{table_name}_tbl')
+
+        if ap.Exists(table_path):
+            print(f"Table {table_name} already exists in the geodatabase.")
+        else:
+            ap.conversion.TableToTable(csv_file, gdb_path, f'{table_name}_tbl')
+            print(f"Table f'{table_name}_tbl' created successfully in {gdb_path}.")
+
+        # Check if required fields exist
+        fields = [f.name for f in ap.ListFields(table_path)]
+        if 'H_LONG' in fields and 'H_LAT' in fields:
+            x_field = 'H_LONG'
+            y_field = 'H_LAT'
+        elif 'LONG' in fields and 'LAT' in fields:
+            x_field = 'LONG'
+            y_field = ('LAT')
+        else:
+            raise ValueError("Can't find longitude and latitude column headers, check table")
+
+
+        # Convert table to feature class
+        feature_class_path = os.path.join(gdb_path, fcname)
+
+        if ap.Exists(feature_class_path):
+            print(f"Feature class {fcname} already exists. Overwriting...")
+            ap.management.Delete(feature_class_path)
+
+
+        ap.management.XYTableToPoint(
+            table_path,
+            feature_class_path,
+            x_field,
+            y_field,
+            coordinate_system=spatial_reference
+        )
+
+        print(f"Feature class '{fcname}' created successfully in {gdb_path}.")
+
 def main():
-    nmocd()
+    output_script_folder = os.path.join(root, 'USGS012')
+    script_name = 'viewdata.txt'
+
+    USGS012()
+    save_script(output_script_folder, script_name)
 
 
 if __name__ == '__main__':
