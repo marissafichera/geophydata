@@ -1,0 +1,510 @@
+Config                                  : 2025-03-23 10:07:07,768 INFO      (MainThread) ---- Begin configuration -------------------------------------
+
+Config                                  : 2025-03-23 10:07:07,768 INFO      (MainThread) ---- Inputs --------------------------------------------------
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) start_date: 
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) end_date: 
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) county: 
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) bbox: {}
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) wkt: 
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) parameter: potassium
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) site_limit: None
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_bernco: False
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_bor: True
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_cabq: False
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_ebid: False
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_nmbgmr_amp: True
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_nmed_dwb: True
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_nmose_isc_seven_rivers: True
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_nmose_roswell: False
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_nwis: False
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_pvacd: False
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) use_source_wqp: True
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) 
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) ---- Outputs --------------------------------------------------
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) output_path: ./output_1
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) output_summary: True
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) output_timeseries_unified: False
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) output_timeseries_separated: False
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) output_horizontal_datum: WGS84
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) output_elevation_units: ft
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) 
+Config                                  : 2025-03-23 10:07:07,769 INFO      (MainThread) ---- End configuration -------------------------------------
+
+BORSiteSource                           : 2025-03-23 10:07:09,099 INFO      (MainThread) Gathering site records
+httpx                                   : 2025-03-23 10:07:09,111 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:09,112 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:09,119 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:09,558 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00c1d0>
+httpcore.connection                     : 2025-03-23 10:07:09,558 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11bfdeb50> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:09,913 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11a6fc830>
+httpcore.http11                         : 2025-03-23 10:07:09,913 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:09,914 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:09,914 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:09,914 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:09,914 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:10,699 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:10 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"5d8b1d8f5f645cd29c898403485eba36"'), (b'Keep-Alive', b'timeout=5, max=100'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=GFCNLPJGPMHAPEIMHOLBCENKGNGEAMKEMOLNDNEECPGMAPCMFMFOPODNFLGOEJGMGDNDLJCCCBMELCKFEOLAGMEJGDMKCGDMKIJGAKDJADANCDCFCMHFILFFOJAAHPIC; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd4026da13baaeac2c2360ea53e7b37f8595da273376400ef0a924f5a66b33ee73cbef5d338e0a8b1fa2236e53f2e4577b4; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:10,701 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/location?stateId=NM&locationTypeId=10 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:10,701 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:10,701 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:10,702 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:10,702 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:10,702 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:10,702 DEBUG     (MainThread) close.complete
+BORSiteSource                           : 2025-03-23 10:07:10,703 INFO      (MainThread) total records=4
+BORSiteSource                           : 2025-03-23 10:07:10,704 INFO      (MainThread) processed nrecords=4
+BORAnalyteSource                        : 2025-03-23 10:07:10,704 INFO      (MainThread) 3246: Gathering analyte data
+httpx                                   : 2025-03-23 10:07:10,704 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:10,705 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:10,716 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:10,877 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00cfb0>
+httpcore.connection                     : 2025-03-23 10:07:10,878 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11bfdf0d0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:11,155 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00cec0>
+httpcore.http11                         : 2025-03-23 10:07:11,156 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,156 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:11,157 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,157 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:11,157 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,284 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:11 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"715abbe3d8c3dd846a5bb72aa310490a"'), (b'Keep-Alive', b'timeout=5, max=100'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=CINKNNDOAGDLIBNDEBCENHEFILABHMMBOLFJCKLHFHDKIBONKDDEGJNOKHNLAMAELONDGIGKEBBMIHOGAHIAMDDJGDEGOJDJGNAIBBPOJHFCGEBFOGAEHMAKMEOJLONO; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd422cfb74097733b2725219c46dd49c0230d531b12c4dac7d91555b3dcb7b8d0c680553a6d5af8c298fe178ce5687d6f64; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:11,285 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-record/4098 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:11,286 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,286 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:11,287 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:11,287 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:11,287 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:11,287 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:11,288 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:11,289 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:11,302 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:11,348 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00df40>
+httpcore.connection                     : 2025-03-23 10:07:11,348 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11bfdead0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:11,444 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11aa62240>
+httpcore.http11                         : 2025-03-23 10:07:11,444 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,445 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:11,445 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,445 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:11,445 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,597 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:11 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"716af49a695d2ed99b279bcc31e0b071"'), (b'Keep-Alive', b'timeout=5, max=100'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=LHBCLDEIMJPEKOELFNGFENPGCCEJHIJKGLPHGCKENLPOFANJAPHAJKIGALBGCNNMONCDEANBEBPLNBFHLMFALKLOGDHHHHDHFAKDLIOBINCALNAHPMFKEOBMLHPGDAJN; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd4deced67d325eb825b6da0fd5cdc7936326d3a373fa3da29de7d5b9b1e0270056fdaf62557d100aeda37f1ffe38aebabf; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:11,599 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4718 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:11,600 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,600 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:11,600 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:11,601 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:11,601 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:11,601 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:11,602 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:11,603 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:11,615 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:11,660 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00cef0>
+httpcore.connection                     : 2025-03-23 10:07:11,660 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11bfdfa50> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:11,752 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00d010>
+httpcore.http11                         : 2025-03-23 10:07:11,753 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,753 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:11,753 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,753 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:11,753 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,834 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:11 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"6f0834b0c0271ba9f7302a2ca4c58517"'), (b'Keep-Alive', b'timeout=5, max=99'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=KIGNJIAKANACONKKGFKBBPPGCJLOPAONMHFDFDHDAGIDOMFFOECEKGBLEKCPONFICEODGDHPEBMDOIELINNAAHBFGDEHKKBEIOGLJANOONGOPMFFMILDJHNOIAALAHKO; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd455204d8e108bd8060d46a73ed965fb989903e04e778b7d024f0074bcf3bef5d6670f781de0245dba360493dcd5913500; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:11,834 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4719 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:11,834 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,834 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:11,834 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:11,834 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:11,834 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:11,834 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:11,835 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:11,835 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:11,841 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:11,884 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00e300>
+httpcore.connection                     : 2025-03-23 10:07:11,884 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abac350> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:11,977 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00e210>
+httpcore.http11                         : 2025-03-23 10:07:11,977 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,977 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:11,977 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:11,977 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:11,977 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,059 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:12 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"139032986fb2789491a1490cb5095fe7"'), (b'Keep-Alive', b'timeout=5, max=99'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=EBMAFJCABFOEOIMIOHKICJJAAPKLLPHFBHPAFCDIBBIMPKECFAJHGIEDFILJKNEEBLMDHBNDFBMAPLGDHIBAJPCBGDOIMMGOOIHHKIPGJKPBCJNMFAMJFEEPCDHHJHOO; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd483d5985fcc56a9f8b6ac7da507191a8e1b28c3ffb741d35b403e555e8cf31045c930cce2daacb2da68225c7ce46949b6; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:12,060 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4720 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:12,060 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,061 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:12,061 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:12,061 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:12,061 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:12,061 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:12,062 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:12,063 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:12,075 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:12,120 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00f1a0>
+httpcore.connection                     : 2025-03-23 10:07:12,120 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abaccd0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:12,212 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00f0b0>
+httpcore.http11                         : 2025-03-23 10:07:12,212 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,213 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:12,213 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,213 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:12,213 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,294 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:12 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"91995b98ba06554cd0083477b8116f9f"'), (b'Keep-Alive', b'timeout=5, max=98'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=CHBJDIDFHDGNIPOFLANCIHAFDIFIKNJMDDPOHPPPGICKPFCEFLBHGHFOAKPFNHKMJMJDPCEHFBGAAKBLKFDAAIDHGDIGOGIHBJKINCGCBIAKIALBBIMKEGEIFOGGHGME; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd49ca63254d12748045b4c255631ef0947d1ef1c8afd6508480d2df97d7e923c0354dffdf756a98ec58b979171ab6f934a; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:12,295 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4721 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:12,296 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,296 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:12,296 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:12,297 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:12,297 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:12,297 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:12,298 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:12,299 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:12,312 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:12,356 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb80b0>
+httpcore.connection                     : 2025-03-23 10:07:12,357 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abacc50> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:12,449 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00ff80>
+httpcore.http11                         : 2025-03-23 10:07:12,449 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,449 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:12,449 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,449 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:12,449 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,530 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:12 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"b960e0ccca11c6a95826404da12dafbc"'), (b'Keep-Alive', b'timeout=5, max=98'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=KLHEADFBHCKAFJINHPEEDKPLLEDGCEDAJHFDNCGGJKBBACIDAABKDLPMAPJMOGPPDKBDCHJPFBPNNFHJEOGADKHGGDDJEKMBCADKKMBGIGFNLIGFEBPPPMPBJAIIOIEC; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd4665769904567e4ef64772146cb79cea8d56e7cf520dbd29cdaee58b573a9683d13ee5e204e2cd80f6b6fd35c94a934a1; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:12,532 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4722 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:12,532 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,532 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:12,533 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:12,533 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:12,533 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:12,533 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:12,534 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:12,536 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:12,547 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:12,592 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb8fb0>
+httpcore.connection                     : 2025-03-23 10:07:12,593 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abaddd0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:12,685 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb8ec0>
+httpcore.http11                         : 2025-03-23 10:07:12,685 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,685 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:12,685 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,685 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:12,686 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,764 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:12 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"6cfcb74db7aa5722c738ad1e86acaafe"'), (b'Keep-Alive', b'timeout=5, max=97'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=MIPNMJNKDMNJNKKNMKFNJDPBBPHPOPPFFCLGOOAPKBJKNGHNBBHKINMAIMDFBIFCENMDDCEDFBLLELKJNAFALENHGDLEHHOEABNBLMBKBDOEELBHGGIPNOLJEPGOGJMG; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd475909cba334c1da99a44e929cd3ea3eeffd2ef06ad38b2d361c6b015137bf5c5637f68133e885bb01fa6f9d78ee720c8; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:12,765 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4723 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:12,765 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,765 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:12,765 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:12,765 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:12,766 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:12,766 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:12,767 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:12,768 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:12,780 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:12,824 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb9eb0>
+httpcore.connection                     : 2025-03-23 10:07:12,824 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abad150> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:12,916 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb9d90>
+httpcore.http11                         : 2025-03-23 10:07:12,917 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,918 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:12,918 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:12,918 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:12,918 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,009 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:13 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"663b341ff2a8848f5b3cbe90679ba85a"'), (b'Keep-Alive', b'timeout=5, max=97'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=HPCDLMDHMFENAEENNAOHOCHCDBEIAALKKMEIBGPBONDDCAKHDMOGHCOMLODMIHDOACKDCNHMGBOCLIPJOCOAGABJGDFDDGBOFIJMDAOAIKEDJJGABPIEIDKJEEIDANBM; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd45defe325b80f2122edae2a9dad5cc60bc562cd71fe121f2079423cab2fa1f598a0d0efa739ab67b20124d60a407bc48f; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:13,010 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4724 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:13,011 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,011 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:13,011 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:13,011 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:13,011 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:13,012 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:13,013 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:13,014 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:13,026 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:13,071 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abbad80>
+httpcore.connection                     : 2025-03-23 10:07:13,072 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abad950> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:13,164 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abbac60>
+httpcore.http11                         : 2025-03-23 10:07:13,164 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,165 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:13,165 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,166 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:13,166 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,245 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:13 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"02b2341bb843f2b4221e027d174bfb46"'), (b'Keep-Alive', b'timeout=5, max=96'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=MDNNOCOOCLLJMCGGOILICNPGDGGKHNILEKDNLNCDEDGMAECBOLBNEKJFGLMOGJBLHEHDHCMLGBJKCGKANCCAPBKNGDEJFLEHAHIGCJCCFFEABECEGCMNINGPPAANNMBC; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd41d62df46045183f97d28bcacda973ae4523fb1384ff698c8545ea74ab2969ce0c60de65638101d1bc651f8dbaae5852b; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:13,246 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4725 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:13,247 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,247 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:13,247 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:13,248 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:13,248 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:13,248 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:13,249 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:13,251 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:13,265 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:13,312 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11aa19c10>
+httpcore.connection                     : 2025-03-23 10:07:13,312 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abad3d0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:13,404 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11a6fd6a0>
+httpcore.http11                         : 2025-03-23 10:07:13,405 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,406 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:13,406 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,406 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:13,406 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,484 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:13 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"17d7fa4de402dab917eb88cdb529916f"'), (b'Keep-Alive', b'timeout=5, max=96'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=OMIKPOICEHCIBEIKEHLKJMEGKBONNDEAHFINCPMEKGDDDOCIPADPLOJEILLFFBDFCICDIMGDGBJOCOEEPCMAFIFAGDFPCMEMHJPOJMAJAHIAGEINNMIGHLOGMBECINGA; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd4887a7f481036af190ee138baf203d0c927141af4d034a452c222e12e5615751990b036d7a090f4b9eb26cdecc31579b3; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:13,485 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4726 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:13,485 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,485 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:13,485 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:13,486 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:13,486 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:13,486 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:13,487 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:13,488 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:13,499 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:13,548 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00f650>
+httpcore.connection                     : 2025-03-23 10:07:13,549 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11bfdfed0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:13,640 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00f8c0>
+httpcore.http11                         : 2025-03-23 10:07:13,641 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,642 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:13,642 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,642 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:13,643 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,720 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:13 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"62204d7c9f69cb315b42b50454d3de23"'), (b'Keep-Alive', b'timeout=5, max=95'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=JDCGMMBEGCFNEGKGOPFEDOAPAOPOELMKPBOMGMEIMPCAJIIKCCHLPOKDNKCMJEHJCCADOHGJGBMAEGPPLNHAGFFIGDDLIPOBJJKNIJFKFBLJIMEEBJNKEMAFJFBBOGGD; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd46878e287575572243af903fa5e8c985de648a00f044143e387b2ca07df0eb4949a415931630f033340374eb48d980e0f; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:13,721 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4727 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:13,721 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,721 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:13,721 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:13,721 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:13,722 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:13,722 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:13,722 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:13,723 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:13,730 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:13,776 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00e870>
+httpcore.connection                     : 2025-03-23 10:07:13,777 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11bfdfdd0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:13,869 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00e7b0>
+httpcore.http11                         : 2025-03-23 10:07:13,869 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,870 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:13,870 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,870 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:13,870 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,952 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:14 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"b5ba728b04a36272055fbc63a5ef8396"'), (b'Keep-Alive', b'timeout=5, max=95'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=BJOGPBNKBCCNJELOIMHLOLBCONIMGEMKJBOBGKIPBLLKNIGDMOGKFLDDMHGAMNKKODFDBOPDGBMDCOLIOMEAAJNIGDGHPIMONKGEFHDHMMBMAFHIAKCNAAEIBPDEAOBK; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd46450c132e9f3bb5cd73f2a3ae452cf937c10a4bb5a861b51b6717ae44e5fbc3f0c80ee05e913dc54906bb559d476b785; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:13,952 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4728 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:13,953 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:13,953 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:13,953 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:13,953 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:13,953 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:13,953 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:13,953 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:13,954 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:13,960 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:14,005 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00cfb0>
+httpcore.connection                     : 2025-03-23 10:07:14,005 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abae7d0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:14,096 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c00d610>
+httpcore.http11                         : 2025-03-23 10:07:14,097 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,097 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:14,098 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,098 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:14,098 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,180 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:14 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"943b49ae78e2bfa28ab532829e03bc0e"'), (b'Keep-Alive', b'timeout=5, max=94'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=ICOOCHPDKBDLCHGGNJAIBDIOBIGKHPJHCLKIDHAJAIFLIOMIDAFPMDNOIMPMNGCILHCDMJFCHBFHAHMHMONAJJHIGDHFNCNJMAJOGAPIOJFNFJGMPPPLPGLKCAAEDPIH; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd41d53d4e4d3cc0d4fdd7457fddb6b592f86e7d0d193c4e139c99dafb7afb6a2fa0c650c0ed17ff3111402f5c2fe642551; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:14,181 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4729 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:14,181 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,182 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:14,182 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:14,182 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:14,182 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:14,182 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:14,183 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:14,184 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:14,196 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:14,240 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb9a00>
+httpcore.connection                     : 2025-03-23 10:07:14,240 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abadb50> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:14,332 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1145e6e40>
+httpcore.http11                         : 2025-03-23 10:07:14,333 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,333 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:14,333 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,333 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:14,333 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,417 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:14 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"2746c0138a72ca3f998f17d462b1948d"'), (b'Keep-Alive', b'timeout=5, max=100'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=LIFCAIGDCMNMKMICNGGFFMADLFCNAGOCONKKEPAIOOCPPELPLLDOEADFHEBCDLPPKAHDKBEMHBIPDCKMLDPACABNGDFAHJGANEFBEGJCEMBEAMNJFMFKNIPFNAIBMHLK; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd48f63acb8e4e82233ae5859d92e960db87d0b9dfc868fe739bd80bd75e74b7bcb986ed120c61d5e62550c4439c71726ae; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:14,419 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4730 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:14,419 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,419 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:14,420 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:14,420 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:14,420 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:14,420 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:14,421 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:14,423 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:14,434 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:14,480 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb9ca0>
+httpcore.connection                     : 2025-03-23 10:07:14,480 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abaddd0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:14,573 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abba7e0>
+httpcore.http11                         : 2025-03-23 10:07:14,573 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,574 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:14,574 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,574 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:14,574 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,659 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:14 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"e048ad9d5bce192aef6f674029766ad7"'), (b'Keep-Alive', b'timeout=5, max=99'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=ICFILECMGKEDKOOIJFGHAHLGIGNDAFJGDEJHKDJOPKCPGFNCCPAPHAEEAMGMEHBPHPIDELPLHBOHMPICLEPAJHPBGDKJONLDBCMLFFJEPMDFBAMCOGEFGJKHFAEKIGLK; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd4fc5a12210bf6a1bfe76c321632e457782b104b6fef2fd794392211b16c39237bbf2a7557cbcb28747d8dd77282ff275b; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:14,660 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4731 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:14,661 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,661 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:14,662 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:14,662 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:14,662 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:14,662 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:14,664 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:14,665 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:14,677 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:14,720 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb8a40>
+httpcore.connection                     : 2025-03-23 10:07:14,720 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abad6d0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:14,812 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb90d0>
+httpcore.http11                         : 2025-03-23 10:07:14,812 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,812 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:14,813 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,813 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:14,813 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,895 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:14 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"a70e6d980fde9037a319e5a07fb1c046"'), (b'Keep-Alive', b'timeout=5, max=99'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=LPDGMMDLBGCJJKLKIDCLABNFEEBFAMKPPDAGFBPGLMJNKCAEFJNIEPPKIOGJLMIMCLADONBHHBGLFNHAKEDABFGGGDIEAIFKELGADMHNHMLNPGPHFOECMAKEFDFHNKFA; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd45118b1ca138985be76d795132ba8f4f2f30c4ffe01b5637be9c75a027525ac9d85774a936c6f21297e944a4d674d8a62; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:14,896 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4732 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:14,897 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:14,897 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:14,897 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:14,897 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:14,897 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:14,898 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:14,898 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:14,899 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:14,911 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:14,957 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb8440>
+httpcore.connection                     : 2025-03-23 10:07:14,957 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11bfdf950> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:15,048 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb8710>
+httpcore.http11                         : 2025-03-23 10:07:15,049 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,049 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:15,049 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,049 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:15,049 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,130 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:15 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"6c3f88daaf91a081500b0eda50149ad1"'), (b'Keep-Alive', b'timeout=5, max=98'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=GFJHDBNPNGFMDEEHFEGDFCHDMEIGLGAGENBIDMDACECEOHGPMLAOGLJFCDFPKBLKFBEDFLJBIBAMFKGDELLAKLPEGDLKAEPFLPCEJGNEOFEKELJOMMAPHLGKELNAHPFL; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd4b297b09c57c66df1563110860071e506f62f6132d9cdc8f8694915550a496ef1185cf200ee2a6ff934d1550d96acc335; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:15,131 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4733 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:15,132 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,132 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:15,132 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:15,133 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:15,133 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:15,133 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:15,134 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:15,135 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:15,149 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:15,200 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c014530>
+httpcore.connection                     : 2025-03-23 10:07:15,200 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abaded0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:15,293 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c014410>
+httpcore.http11                         : 2025-03-23 10:07:15,293 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,294 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:15,294 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,295 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:15,295 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,374 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:15 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"a4238ceed8807c8c45db59eb20513288"'), (b'Keep-Alive', b'timeout=5, max=98'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=FMJBEEHMLMCNHNHPPNBPDKLCEGJFMJHNLBMKJHDNMENPHCDJGBBOCPNKPLHFHHAJOCCDGAOJIBHFLOAJNBAABGHOGDOOJIPKGMDKOMNLFNEOBJBCAGDMNLOIIODILDJG; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd4b86348f59984a7758681faf540a133eb632e76212f5f80d549ccfbe9ffe1a1ddb07be2ba76793002a48ae76b87cc2ab7; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:15,375 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4734 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:15,376 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,376 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:15,376 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:15,376 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:15,377 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:15,377 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:15,378 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:15,379 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:15,391 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:15,436 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c0153d0>
+httpcore.connection                     : 2025-03-23 10:07:15,436 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abae9d0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:15,528 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c0152b0>
+httpcore.http11                         : 2025-03-23 10:07:15,528 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,529 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:15,529 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,529 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:15,530 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,607 DEBUG     (MainThread) receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 23 Mar 2025 16:07:15 GMT'), (b'Vary', b'Accept,Accept-Encoding,Content-Type,Authorization,Origin'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Frame-Options', b'deny'), (b'Cache-Control', b'no-cache, private'), (b'ETag', b'"86c976705c524d441592e9e073c4a91d"'), (b'Keep-Alive', b'timeout=5, max=97'), (b'Connection', b'Keep-Alive'), (b'Content-Type', b'application/vnd.api+json; charset=utf-8'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-FRAME-OPTIONS', b'SAMEORIGIN'), (b'Set-Cookie', b'f5avraaaaaaaaaaaaaaaa_session_=PMMENOMMLJPEGFAHNOAKFFHINDDIMBCDDFCGPDBJMMKHCDNLBODJIAGGMNPEFDCMLMODDOGOIBFFBNEOEIFALJHNGDKLMMAIEKAFBCAGKMHBGFOKGJPBNBHCEGGBNEHP; HttpOnly; secure; SameSite=Strict;'), (b'Set-Cookie', b'TS01888c42=01ac6fafd435e2995f723a96615b4159c0ead1e3ac9fa9742e52105863d8ac5b1b9c951a7f35b7e5f026d3bf1400869286c90ef164; Path=/; Secure; HttpOnly;'), (b'Transfer-Encoding', b'chunked')])
+httpx                                   : 2025-03-23 10:07:15,608 INFO      (MainThread) HTTP Request: GET https://data.usbr.gov/rise/api/catalog-item/4735 "HTTP/1.1 200 OK"
+httpcore.http11                         : 2025-03-23 10:07:15,609 DEBUG     (MainThread) receive_response_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,609 DEBUG     (MainThread) receive_response_body.complete
+httpcore.http11                         : 2025-03-23 10:07:15,609 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:15,609 DEBUG     (MainThread) response_closed.complete
+httpcore.connection                     : 2025-03-23 10:07:15,610 DEBUG     (MainThread) close.started
+httpcore.connection                     : 2025-03-23 10:07:15,610 DEBUG     (MainThread) close.complete
+httpx                                   : 2025-03-23 10:07:15,611 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:15,612 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:15,625 DEBUG     (MainThread) connect_tcp.started host='data.usbr.gov' port=443 local_address=None timeout=5.0 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:15,667 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c016240>
+httpcore.connection                     : 2025-03-23 10:07:15,668 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11abaefd0> server_hostname='data.usbr.gov' timeout=5.0
+httpcore.connection                     : 2025-03-23 10:07:15,760 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11c016120>
+httpcore.http11                         : 2025-03-23 10:07:15,760 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,760 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:15,761 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,761 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:15,761 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,775 DEBUG     (MainThread) receive_response_headers.failed exception=KeyboardInterrupt()
+httpcore.http11                         : 2025-03-23 10:07:15,775 DEBUG     (MainThread) response_closed.started
+httpcore.http11                         : 2025-03-23 10:07:15,775 DEBUG     (MainThread) response_closed.complete
+Config                                  : 2025-03-23 10:07:15,788 WARNING   (MainThread) Traceback (most recent call last):
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/backend/unifier.py", line 152, in _site_wrapper
+    summary_records = parameter_source.read(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/backend/source.py", line 640, in read
+    all_analyte_records = self.get_records(site_record)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/backend/connectors/bor/source.py", line 127, in get_records
+    data = self._execute_json_request(f'https://data.usbr.gov{item["id"]}')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/backend/source.py", line 289, in _execute_json_request
+    resp = httpx.get(url, params=params, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpx/_api.py", line 210, in get
+    return request(
+           ^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpx/_api.py", line 118, in request
+    return client.request(
+           ^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpx/_client.py", line 837, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpx/_client.py", line 926, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpx/_client.py", line 954, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpx/_client.py", line 991, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpx/_client.py", line 1027, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpx/_transports/default.py", line 236, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/ssl.py", line 1233, in recv
+    return self.read(buflen)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/ssl.py", line 1106, in read
+    return self._sslobj.read(len)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+Config                                  : 2025-03-23 10:07:15,788 WARNING   (MainThread) Failed to unify BORSiteSource
+WQPSiteSource                           : 2025-03-23 10:07:15,789 INFO      (MainThread) Gathering site records
+httpx                                   : 2025-03-23 10:07:15,789 DEBUG     (MainThread) load_ssl_context verify=True cert=None trust_env=True http2=False
+httpx                                   : 2025-03-23 10:07:15,789 DEBUG     (MainThread) load_verify_locations cafile='/Users/marissafichera/opt/anaconda3/envs/mcrasta_env_2/lib/python3.12/site-packages/certifi/cacert.pem'
+httpcore.connection                     : 2025-03-23 10:07:15,795 DEBUG     (MainThread) connect_tcp.started host='www.waterqualitydata.us' port=443 local_address=None timeout=30 socket_options=None
+httpcore.connection                     : 2025-03-23 10:07:15,885 DEBUG     (MainThread) connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb8410>
+httpcore.connection                     : 2025-03-23 10:07:15,885 DEBUG     (MainThread) start_tls.started ssl_context=<ssl.SSLContext object at 0x11bf736d0> server_hostname='www.waterqualitydata.us' timeout=30
+httpcore.connection                     : 2025-03-23 10:07:15,921 DEBUG     (MainThread) start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11abb8320>
+httpcore.http11                         : 2025-03-23 10:07:15,921 DEBUG     (MainThread) send_request_headers.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,922 DEBUG     (MainThread) send_request_headers.complete
+httpcore.http11                         : 2025-03-23 10:07:15,922 DEBUG     (MainThread) send_request_body.started request=<Request [b'GET']>
+httpcore.http11                         : 2025-03-23 10:07:15,922 DEBUG     (MainThread) send_request_body.complete
+httpcore.http11                         : 2025-03-23 10:07:15,922 DEBUG     (MainThread) receive_response_headers.started request=<Request [b'GET']>
