@@ -6,6 +6,8 @@ import numpy as np
 import math
 from math import sqrt, exp, pi
 import sys
+import pandas as pd
+import geopandas as gpd
 
 
 # Set environment
@@ -36,27 +38,38 @@ def csv_to_shapefile(csv_path, shapefile_path, x_field="Longitude", y_field="Lat
     str: Path to the created Shapefile.
     """
 
+    # Set environment and workspace
+    arcpy.env.overwriteOutput = True
 
-    try:
-        # Set environment and workspace
-        arcpy.env.overwriteOutput = True
+    # Convert spatial reference if needed
+    spatial_reference = arcpy.SpatialReference(spatial_ref)
 
-        # Convert spatial reference if needed
-        spatial_reference = arcpy.SpatialReference(spatial_ref)
+    # Load your CSV
+    df = pd.read_csv(csv_path)
 
-        # Create a temporary layer from the CSV file
-        layer_name = "temp_layer"
-        arcpy.management.MakeXYEventLayer(csv_path, x_field, y_field, layer_name, spatial_reference)
+    gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(x=df.longitude, y=df.latitude), crs='EPSG:4326')
+    gdf.to_file(shapefile_path)
 
-        # Export the layer to a shapefile
-        arcpy.management.CopyFeatures(layer_name, shapefile_path)
+    # Convert the date column (assuming it's called 'Date') to datetime format
+    df['date_mostrecent_conv'] = pd.to_datetime(df['most_recent_date'], format='%d/%m/%Y', errors='coerce')
 
-        print(f"Shapefile created successfully: {shapefile_path}")
-        return shapefile_path
+    # # Drop the original date column
+    # df.drop(columns=['most_recent_date'], inplace=True)
+    #
+    # # Create a temporary layer from the CSV file
+    # layer_name = "temp_layer"
+    # arcpy.management.MakeXYEventLayer(csv_path, x_field, y_field, layer_name, spatial_reference)
+    # print(arcpy.GetInstallInfo()['Version'])
+    # environ_details = os.environ
+    # fields = arcpy.ListFields(layer_name)
+    # for field in fields:
+    #     print(f"{field.name} has a type of {field.type} with a length of {field.length}")
+    # # Export the layer to a shapefile
+    # arcpy.management.CopyFeatures(layer_name, shapefile_path)
+    #
+    # print(f"Shapefile created successfully: {shapefile_path}")
+    return shapefile_path
 
-    except Exception as e:
-        print(f"Error: {e}")
-        return None
 
 
 def is_geographic(feature_class):
@@ -81,22 +94,24 @@ def project_if_geographic(input_fc, target_sr, output_fc):
         return input_fc
 
 
-def run_adaptive_kd_multiple(
-    point_datasets,           # List of point feature classes
-    output_dir,               # Folder to save output rasters
-    output_combined_raster=None,   # Path to final combined raster
-    population_field="NONE",  # Field to weight points, or "NONE"
-    cell_size=1000            # Raster resolution in projected units (e.g., meters)
-):
+def run_adaptive_kd(
+        point_datasets,           # List of point feature classes
+        output_dir,               # Folder to save output rasters
+        output_combined_raster=None,   # Path to final combined raster
+        population_field="NONE",  # Field to weight points, or "NONE"
+        cell_size=1000,
+        names=None,# Raster resolution in projected units (e.g., meters)
+        ):
+
     density_rasters = []
 
     # Make sure output folder exists
     os.makedirs(output_dir, exist_ok=True)
 
-    for i, fc in enumerate(point_datasets):
-        print(f"➡️  Processing dataset {i+1}/{len(point_datasets)}: {fc}")
+    for fc, name in zip(point_datasets, names):
+        print(f"➡️  Processing dataset {name}: {fc}")
 
-        out_raster_path = os.path.join(output_dir, f"adaptive_kd_{i+1}.tif")
+        out_raster_path = os.path.join(output_dir, f"{name}_adaptive_kd.tif")
 
         # Leave search_radius=None for adaptive behavior
         kd_raster = KernelDensity(
@@ -138,10 +153,51 @@ def clip_points_to_boundary(input_fc, clip_fc, output_fc):
     return output_fc
 
 
+def convert_shapefiles_to_geojson(folder_path, output_folder=None):
+    if output_folder is None:
+        output_folder = folder_path  # Save GeoJSONs to same folder if not specified
+
+    # Loop through files in the folder
+    for filename in os.listdir(folder_path):
+        if filename.endswith('cl.shp'):
+            shapefile_path = os.path.join(folder_path, filename)
+
+            try:
+                # Read shapefile
+                gdf = gpd.read_file(shapefile_path)
+
+                # Define output path (same name but .geojson)
+                geojson_name = filename.replace('.shp', '.geojson')
+                geojson_path = os.path.join(output_folder, geojson_name)
+
+                # Export to GeoJSON
+                gdf.to_file(geojson_path, driver='GeoJSON')
+
+                print(f"✅ Converted: {filename} → {geojson_name}")
+
+            except Exception as e:
+                print(f"❌ Failed to convert {filename}: {e}")
+
+
+
 # Example usage:
 def main():
+    convert_shapefiles_to_geojson(r"\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\scratch")
+    sys.exit()
+
     names = ['summary_tds_all', 'summary_dtw_all']
-    waterdata_csvs = [os.path.join('waterdata', f'{name}.csv') for name in names]
+    names = ['arsenic',
+             'bicarbonate',
+             'carbonate',
+             'chloride',
+             'magnesium',
+             'nitrate',
+             'ph',
+             'potassium',
+             'sodium',
+             'sulfate']
+
+    waterdata_csvs = [os.path.join('dieoutput', f'{name}', 'output', f'summary.csv') for name in names]
 
     # Define target spatial reference (for example, NAD83 UTM Zone 13N, EPSG:26913)
     # - using Albers Equal Area Conic EPSG:5070 or potentially ESRI:102008 to cover entire state of NM
@@ -166,23 +222,24 @@ def main():
         os.makedirs(temp_workspace)
 
     input_fcs = []
-    for i, fc in enumerate(input_datasets):
+    for fc, name in zip(input_datasets, names):
         # Define temporary projected feature class path
-        projected_fc = os.path.join(temp_workspace, "projected_{}.shp".format(i))
+        projected_fc = os.path.join(temp_workspace, f"{name}_proj.shp")
         # Project if necessary
         input_for_analysis = project_if_geographic(fc, target_spatial_ref, projected_fc)
         input_fcs.append(input_for_analysis)
 
     # Define the output raster path
-    outrastername = 'composite_adaptive_density'
-    output_density_raster = os.path.join(ROOT, f'{outrastername}.tif')
+    # outrastername = 'composite_adaptive_density'
+    # output_density_raster = os.path.join(ROOT, f'{outrastername}.tif')
 
-    run_adaptive_kd_multiple(
+    run_adaptive_kd(
         point_datasets=input_fcs,
         output_dir=ROOT,
         output_combined_raster=None,
         population_field='NONE',
-        cell_size=100
+        cell_size=100,
+        names=names,
     )
 
     # re-project back into WGS1984

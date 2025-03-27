@@ -23,8 +23,8 @@ import requests
 import json
 import os
 
-root = r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData'
-default_gdb = r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
+root = r'\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData'
+default_gdb = r'\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb'
 ap.env.overwriteOutput = True
 
 
@@ -444,54 +444,88 @@ def sort_tgs_logdata(df, df2, name, label):
     print(f'{df=}')
     print(f'{df2.columns=}')
 
-    df1 = df[['UWI', 'Surface Lat', 'Surface Long']].drop_duplicates()
-    # join Export Well Results sheet to other sheet on UWI to get locations
-    columns_to_keep = ['UWI', 'Surface Lat', 'Surface Long', 'Top Depth', 'Bottom Depth', 'Product Type Name',
-                       'Data Available', 'Description']
-    # suffixes = ('_df1', '_df2')
-    merged_df = df1.merge(df2, on='UWI', how='inner')
-    print(f'{merged_df.columns=}')
-    joined_df = merged_df[columns_to_keep]
+    if name == 'Export Product Results':
+        # extract all the raster and image log data from Export Product Results
+        gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(x=df['Surface Long'], y=df['Surface Lat']), crs='EPSG:4326')
+        gdf_rasters = gdf[(gdf['Product Type Name'] == 'SmartRASTER') | (gdf['Product Type Name'] == 'Log Image')]
 
-    # create geodataframe from joined dataframe
-    gdf = gpd.GeoDataFrame(joined_df, geometry=gpd.points_from_xy(joined_df['Surface Long'], joined_df['Surface Lat']))
-    gdf.set_crs('EPSG:4326', allow_override=True, inplace=True)
+        # screen TGS data, create separate files for each log type
+        keywords = ['caliper',
+                    'spontaneous potential',
+                    'density', 'neutron',
+                    'gamma ray',
+                    'resistivity',
+                    'conductivity',
+                    'microlog']
 
-    # find number of unique values in Data Available column
-    # unique_vals = gdf['Data Available'].unique()
-    # print(f'unique values in digital curves (LAS+) sheet = {unique_vals.shape}')
+        for keyword in keywords:
+            log_df = gdf_rasters[gdf_rasters['Data Available'].str.contains(keyword, case=False, na=False)]
+            log_df.to_file(os.path.join(root, f'TGS\TGS{label}{keyword}.shp'))
 
-    # start by combining all porosity logs (or logs that are used to measure porosity)
-    # keywords: density, neutron, sonic, gamma ray, acoustic
-    keywords_por = ['density', 'neutron', 'sonic', 'gamma ray', 'acoustic']
-    pattern = '|'.join(keywords_por)
-    poro_df = gdf[gdf['Description'].str.contains(pattern, case=False, na=False)]
-    poro_df.to_file(os.path.join(root, f'TGS\TGS_{label}_poro.shp'))
+        return
 
-    # combine all permeability logs
-    # keywords: resitivity, induction, laterolog, microlog, spontaneous potential
-    keywords_perm = ['resistivity', 'induction', 'laterolog', 'microlog', 'spontaneous potential']
-    pattern = '|'.join(keywords_perm)
-    perm_df = gdf[gdf['Description'].str.contains(pattern, case=False, na=False)]
-    perm_df.to_file(os.path.join(root, f'TGS\TGS_{label}_perm.shp'))
+    if name != 'Export Product Results':
+        df1 = df[['UWI', 'Surface Lat', 'Surface Long']].drop_duplicates()
+        # join Export Well Results sheet to other sheet on UWI to get locations
+        columns_to_keep = ['UWI', 'Surface Lat', 'Surface Long', 'Top Depth', 'Bottom Depth', 'Product Type Name',
+                           'Data Available', 'Description']
+        # suffixes = ('_df1', '_df2')
+        merged_df = df1.merge(df2, on='UWI', how='inner')
+        print(f'{merged_df.columns=}')
+        joined_df = merged_df[columns_to_keep]
 
-    # now take group that doesn't contain either
-    pattern = '|'.join(keywords_perm + keywords_por)
-    other_df = gdf[~gdf['Description'].str.contains(pattern, case=False, na=False)]
-    other_df.to_file(os.path.join(root, f'TGS\TGS_{label}_other.shp'))
+        # create geodataframe from joined dataframe
+        gdf = gpd.GeoDataFrame(joined_df, geometry=gpd.points_from_xy(joined_df['Surface Long'], joined_df['Surface Lat']))
+        gdf.set_crs('EPSG:4326', allow_override=True, inplace=True)
 
-    gdfs = [poro_df,
-            perm_df,
-            other_df]
-    dfnames = ['poro', 'perm', 'other']
+        # find number of unique values in Data Available column
+        # unique_vals = gdf['Data Available'].unique()
+        # print(f'unique values in digital curves (LAS+) sheet = {unique_vals.shape}')
 
-    for gdf, n in zip(gdfs, dfnames):
-        # Group by top depth <= 2,000 ft., save to shapefile
-        threshold = 2000
-        group1 = gdf[gdf['Top Depth'] <= threshold]
-        group2 = gdf[gdf['Top Depth'] > threshold]
-        group1.to_file(os.path.join(root, f'TGS\TGS_{n}{label}TopDepthLT2kft.shp'))
-        group2.to_file(os.path.join(root, f'TGS\TGS_{n}{label}TopDepthGT2kft.shp'))
+        # screen TGS data, create separate files for each log type
+        keywords = ['caliper',
+                    'spontaneous potential',
+                    'density', 'neutron',
+                    'gamma ray',
+                    'resistivity',
+                    'conductivity',
+                    'microlog']
+
+        for keyword in keywords:
+            log_df = gdf[gdf['Description'].str.contains(keyword, case=False, na=False)]
+            log_df.to_file(os.path.join(root, f'TGS\TGS{label}{keyword}.shp'))
+
+        # # start by combining all porosity logs (or logs that are used to measure porosity)
+        # # keywords: density, neutron, sonic, gamma ray, acoustic
+        # keywords_por = ['density', 'neutron', 'sonic', 'gamma ray', 'acoustic']
+        # pattern = '|'.join(keywords_por)
+        # poro_df = gdf[gdf['Description'].str.contains(pattern, case=False, na=False)]
+        # poro_df.to_file(os.path.join(root, f'TGS\TGS_{label}_poro.shp'))
+        #
+        # # combine all permeability logs
+        # # keywords: resitivity, induction, laterolog, microlog, spontaneous potential
+        # keywords_perm = ['resistivity', 'induction', 'laterolog', 'microlog', 'spontaneous potential']
+        # pattern = '|'.join(keywords_perm)
+        # perm_df = gdf[gdf['Description'].str.contains(pattern, case=False, na=False)]
+        # perm_df.to_file(os.path.join(root, f'TGS\TGS_{label}_perm.shp'))
+        #
+        # # now take group that doesn't contain either
+        # pattern = '|'.join(keywords_perm + keywords_por)
+        # other_df = gdf[~gdf['Description'].str.contains(pattern, case=False, na=False)]
+        # other_df.to_file(os.path.join(root, f'TGS\TGS_{label}_other.shp'))
+        #
+        # gdfs = [poro_df,
+        #         perm_df,
+        #         other_df]
+        # dfnames = ['poro', 'perm', 'other']
+        #
+        # for gdf, n in zip(gdfs, dfnames):
+        #     # Group by top depth <= 2,000 ft., save to shapefile
+        #     threshold = 2000
+        #     group1 = gdf[gdf['Top Depth'] <= threshold]
+        #     group2 = gdf[gdf['Top Depth'] > threshold]
+        #     group1.to_file(os.path.join(root, f'TGS\TGS_{n}{label}TopDepthLT2kft.shp'))
+        #     group2.to_file(os.path.join(root, f'TGS\TGS_{n}{label}TopDepthGT2kft.shp'))
 
 
 def tgs_data():
@@ -506,73 +540,83 @@ def tgs_data():
 
     # Create a dictionary to hold each sheet as a DataFrame
     # sheets_data = {}
-    labels = ['LAS', 'LAS+', 'ARLAS', 'MudLAS']
+    labels = ['rasters', 'LAS', 'LAS+', 'ARLAS', 'MudLAS']
 
     df1 = pd.read_excel(excel_file, sheet_name='Export Product Results')
+    gdf = gpd.GeoDataFrame(df1, geometry=points_from_xy(x=df1['Surface Long'], y=df1['Surface Lat']), crs='EPSG:4326')
 
-    # Create geodataframe from Export Product Results sheet - contains all products
-    gdf = gpd.GeoDataFrame(df1, geometry=gpd.points_from_xy(df1['Surface Long'], df1['Surface Lat']))
-    gdf.set_crs('EPSG:4326', allow_override=True, inplace=True)
-    gdf.to_file(os.path.join(root, 'TGS\TGSProducts_NoSJorDB_all.shp'))
+    unique_vals = gdf['Product Type Name'].unique()
+    for v in unique_vals:
+        pt_gdf = gdf[gdf['Product Type Name'] == v]
+        name = re.sub(r'[ ()]', '', v)
+        pt_gdf.to_file(os.path.join(root, f'TGS\TGSproducts_{name}.shp'))
 
     sys.exit()
 
+    # Create geodataframe from Export Product Results sheet - contains all products
+    # gdf = gpd.GeoDataFrame(df1, geometry=gpd.points_from_xy(df1['Surface Long'], df1['Surface Lat']))
+    # gdf.set_crs('EPSG:4326', allow_override=True, inplace=True)
+    # gdf.to_file(os.path.join(root, 'TGS\TGSProducts_NoSJorDB_all.shp'))
+    gdf = gpd.read_file(os.path.join(root, 'TGS\TGSProducts_NoSJorDB_all.shp'))
+
     # Iterate over all sheet names and load each sheet into a DataFrame, then organize digital log data
-    for l, sheet_name in zip(labels, excel_file.sheet_names[2:]):
+    for l, sheet_name in zip(labels, excel_file.sheet_names[1:]):
         sheetdata = pd.read_excel(excel_file, sheet_name=sheet_name)
+        # sheetdata.to_csv(os.path.join(root, f'TGS\TGSnoSJDB_{sheet_name}.csv'.replace(' ','')))
         sort_tgs_logdata(df=df1, df2=sheetdata, name=sheet_name, label=l)
 
-    # Group by top depth <= 2,000 ft., save to shapefile
-    threshold = 2000
-    group1 = gdf[gdf['Top Depth'] <= threshold]
-    group2 = gdf[gdf['Top Depth'] > threshold]
-    group1.to_file(os.path.join(root, 'TGS\TGSproducts_TopDepthLT2kft.shp'))
-    group2.to_file(os.path.join(root, 'TGS\TGSproducts_TopDepthGT2kft.shp'))
 
-    # Graph the number of products for each group
-    gdfs = [group1, group2]
-    labels = ['TGS Wells, Top Depth <= 2,000 ft.', 'TGS Wells, Top Depth > 2,000 ft.']
-
-
-    for g, l in zip(gdfs, labels):
-        category_counts = g['Product Type Name'].value_counts().reset_index()
-        category_counts.columns = ['Category', 'Count']
-        plt.figure()
-        ax = sns.barplot(data=category_counts, x='Category', y='Count')
-        plt.title(f'{l}')
-        plt.xlabel('Category')
-        plt.ylabel('Count')
-
-        # Add the count values on top of the bars
-        for p in ax.patches:
-            # Get the height of each bar
-            height = p.get_height()
-
-            # Add text to the bar (centered at the middle of each bar)
-            ax.text(p.get_x() + p.get_width() / 2, height + 0.1,  # Slightly above the bar
-                    str(int(height)),  # Convert height to integer for count value
-                    ha='center',  # Horizontal alignment (centered)
-                    va='bottom',  # Vertical alignment (above the bar)
-                    fontsize=12,  # Font size of the count
-                    color='black')  # Text color
-
-        plt.xticks()
-        plt.tight_layout()
-        # plt.show()
-
-        total_count = category_counts['Count'].sum()
-        print(f'{total_count=}')
-
-    # now group by product type
-    labels =['LT2kft', 'GT2kft']
-    for l, g in zip(labels, gdfs):
-        unique_vals = g['Product Type Name'].unique()
-        for v in unique_vals:
-            pt_gdf = g[g['Product Type Name'] == v]
-            name = re.sub(r'[ ()]', '', v)
-            pt_gdf.to_file(os.path.join(root, f'TGS\TGSproducts_{name}{l}.shp'))
-
-    plt.show()
+    # # Group by top depth <= 2,000 ft., save to shapefile
+    # threshold = 2000
+    # group1 = gdf[gdf['Top Depth'] <= threshold]
+    # group2 = gdf[gdf['Top Depth'] > threshold]
+    # group1.to_file(os.path.join(root, 'TGS\TGSproducts_TopDepthLT2kft.shp'))
+    # group2.to_file(os.path.join(root, 'TGS\TGSproducts_TopDepthGT2kft.shp'))
+    #
+    # # Graph the number of products for each group
+    # gdfs = [group1, group2]
+    # labels = ['TGS Wells, Top Depth <= 2,000 ft.', 'TGS Wells, Top Depth > 2,000 ft.']
+    #
+    #
+    # for g, l in zip(gdfs, labels):
+    #     category_counts = g['Product Type Name'].value_counts().reset_index()
+    #     category_counts.columns = ['Category', 'Count']
+    #     plt.figure()
+    #     ax = sns.barplot(data=category_counts, x='Category', y='Count')
+    #     plt.title(f'{l}')
+    #     plt.xlabel('Category')
+    #     plt.ylabel('Count')
+    #
+    #     # Add the count values on top of the bars
+    #     for p in ax.patches:
+    #         # Get the height of each bar
+    #         height = p.get_height()
+    #
+    #         # Add text to the bar (centered at the middle of each bar)
+    #         ax.text(p.get_x() + p.get_width() / 2, height + 0.1,  # Slightly above the bar
+    #                 str(int(height)),  # Convert height to integer for count value
+    #                 ha='center',  # Horizontal alignment (centered)
+    #                 va='bottom',  # Vertical alignment (above the bar)
+    #                 fontsize=12,  # Font size of the count
+    #                 color='black')  # Text color
+    #
+    #     plt.xticks()
+    #     plt.tight_layout()
+    #     # plt.show()
+    #
+    #     total_count = category_counts['Count'].sum()
+    #     print(f'{total_count=}')
+    #
+    # # now group by product type
+    # labels =['LT2kft', 'GT2kft']
+    # for l, g in zip(labels, gdfs):
+    #     unique_vals = g['Product Type Name'].unique()
+    #     for v in unique_vals:
+    #         pt_gdf = g[g['Product Type Name'] == v]
+    #         name = re.sub(r'[ ()]', '', v)
+    #         pt_gdf.to_file(os.path.join(root, f'TGS\TGSproducts_{name}{l}.shp'))
+    #
+    # plt.show()
 
 
 def ose_data():
@@ -762,11 +806,29 @@ def parse_edi_files(folder_path=r'C:\Users\mfichera\OneDrive - nmt.edu\Documents
 
 
 def save_script(output_script_folder, script_name='viewdata.txt'):
+    base_name, ext = os.path.splitext(script_name)
     output_script_path = os.path.join(output_script_folder, script_name)
-    # Save script to output directory
-    script_content = """" + __file__ + """""
-    with open(output_script_path, 'w') as script_file:
-        script_file.write(script_content)
+
+    # If the file exists, append an incrementing number to avoid overwrite
+    counter = 1
+    while os.path.exists(output_script_path):
+        new_name = f"{base_name}_{counter}{ext}"
+        output_script_path = os.path.join(output_script_folder, new_name)
+        counter += 1
+
+    # Get the path of the currently running script
+    current_script = os.path.abspath(__file__)
+
+    # Read the current script's contents
+    with open(current_script, 'r', encoding='utf-8') as f:
+        script_content = f.read()
+
+    # Write the content to the new file
+    with open(output_script_path, 'w') as out_f:
+        out_f.write(script_content)
+
+    print(f"Script saved as: {output_script_path}")
+
 
 def nmocd():
     file_path = os.path.join(root, 'NMOCD', 'NMOCDWellLogs')
@@ -829,11 +891,50 @@ def USGS012():
 
         print(f"Feature class '{fcname}' created successfully in {gdb_path}.")
 
+
+def csv_to_shapefile(gdf, output_folder):
+    shapefile_name = "SSDB_WellHeader_locations.shp"
+    gdf.to_file(os.path.join(output_folder, shapefile_name))
+
+    shp = gpd.read_file(os.path.join(output_folder,shapefile_name))
+    clip_points_to_boundary(input_fc=shp, output_fc=os.path.join(output_folder, 'SSDB_WellHeader_locs_cl.shp'))
+    # Input CSV file
+    # csv_file = r"C:\path\to\your\input.csv"
+    #
+    # # Output folder and shapefile name
+    # output_folder = r"C:\path\to\output\folder"
+
+def clip_points_to_boundary(input_fc,
+                            output_fc,
+                            clip_fc=r'C:\Users\mfichera\OneDrive - nmt.edu\Documents\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData\basemap\NM_dataextent_WGS.shp',
+                            ):
+    """
+    Clips a point feature class to a polygon boundary.
+
+    Parameters:
+      input_fc (str): Path to the input points feature class
+      clip_fc (str): Path to the polygon clip boundary
+      output_fc (str): Path to save the clipped feature class
+    """
+    print(input_fc)
+    sys.exit()
+    print(ap.Describe(input_fc).spatialReference)
+    print(ap.Describe(clip_fc).spatialReference)
+
+    out_fc = os.path.join(r'W:\statewide\AquiferCharacterization\ArcGIS\Projects\NewMexWells\NewMexWells', output_fc)
+    ap.analysis.Clip(in_features=input_fc, clip_features=clip_fc, out_feature_class=out_fc)
+    print(f"📍 Clipped {os.path.basename(input_fc)} to boundary → {out_fc}")
+    return output_fc
+
+
 def main():
-    output_script_folder = os.path.join(root, 'USGS012')
+
+    tgs_data()
+
+    output_script_folder = os.path.join(root, 'TGS')
     script_name = 'viewdata.txt'
 
-    USGS012()
+    # USGS012()
     save_script(output_script_folder, script_name)
 
 
