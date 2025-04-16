@@ -45,7 +45,7 @@ nm_extent_wgs84 = (lonmin, latmin, lonmax, latmax)
 import os
 import zipfile
 
-def geojson_to_shapefile():
+def geojson_to_shapefile_usgs():
     url_ids = [
         '1054',
         '5059',
@@ -927,9 +927,37 @@ def clip_points_to_boundary(input_fc,
     return output_fc
 
 
-def main():
+def geojson_to_shapefile(input_geojson, output_shapefile):
+    """
+    Converts a GeoJSON file to an ESRI Shapefile.
 
-    tgs_data()
+    Parameters:
+    - input_geojson (str): Path to the input GeoJSON file.
+    - output_shapefile (str): Path to save the output Shapefile.
+
+    Returns:
+    - None
+    """
+    try:
+        # Read the GeoJSON into a GeoDataFrame
+        gdf = gpd.read_file(input_geojson)
+
+        # Save to shapefile
+        gdf.to_file(output_shapefile, driver='ESRI Shapefile')
+
+        print(f"✅ Successfully converted to shapefile: {output_shapefile}")
+    except Exception as e:
+        print(f"❌ Error: {e}")
+
+
+def main():
+    gjson = r'\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\NMHydrogeoData\geoconnex\features.geojson'
+    out_shp = r'\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\NMHydrogeoData\geoconnex\publicwatersystems.shp'
+
+    geojson_to_shapefile(input_geojson=gjson, output_shapefile=out_shp)
+
+
+
 
     output_script_folder = os.path.join(root, 'TGS')
     script_name = 'viewdata.txt'
