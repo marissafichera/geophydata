@@ -120,15 +120,127 @@ def gdb_to_shapefile(input_gdb, feature_class, output_shapefile):
         gdf_nm.to_file(output_shapefile)
         print(f"Shapefile created: {output_shapefile}")
 
+def process_usgs_tds_data(subroot, gdf):
+    # need to export separately anything with well_depth = 0 AND top_of_scr = 0
+    # should export two different shapefiles at end
+
+    gdf_wd0 = gdf[(gdf['well_depth'] == 0) & (gdf['top_of_scr'] == 0)]
+    gdf_wd0.to_file(os.path.join(root, subroot, 'USGS_TDS_noWD.shp'))
+
+    gdf_wd = gdf[(gdf['well_depth'] != 0) | (gdf['top_of_scr'] != 0)]
+    gdf_wd.to_file(os.path.join(root, subroot, 'USGS_TDS_WD.shp'))
+
+
+def intersect_analyte_shapefiles(analytes, folder=".", id_col="id", output_path="intersected_records.shp"):
+    """
+    Reads shapefiles for each analyte and outputs a shapefile of records that exist in all of them by ID.
+
+    Parameters:
+        analytes (list of str): List of analyte names (e.g., ["arsenic", "uranium"])
+        folder (str): Folder where the shapefiles are located
+        id_col (str): Column name used to match records (default: "id")
+        output_path (str): Output shapefile path
+    """
+    common_ids = None
+    gdf_dict = {}
+
+    for analyte in analytes:
+        path = os.path.join(folder, f"{analyte}_cl.shp")
+        if not os.path.exists(path):
+            print(f"⚠️ Missing shapefile: {path}")
+            return
+
+        gdf = gpd.read_file(path)
+        gdf_dict[analyte] = gdf
+
+        ids = set(gdf[id_col])
+        common_ids = ids if common_ids is None else common_ids.intersection(ids)
+
+    if not common_ids:
+        print("❌ No common IDs found across all shapefiles.")
+        return
+
+    # Use the first GeoDataFrame and filter to common IDs
+    base_analyte = analytes[0]
+    result_gdf = gdf_dict[base_analyte][gdf_dict[base_analyte][id_col].isin(common_ids)]
+
+    # Save to shapefile
+    result_gdf.to_file(os.path.join(root, output_path))
+    print(f"✅ Output written to: {output_path}")
+
+
+
+
+def intersect_with_optional_union(analytes, folder=".", id_col="id",
+                                   union_group={"bicarbonate", "carbonate"},
+                                   output_path="intersected_with_union.shp"):
+    """
+    Reads shapefiles by analyte name and outputs records present in all analytes,
+    allowing union logic (OR) for a specified group (like bicarbonate OR carbonate).
+    """
+    gdf_dict = {}
+    common_ids = None
+    union_ids = set()
+
+    for analyte in analytes:
+        path = os.path.join(folder, f"{analyte}_cl.shp")
+        if not os.path.exists(path):
+            print(f"⚠️ Missing shapefile: {path}")
+            return
+
+        gdf = gpd.read_file(path)
+        gdf_dict[analyte] = gdf
+        ids = set(gdf[id_col])
+
+        if analyte in union_group:
+            union_ids.update(ids)  # OR logic: union of IDs
+        else:
+            common_ids = ids if common_ids is None else common_ids.intersection(ids)
+
+    # Combine: intersected IDs + union group IDs
+    final_ids = common_ids.intersection(union_ids) if union_ids else common_ids
+
+    if not final_ids:
+        print("❌ No matching records found with given criteria.")
+        return
+
+    # Use one of the GeoDataFrames (any analyte) to extract geometry and IDs
+    base_analyte = analytes[0]
+    result_gdf = gdf_dict[base_analyte][gdf_dict[base_analyte][id_col].isin(final_ids)]
+
+    # Save result
+    result_gdf.to_file(os.path.join(root, output_path))
+    print(f"✅ Output written to: {output_path}")
+
+def hydrogeology_studies():
+    df = pd.read_csv('HydrogeologyStudiesNM.csv')
+
+    print(df['Agency or Journal'].unique())
+    print(df['Agency or Journal'].nunique())
+    print(df['Agency or Journal'].value_counts())
+
 
 def main():
-    subroot = 'USGS008h'
+    hydrogeology_studies()
 
-    input_gdb = os.path.join(root, 'BrackishWater_DissolvedSolids.gdb')
-    feature_class = "Diss_Solids"
-    output_shapefile = os.path.join(root, subroot, 'Diss_Solids.shp')
+    # analytes = ['calcium',
+    #             'sodium',
+    #             'potassium',
+    #             'magnesium',
+    #             'sulfate',
+    #             'chloride',
+    #             'bicarbonate',
+    #             'carbonate']
+    #
+    # f = r'W:\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\scratch'
+    # intersect_with_optional_union(analytes, folder=f, id_col='id', output_path='piper_HCOorCO.shp')
+    # intersect_analyte_shapefiles(analytes, folder=f, output_path="piper_elements.shp")
 
-    gdb_to_shapefile(input_gdb, feature_class, output_shapefile)
+    # input_gdb = os.path.join(root, 'BrackishWater_DissolvedSolids.gdb')
+    # feature_class = "Diss_Solids"
+    # output_shapefile = os.path.join(root, subroot, 'Diss_Solids.shp')
+    #
+    # gdb_to_shapefile(input_gdb, feature_class, output_shapefile)
 
     # output_script_folder = os.path.join(root, subroot)
     # script_name = 'script.txt'

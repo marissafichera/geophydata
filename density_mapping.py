@@ -182,9 +182,6 @@ def convert_shapefiles_to_geojson(folder_path, output_folder=None):
 
 # Example usage:
 def main():
-    convert_shapefiles_to_geojson(r"\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\scratch")
-    sys.exit()
-
     names = ['summary_tds_all', 'summary_dtw_all']
     names = ['arsenic',
              'bicarbonate',
@@ -196,7 +193,7 @@ def main():
              'potassium',
              'sodium',
              'sulfate']
-
+    names = ['calcium']
     waterdata_csvs = [os.path.join('dieoutput', f'{name}', 'output', f'summary.csv') for name in names]
 
     # Define target spatial reference (for example, NAD83 UTM Zone 13N, EPSG:26913)
@@ -211,6 +208,8 @@ def main():
         shp = (csv_to_shapefile(csv_path=c, shapefile_path=os.path.join(ROOT, f'{name}.shp'), x_field='longitude', y_field='latitude', spatial_ref=4326))
         input_shps.append(clip_points_to_boundary(input_fc=shp, clip_fc=clip_fc_project, output_fc=f'{name}_cl.shp'))
     print(input_shps)
+
+    sys.exit()
 
     input_datasets = []
     for ishp in input_shps:
