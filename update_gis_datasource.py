@@ -4,9 +4,9 @@ import os
 
 def update_source():
     # User Inputs
-    aprx_path = r"\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData2.aprx"  # Change this to your ArcGIS Pro project
-    old_source = r"W:\statewide\AquiferCharacterization\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb"  # Change to old folder or GDB path
-    new_source = r"\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMGeophysicalData\NMGeophysicalData.gdb"  # Change to new folder or GDB path
+    aprx_path = r"W:\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\NMHydrogeoData.aprx"  # Change this to your ArcGIS Pro project
+    old_source = r'W:\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\scratch'  # Change to old folder or GDB path
+    new_source = r"W:\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\NMHydrogeoData\NMBG002h" # Change to new folder or GDB path
     target_map_name = 'Map'
 
     # Load ArcGIS Pro Project
@@ -31,21 +31,21 @@ def update_source():
                 if old_source.lower() in current_source.lower():
                     try:
                         # Detect if the old source is a File Geodatabase (GDB)
-                        if old_source.lower().endswith(".gdb"):
+                        if old_source.lower().endswith(".dumb"):
                             # Update GDB workspace
                             lyr.findAndReplaceWorkspacePath(old_source, new_source, False)
                             print(f"Updated GDB Layer: {lyr.name} → {new_source}")
-                        # else:
+                        else:
                             # Handle folder-based datasets (shapefiles, rasters, etc.)
-                            # relative_path = os.path.relpath(current_source, old_source)
-                            # new_path = os.path.join(new_source, relative_path)
+                            relative_path = os.path.relpath(current_source, old_source)
+                            new_path = os.path.join(new_source, relative_path)
 
                             # Ensure new data exists before updating
-                            # if arcpy.Exists(new_path):
-                            #     lyr.findAndReplaceWorkspacePath(old_source, new_source, False)
-                            #     print(f"Updated Folder Layer: {lyr.name} → {new_path}")
-                            # else:
-                            #     print(f"Skipping {lyr.name}, new source not found: {new_path}")
+                            if arcpy.Exists(new_path):
+                                lyr.updateConnectionProperties(old_source, new_source)
+                                print(f"Updated Folder Layer: {lyr.name} → {new_path}")
+                            else:
+                                print(f"Skipping {lyr.name}, new source not found: {new_path}")
 
                     except Exception as e:
                         print(Exception)

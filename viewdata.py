@@ -951,19 +951,16 @@ def geojson_to_shapefile(input_geojson, output_shapefile):
 
 
 def main():
-    gjson = r'\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\NMHydrogeoData\geoconnex\features.geojson'
-    out_shp = r'\\agustin\amp\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\NMHydrogeoData\geoconnex\publicwatersystems.shp'
+    usgs_shp = r'W:\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\NMHydrogeoData\USGS008h\Diss_Solids.shp'
+    df = gpd.read_file(usgs_shp)
+    df2 = df[df['state_alph'] == 'NM']
+    print(df2['sourceID'].unique())
 
-    geojson_to_shapefile(input_geojson=gjson, output_shapefile=out_shp)
-
-
-
-
-    output_script_folder = os.path.join(root, 'TGS')
-    script_name = 'viewdata.txt'
-
-    # USGS012()
-    save_script(output_script_folder, script_name)
+    # output_script_folder = os.path.join(root, 'TGS')
+    # script_name = 'viewdata.txt'
+    #
+    # # USGS012()
+    # save_script(output_script_folder, script_name)
 
 
 if __name__ == '__main__':

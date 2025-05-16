@@ -7,6 +7,8 @@ diss_solids = gpd.read_file(r'W:\statewide\AquiferCharacterization\ArcGIS\Projec
 summary_tds = gpd.read_file(r'W:\statewide\AquiferCharacterization\ArcGIS\Projects\NMHydrogeoData\scratch\summary_tds_all_cl.shp')
 
 # Prepare Diss_Solids data
+# Only keep rows where either well_depth or top_of_scr is not zero
+diss_solids = diss_solids[(diss_solids['well_depth'] != 0) | (diss_solids['top_of_scr'] != 0)]
 diss_solids['depth_for_plot'] = diss_solids.apply(
     lambda row: row['well_depth'] if row['well_depth'] != 0 else row['top_of_scr'], axis=1
 )
