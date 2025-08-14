@@ -1,0 +1,11 @@
+.idea/*
+waterdata/OSE*
+waterdata/tl*
+nm_land_status_shp/*
+out/potential_wells/*
+out/pop_density/*
+out/USGS_osd_gravity/*
+
+nm_land_status.gpkg
+nm_land_status_categories_hatch.png
+nm_land_status_preview.png
