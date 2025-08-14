@@ -1,4 +1,6 @@
 .idea/*
+.idea/geophydata.iml
+.idea/misc.xml
 waterdata/OSE*
 waterdata/tl*
 nm_land_status_shp/*
